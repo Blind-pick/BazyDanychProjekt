@@ -1,0 +1,331 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Cinema Reservation System ERD" id="zX67txeZMCmvKnLmYOCc">
+    <mxGraphModel dx="2155" dy="1142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t_cinemas_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="CINEMAS" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cinemas_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;cinema_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR&lt;br&gt;city : VARCHAR&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="60" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="t_halls_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="HALLS" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="t_halls_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;hall_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;cinema_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;hall_type_id&lt;/i&gt; : FK&lt;br&gt;name : VARCHAR&lt;br&gt;capacity : INT&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="220" x="60" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="t_halltypes_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="HALL_TYPES" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="t_halltypes_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;hall_type_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="60" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="t_seattypes_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="SEAT_TYPES" vertex="1">
+          <mxGeometry height="28" width="220" x="60" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="t_seattypes_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;seat_type_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="60" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="t_seats_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#1565C0;strokeColor=#1565C0;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="SEATS" vertex="1">
+          <mxGeometry height="28" width="220" x="370" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t_seats_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;seat_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;hall_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;seat_type_id&lt;/i&gt; : FK&lt;br&gt;row_label : VARCHAR&lt;br&gt;seat_number : SMALLINT&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="220" x="370" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="t_movies_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#2E7D32;strokeColor=#2E7D32;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="MOVIES" vertex="1">
+          <mxGeometry height="28" width="220" x="670" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="t_movies_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;movie_id&lt;/b&gt; : INT, PK&lt;br&gt;title : VARCHAR&lt;br&gt;duration_minutes : SMALLINT&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="670" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="t_genres_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#2E7D32;strokeColor=#2E7D32;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="GENRES" vertex="1">
+          <mxGeometry height="28" width="200" x="940" y="137" as="geometry" />
+        </mxCell>
+        <mxCell id="t_genres_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;genre_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="200" x="940" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="t_moviegenres_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#2E7D32;strokeColor=#2E7D32;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="MOVIE_GENRES" vertex="1">
+          <mxGeometry height="28" width="200" x="940" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="t_moviegenres_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;&lt;i&gt;movie_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;br&gt;&lt;b&gt;&lt;i&gt;genre_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="200" x="940" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="t_showtimes_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#2E7D32;strokeColor=#2E7D32;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="SHOWTIMES" vertex="1">
+          <mxGeometry height="28" width="220" x="670" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="t_showtimes_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;showtime_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;movie_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;hall_id&lt;/i&gt; : FK&lt;br&gt;start_datetime : TIMESTAMP&lt;br&gt;base_price : DECIMAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="220" x="670" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="t_users_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#6A1B9A;strokeColor=#6A1B9A;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="USERS" vertex="1">
+          <mxGeometry height="28" width="220" x="1440" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="t_users_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;user_id&lt;/b&gt; : INT, PK&lt;br&gt;email : VARCHAR, UQ&lt;br&gt;username : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="1440" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t_roles_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#6A1B9A;strokeColor=#6A1B9A;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="ROLES" vertex="1">
+          <mxGeometry height="28" width="200" x="1765" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="t_roles_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;role_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="200" x="1765" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="t_userroles_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#6A1B9A;strokeColor=#6A1B9A;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="USER_ROLES" vertex="1">
+          <mxGeometry height="28" width="200" x="1765" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="t_userroles_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;&lt;i&gt;user_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;br&gt;&lt;b&gt;&lt;i&gt;role_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="200" x="1765" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="t_employees_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#6A1B9A;strokeColor=#6A1B9A;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="EMPLOYEES" vertex="1">
+          <mxGeometry height="28" width="220" x="1750" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="t_employees_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;employee_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;user_id&lt;/i&gt; : FK, UQ&lt;br&gt;&lt;i&gt;cinema_id&lt;/i&gt; : FK&lt;br&gt;position : VARCHAR&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="220" x="1750" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reservations_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="RESERVATIONS" vertex="1">
+          <mxGeometry height="28" width="240" x="1070" y="363" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reservations_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;reservation_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;user_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;showtime_id&lt;/i&gt; : FK&lt;br&gt;status : ENUM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="240" x="1070" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="t_resseats_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=12;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="RESERVATION_SEATS" vertex="1">
+          <mxGeometry height="28" width="240" x="770" y="710.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_resseats_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;reservation_seat_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;reservation_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;seat_id&lt;/i&gt; : FK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="240" x="770" y="738.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_tickets_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="TICKETS" vertex="1">
+          <mxGeometry height="28" width="260" x="1370" y="541.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_tickets_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;ticket_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;showtime_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;seat_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;user_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;reservation_id&lt;/i&gt; : FK, NULL&lt;br&gt;&lt;i&gt;ticket_group_id&lt;/i&gt; : FK, NULL&lt;br&gt;&lt;i&gt;promotion_id&lt;/i&gt; : FK, NULL&lt;br&gt;final_price : DECIMAL&lt;br&gt;status : ENUM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="172" width="260" x="1370" y="569.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ticketgroups_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="TICKET_GROUPS" vertex="1">
+          <mxGeometry height="28" width="220" x="1745" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ticketgroups_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;ticket_group_id&lt;/b&gt; : INT, PK&lt;br&gt;group_name : VARCHAR&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="1745" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="t_payments_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="PAYMENTS" vertex="1">
+          <mxGeometry height="28" width="260" x="1370" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="t_payments_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;payment_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;user_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;payment_method_id&lt;/i&gt; : FK&lt;br&gt;amount : DECIMAL&lt;br&gt;status : ENUM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="260" x="1370" y="838" as="geometry" />
+        </mxCell>
+        <mxCell id="t_paymethods_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="PAYMENT_METHODS" vertex="1">
+          <mxGeometry height="28" width="220" x="1730" y="836.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_paymethods_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;payment_method_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="1730" y="864.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ticketpayments_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=12;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="TICKET_PAYMENTS" vertex="1">
+          <mxGeometry height="28" width="220" x="1745" y="646.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ticketpayments_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;&lt;i&gt;ticket_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;br&gt;&lt;b&gt;&lt;i&gt;payment_id&lt;/i&gt;&lt;/b&gt; : PK, FK&lt;br&gt;amount : DECIMAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="1745" y="674.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_promotions_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#E65100;strokeColor=#E65100;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="PROMOTIONS" vertex="1">
+          <mxGeometry height="28" width="220" x="2120" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="t_promotions_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;promotion_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR&lt;br&gt;discount_value : DECIMAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="2120" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="t_promorules_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=12;fillColor=#E65100;strokeColor=#E65100;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="PROMOTION_RULES" vertex="1">
+          <mxGeometry height="28" width="220" x="2120" y="630.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_promorules_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;rule_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;promotion_id&lt;/i&gt; : FK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="2120" y="658.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cancpol_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=11;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="CANCELLATION_POLICIES" vertex="1">
+          <mxGeometry height="28" width="220" x="770" y="843" as="geometry" />
+        </mxCell>
+        <mxCell id="t_cancpol_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;policy_id&lt;/b&gt; : INT, PK&lt;br&gt;name : VARCHAR, UQ&lt;br&gt;refund_percent : DECIMAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="220" x="770" y="871" as="geometry" />
+        </mxCell>
+        <mxCell id="t_refunds_header" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontStyle=1;fontSize=13;fillColor=#BF360C;strokeColor=#BF360C;fontColor=#FFFFFF;arcSize=8;shadow=1;" value="REFUNDS" vertex="1">
+          <mxGeometry height="28" width="240" x="1100" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="t_refunds_body" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;spacingTop=4;fillColor=#FBE9E7;strokeColor=#BF360C;fontColor=#000000;arcSize=4;shadow=1;" value="&lt;div style=&#39;text-align:left;font-size:11px;line-height:1.5;color:#000;&#39;&gt;&lt;b&gt;refund_id&lt;/b&gt; : INT, PK&lt;br&gt;&lt;i&gt;ticket_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;payment_id&lt;/i&gt; : FK&lt;br&gt;&lt;i&gt;policy_id&lt;/i&gt; : FK, NULL&lt;br&gt;refund_amount : DECIMAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="240" x="1100" y="838" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_cinema_halls" edge="1" parent="1" source="t_cinemas_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_halls_header" value="ma">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_hall_halltype" edge="1" parent="1" source="t_halls_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERmandOne;endFill=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_halltypes_header" value="typ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_hall_seats" edge="1" parent="1" source="t_halls_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="t_seats_body" value="zawiera">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_seat_seattype" edge="1" parent="1" source="t_seats_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERmandOne;endFill=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.2;exitY=1.031;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" target="t_seattypes_body" value="typ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="416" />
+              <mxPoint x="310" y="416" />
+              <mxPoint x="310" y="629" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_movie_showtimes" edge="1" parent="1" source="t_movies_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_showtimes_header" value="seanse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_hall_showtimes" edge="1" parent="1" source="t_halls_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_showtimes_body" value="gości">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="380" />
+              <mxPoint x="320" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_movie_moviegenres" edge="1" parent="1" source="t_movies_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_moviegenres_body" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_genre_moviegenres" edge="1" parent="1" source="t_genres_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#2E7D32;fontColor=#2E7D32;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_moviegenres_header" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_userroles" edge="1" parent="1" source="t_users_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_userroles_body" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_role_userroles" edge="1" parent="1" source="t_roles_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_userroles_header" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_employee" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToOne;endFill=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=10;labelBackgroundColor=#FFFFFF;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="t_employees_body" value="pracuje jako">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="433" />
+            </Array>
+            <mxPoint x="1600" y="140" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_cinema_employees" edge="1" parent="1" source="t_cinemas_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" target="t_employees_body" value="zatrudnia">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="166" />
+              <mxPoint x="300" y="105" />
+              <mxPoint x="1360" y="105" />
+              <mxPoint x="1360" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_showtime_reservations" edge="1" parent="1" source="t_showtimes_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1.01;exitY=0.918;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;exitPerimeter=0;" target="t_reservations_body" value="rezerwowany">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="375" />
+              <mxPoint x="930" y="410" />
+              <mxPoint x="960" y="410" />
+              <mxPoint x="960" y="420" />
+              <mxPoint x="1050" y="420" />
+              <mxPoint x="1050" y="416" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_user_reservations" edge="1" parent="1" source="t_users_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.404;exitY=0.998;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="t_reservations_header" value="rezerwuje">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1529" y="150" />
+              <mxPoint x="1520" y="150" />
+              <mxPoint x="1520" y="240" />
+              <mxPoint x="1190" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_reservation_resseats" edge="1" parent="1" source="t_reservations_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_resseats_header" value="miejsca">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="680" />
+              <mxPoint x="890" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_seat_resseats" edge="1" parent="1" source="t_seats_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_resseats_body" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="450" y="470" />
+              <mxPoint x="450" y="757" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_showtime_tickets" edge="1" parent="1" source="t_showtimes_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;" target="t_tickets_body" value="sprzedawany">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="406" />
+              <mxPoint x="830" y="406" />
+              <mxPoint x="830" y="540" />
+              <mxPoint x="1230" y="540" />
+              <mxPoint x="1230" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_seat_tickets" edge="1" parent="1" source="t_seats_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=0.838;exitY=0.981;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;exitPerimeter=0;" target="t_tickets_body" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="554" y="416" />
+              <mxPoint x="580" y="416" />
+              <mxPoint x="580" y="470" />
+              <mxPoint x="1030" y="470" />
+              <mxPoint x="1030" y="615" />
+              <mxPoint x="1350" y="615" />
+              <mxPoint x="1350" y="621" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_user_tickets" edge="1" parent="1" source="t_users_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_tickets_header" value="kupuje">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1550" y="500" />
+              <mxPoint x="1500" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_reservation_tickets" edge="1" parent="1" source="t_reservations_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_tickets_body" value="konwertowana">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ticketgroup_tickets" edge="1" parent="1" source="t_ticketgroups_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;" target="t_tickets_body" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_promotion_tickets" edge="1" parent="1" source="t_promotions_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.814;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" target="t_tickets_header" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2060" y="512" />
+              <mxPoint x="2060" y="510" />
+              <mxPoint x="1582" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_ticket_ticketpayments" edge="1" parent="1" source="t_tickets_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_ticketpayments_body" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_payment_ticketpayments" edge="1" parent="1" source="t_payments_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_ticketpayments_body" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_payment_paymethod" edge="1" parent="1" source="t_payments_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERmandOne;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_paymethods_body" value="metodą">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_user_payments" edge="1" parent="1" source="t_tickets_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_payments_header" value="płatność">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_promotion_rules" edge="1" parent="1" source="t_promotions_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToMany;endFill=0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_promorules_header" value="reguły">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_ticket_refund" edge="1" parent="1" source="t_tickets_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERzeroToOne;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=0.604;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" target="t_refunds_header" value="zwrot">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="724" />
+              <mxPoint x="1350" y="718" />
+              <mxPoint x="1245" y="718" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_refund_policy" edge="1" parent="1" source="t_refunds_body" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERzeroToOne;endFill=0;strokeColor=#BF360C;fontColor=#BF360C;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="t_cancpol_body" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="887" />
+              <mxPoint x="1060" y="904" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,82 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="diagram_id" name="Page-1">
+    <mxGraphModel dx="1255" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;" value="PostgreSQL DB" vertex="1">
+          <mxGeometry height="60" width="140" x="200" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;" value="FastAPI" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#000000;" value="Backup Container" vertex="1">
+          <mxGeometry height="60" width="140" x="360" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#000000;" value="Postgres Exporter" vertex="1">
+          <mxGeometry height="60" width="140" x="660" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#000000;" value="Prometheus" vertex="1">
+          <mxGeometry height="60" width="140" x="853" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;" value="Loki" vertex="1">
+          <mxGeometry height="60" width="140" x="853" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDE5B6;strokeColor=#ADC178;fontColor=#000000;" value="Promtail" vertex="1">
+          <mxGeometry height="60" width="140" x="853" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;strokeColor=#666666;fontColor=#000000;" value="Grafana" vertex="1">
+          <mxGeometry height="60" width="140" x="1050" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="2" value="depends on">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="2" value="backups">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="2" value="exports metrics">
+          <mxGeometry relative="1" x="-0.3043" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="5" value="scrapes metrics">
+          <mxGeometry relative="1" x="-0.35" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="2" value="collects logs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" value="collects logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="690" />
+              <mxPoint x="570" y="690" />
+            </Array>
+            <mxPoint x="850" y="690" as="sourcePoint" />
+            <mxPoint x="570" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="7" value="pushes logs to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="6" value="queries metrics">
+          <mxGeometry relative="1" x="0.45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontColor=#FFFFFF;" target="7" value="queries logs">
+          <mxGeometry relative="1" x="0.45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1wSHr3XRpkIlGi0ah-F4-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;" value="Performance tests" vertex="1">
+          <mxGeometry height="60" width="140" x="370" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1wSHr3XRpkIlGi0ah-F4-19" edge="1" parent="1" source="1wSHr3XRpkIlGi0ah-F4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.351;entryY=1.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
