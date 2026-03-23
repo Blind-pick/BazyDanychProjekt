@@ -81,14 +81,16 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS cinemas (
                 cinema_id SERIAL PRIMARY KEY,
                 name VARCHAR(255) NOT NULL,
-                city VARCHAR(255) NOT NULL
+                city VARCHAR(255) NOT NULL,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS hall_types (
                 hall_type_id SERIAL PRIMARY KEY,
-                name VARCHAR(100) UNIQUE NOT NULL
+                name VARCHAR(100) UNIQUE NOT NULL,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -98,14 +100,16 @@ class CinemaDatabaseCreator:
                 cinema_id INT REFERENCES cinemas(cinema_id),
                 hall_type_id INT REFERENCES hall_types(hall_type_id),
                 name VARCHAR(100),
-                capacity INT
+                capacity INT,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS seat_types (
                 seat_type_id SERIAL PRIMARY KEY,
-                name VARCHAR(100) UNIQUE
+                name VARCHAR(100) UNIQUE,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -115,7 +119,8 @@ class CinemaDatabaseCreator:
                 hall_id INT REFERENCES halls(hall_id),
                 seat_type_id INT REFERENCES seat_types(seat_type_id),
                 row_label VARCHAR(10),
-                seat_number SMALLINT
+                seat_number SMALLINT,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -123,14 +128,16 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS movies (
                 movie_id SERIAL PRIMARY KEY,
                 title VARCHAR(255),
-                duration_minutes SMALLINT
+                duration_minutes SMALLINT,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS genres (
                 genre_id SERIAL PRIMARY KEY,
-                name VARCHAR(100) UNIQUE
+                name VARCHAR(100) UNIQUE,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -138,6 +145,7 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS movie_genres (
                 movie_id INT REFERENCES movies(movie_id),
                 genre_id INT REFERENCES genres(genre_id),
+                created_at TIMESTAMP DEFAULT NOW(),
                 PRIMARY KEY (movie_id, genre_id)
             );
             """,
@@ -148,7 +156,8 @@ class CinemaDatabaseCreator:
                 movie_id INT REFERENCES movies(movie_id),
                 hall_id INT REFERENCES halls(hall_id),
                 start_datetime TIMESTAMP,
-                base_price DECIMAL(10,2)
+                base_price DECIMAL(10,2),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -156,7 +165,8 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS users (
                 user_id SERIAL PRIMARY KEY,
                 email VARCHAR(255) UNIQUE,
-                username VARCHAR(100) UNIQUE
+                username VARCHAR(100) UNIQUE,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -165,7 +175,8 @@ class CinemaDatabaseCreator:
                 reservation_id SERIAL PRIMARY KEY,
                 user_id INT REFERENCES users(user_id),
                 showtime_id INT REFERENCES showtimes(showtime_id),
-                status reservation_status
+                status reservation_status,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -173,14 +184,16 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS reservation_seats (
                 reservation_seat_id SERIAL PRIMARY KEY,
                 reservation_id INT REFERENCES reservations(reservation_id),
-                seat_id INT REFERENCES seats(seat_id)
+                seat_id INT REFERENCES seats(seat_id),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS ticket_groups (
                 ticket_group_id SERIAL PRIMARY KEY,
-                group_name VARCHAR(100)
+                group_name VARCHAR(100),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -188,14 +201,16 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS promotions (
                 promotion_id SERIAL PRIMARY KEY,
                 name VARCHAR(255),
-                discount_value DECIMAL(10,2)
+                discount_value DECIMAL(10,2),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS promotion_rules (
                 rule_id SERIAL PRIMARY KEY,
-                promotion_id INT REFERENCES promotions(promotion_id)
+                promotion_id INT REFERENCES promotions(promotion_id),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -209,14 +224,16 @@ class CinemaDatabaseCreator:
                 ticket_group_id INT REFERENCES ticket_groups(ticket_group_id),
                 promotion_id INT REFERENCES promotions(promotion_id),
                 final_price DECIMAL(10,2),
-                status ticket_status
+                status ticket_status,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
             """
             CREATE TABLE IF NOT EXISTS payment_methods (
                 payment_method_id SERIAL PRIMARY KEY,
-                name VARCHAR(100) UNIQUE
+                name VARCHAR(100) UNIQUE,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -226,7 +243,8 @@ class CinemaDatabaseCreator:
                 user_id INT REFERENCES users(user_id),
                 payment_method_id INT REFERENCES payment_methods(payment_method_id),
                 amount DECIMAL(10,2),
-                status payment_status
+                status payment_status,
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -235,6 +253,7 @@ class CinemaDatabaseCreator:
                 ticket_id INT REFERENCES tickets(ticket_id),
                 payment_id INT REFERENCES payments(payment_id),
                 amount DECIMAL(10,2),
+                created_at TIMESTAMP DEFAULT NOW(),
                 PRIMARY KEY (ticket_id, payment_id)
             );
             """,
@@ -243,7 +262,8 @@ class CinemaDatabaseCreator:
             CREATE TABLE IF NOT EXISTS cancellation_policies (
                 policy_id SERIAL PRIMARY KEY,
                 name VARCHAR(255) UNIQUE,
-                refund_percent DECIMAL(5,2)
+                refund_percent DECIMAL(5,2),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """,
 
@@ -253,7 +273,8 @@ class CinemaDatabaseCreator:
                 ticket_id INT REFERENCES tickets(ticket_id),
                 payment_id INT REFERENCES payments(payment_id),
                 policy_id INT REFERENCES cancellation_policies(policy_id),
-                refund_amount DECIMAL(10,2)
+                refund_amount DECIMAL(10,2),
+                created_at TIMESTAMP DEFAULT NOW()
             );
             """
         ]
