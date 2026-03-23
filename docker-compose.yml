@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: kino
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pswd
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  api:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_NAME: kino
+      DB_USER: postgres
+      DB_PASSWORD: pswd
+      DB_PORT: 5432
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+volumes:
+  pgdata:
