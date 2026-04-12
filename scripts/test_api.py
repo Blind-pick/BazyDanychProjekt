@@ -47,7 +47,7 @@ def cmd_register_user(base_url: str) -> None:
     
     if resp.status_code == 201:
         session["user_id"] = resp.json()["user_id"]
-        print(f"  ✓ User registered. ID: {session['user_id']}")
+        print(f"  [OK] User registered. ID: {session['user_id']}")
 
 
 def cmd_create_cinema(base_url: str) -> None:
@@ -63,7 +63,7 @@ def cmd_create_cinema(base_url: str) -> None:
     
     if resp.status_code == 201:
         session["cinema_id"] = resp.json()["cinema_id"]
-        print(f"  ✓ Cinema created. ID: {session['cinema_id']}")
+        print(f"  [OK] Cinema created. ID: {session['cinema_id']}")
 
 
 def cmd_list_cinemas(base_url: str) -> None:
@@ -87,10 +87,10 @@ def cmd_list_cinemas(base_url: str) -> None:
 def cmd_create_reservation(base_url: str) -> None:
     
     if not session["user_id"]:
-        print("  ✗ Must register user first")
+        print("  [ERROR] Must register user first")
         return
     if not session["showtime_id"]:
-        print("  ✗ Must select showtime first")
+        print("  [ERROR] Must select showtime first")
         return
     
     print("  Enter seat IDs (comma-separated, e.g., 1,2,3):")
@@ -98,7 +98,7 @@ def cmd_create_reservation(base_url: str) -> None:
     seat_ids = [int(x.strip()) for x in seat_ids_str.split(",") if x.strip().isdigit()]
     
     if not seat_ids:
-        print("  ✗ No valid seat IDs provided")
+        print("  [ERROR] No valid seat IDs provided")
         return
     
     resp = requests.post(
@@ -113,13 +113,13 @@ def cmd_create_reservation(base_url: str) -> None:
     
     if resp.status_code == 201:
         session["reservation_id"] = resp.json()["reservation_id"]
-        print(f"  ✓ Reservation created. ID: {session['reservation_id']}")
+        print(f"  [OK] Reservation created. ID: {session['reservation_id']}")
 
 
 def cmd_get_user_reservations(base_url: str) -> None:
     
     if not session["user_id"]:
-        print("  ✗ Must register user first")
+        print("  [ERROR] Must register user first")
         return
     
     resp = requests.get(f"{base_url}/api/v1/users/{session['user_id']}/reservations")
@@ -129,7 +129,7 @@ def cmd_get_user_reservations(base_url: str) -> None:
 def cmd_get_user_tickets(base_url: str) -> None:
     
     if not session["user_id"]:
-        print("  ✗ Must register user first")
+        print("  [ERROR] Must register user first")
         return
     
     resp = requests.get(f"{base_url}/api/v1/users/{session['user_id']}/tickets")
@@ -139,7 +139,7 @@ def cmd_get_user_tickets(base_url: str) -> None:
 def cmd_get_showtime_seats(base_url: str) -> None:
     
     if not session["showtime_id"]:
-        print("  ✗ Must select showtime first")
+        print("  [ERROR] Must select showtime first")
         return
     
     resp = requests.get(f"{base_url}/api/v1/tickets/showtime/{session['showtime_id']}/seats")
@@ -155,7 +155,7 @@ def cmd_get_showtime_seats(base_url: str) -> None:
 def cmd_create_payment(base_url: str) -> None:
     
     if not session["user_id"]:
-        print("  ✗ Must register user first")
+        print("  [ERROR] Must register user first")
         return
     
     amount = float(input("  Amount: ") or "29.99")
@@ -175,14 +175,14 @@ def cmd_create_payment(base_url: str) -> None:
     
     if resp.status_code == 201:
         session["payment_id"] = resp.json()["payment_id"]
-        print(f"  ✓ Payment created. ID: {session['payment_id']}")
+        print(f"  [OK] Payment created. ID: {session['payment_id']}")
 
 
 def cmd_show_session(base_url: str) -> None:
     
-    print("\n  ═══ Session State ═══")
+    print("\n  Session State")
     for key, value in session.items():
-        status = "✓" if value else "○"
+        status = "[SET]" if value else "[---]"
         print(f"  {status} {key:20s}: {value}")
     print()
 
@@ -190,7 +190,7 @@ def cmd_show_session(base_url: str) -> None:
 def cmd_help(base_url: str = "") -> None:
     
     print("""
-  ═══ Cinema API - Available Commands ═══
+  Cinema API - Available Commands
   
   Users:
     1. register        - Register a new user
@@ -222,7 +222,7 @@ def cmd_health(base_url: str) -> None:
         resp = requests.get(f"{base_url}/health")
         print_response(resp, "API Health Check")
     except requests.exceptions.ConnectionError:
-        print(f"  ✗ Cannot connect to API at {base_url}")
+        print(f"  [ERROR] Cannot connect to API at {base_url}")
 
 
 commands = {
@@ -264,15 +264,15 @@ def main():
                 try:
                     cmd(args.url)
                 except Exception as e:
-                    print(f"  ✗ Error: {e}")
+                    print(f"  [ERROR] Error: {e}")
             else:
-                print("  ✗ Unknown command. Type 'help' for available commands.")
+                print("  [ERROR] Unknown command. Type 'help' for available commands.")
         
         except KeyboardInterrupt:
             print("\n  Interrupted")
             break
         except Exception as e:
-            print(f"  ✗ Error: {e}")
+            print(f"  [ERROR] Error: {e}")
 
 
 if __name__ == "__main__":

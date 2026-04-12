@@ -1,6 +1,6 @@
 # INSTRUKCJE URUCHOMIENIA - Art Cinema Reservation API v2.0
 
-## 📋 Szybki Start (Docker - Rekomendowany)
+## Szybki Start (Docker - Rekomendowany)
 
 ### Wymagania:
 - Docker & Docker Compose zainstalowane
@@ -14,9 +14,9 @@ cd BazyDanychProjekt
 docker-compose up --build
 
 # Output powinien pokazać:
-# ✓ db_1 is now ready to accept connections
-# ✓ api_1 has started successfully
-# ✓ Uvicorn running on http://0.0.0.0:8000
+# [OK] db_1 is now ready to accept connections
+# [OK] api_1 has started successfully
+# [OK] Uvicorn running on http://0.0.0.0:8000
 ```
 
 API będzie dostępny: **http://127.0.0.1:8000**
@@ -25,7 +25,7 @@ API będzie dostępny: **http://127.0.0.1:8000**
 
 ## 📚 Podstawowe Operacje
 
-### 1️⃣ Rejestracja Użytkownika
+### 1. Rejestracja Użytkownika
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/users \
   -H "Content-Type: application/json" \
@@ -38,7 +38,7 @@ curl -X POST http://127.0.0.1:8000/api/v1/users \
 
 ---
 
-### 2️⃣ Utwórz Kino
+### 2. Utwórz Kino
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/cinemas \
   -H "Content-Type: application/json" \
@@ -51,7 +51,7 @@ curl -X POST http://127.0.0.1:8000/api/v1/cinemas \
 
 ---
 
-### 3️⃣ Pobierz Dostępne Miejsca na Seans
+### 3. Pobierz Dostępne Miejsca na Seans
 ```bash
 curl http://127.0.0.1:8000/api/v1/tickets/showtime/1/seats
 ```
@@ -72,7 +72,7 @@ curl http://127.0.0.1:8000/api/v1/tickets/showtime/1/seats
 
 ---
 
-### 4️⃣ Zrób Rezerwację
+### 4. Zrób Rezerwację
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/reservations \
   -H "Content-Type: application/json" \
@@ -84,11 +84,11 @@ curl -X POST http://127.0.0.1:8000/api/v1/reservations \
 ```
 **Odpowiedź:** `{"reservation_id": 1, "status": "pending", ...}`
 
-> ⏱️ **Ważne**: Rezerwacja wygasa po 15 minutach jeżeli nie zostanie potwierdzona!
+> **Ważne**: Rezerwacja wygasa po 15 minutach jeżeli nie zostanie potwierdzona!
 
 ---
 
-### 5️⃣ Potwierdź Rezerwację
+### 5. Potwierdź Rezerwację
 ```bash
 curl -X PATCH http://127.0.0.1:8000/api/v1/reservations/1/status \
   -H "Content-Type: application/json" \
@@ -97,7 +97,7 @@ curl -X PATCH http://127.0.0.1:8000/api/v1/reservations/1/status \
 
 ---
 
-### 6️⃣ Utwórz Bilet
+### 6. Utwórz Bilet
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/tickets \
   -H "Content-Type: application/json" \
@@ -113,7 +113,7 @@ curl -X POST http://127.0.0.1:8000/api/v1/tickets \
 
 ---
 
-### 7️⃣ Utwórz Płatność
+### 7. Utwórz Płatność
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/payments \
   -H "Content-Type: application/json" \
@@ -128,14 +128,14 @@ curl -X POST http://127.0.0.1:8000/api/v1/payments \
 
 ---
 
-### 8️⃣ Oznacz Płatność jako Wykonaną
+### 8. Oznacz Płatność jako Wykonaną
 ```bash
 curl -X POST http://127.0.0.1:8000/api/v1/payments/1/complete
 ```
 
 ---
 
-## 🧪 Interaktywny Test CLI
+## Interaktywny Test CLI
 
 Zamiast ręcznych curl-ów, użyj interaktywnego CLI:
 
@@ -188,7 +188,7 @@ python scripts/test_api.py
 
 ---
 
-## 🔧 Lokalna Instalacja (bez Docker)
+## Lokalna Instalacja (bez Docker)
 
 Jeśli chcesz nie używać Docker-a:
 
