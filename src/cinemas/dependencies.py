@@ -1,4 +1,3 @@
-"""Cinemas domain dependencies."""
 import logging
 from fastapi import Depends, HTTPException, status
 
@@ -13,11 +12,6 @@ logger = logging.getLogger(__name__)
 
 
 async def get_valid_cinema(cinema_id: int) -> Cinema:
-    """Dependency: validate and get cinema by ID.
-    
-    Raises HTTPException 404 if not found.
-    Raises HTTPException 500 if database error.
-    """
     try:
         conn = await get_db_connection()
         try:

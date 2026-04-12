@@ -1,4 +1,3 @@
-"""Database creator and initializer with proper schema."""
 import psycopg
 import logging
 from contextlib import asynccontextmanager
@@ -9,19 +8,15 @@ logger = logging.getLogger(__name__)
 
 
 class CinemaDatabaseInitializer:
-    """Initializes cinema database schema with proper constraints and indexes."""
-    
     def __init__(self, host: str, dbname: str, user: str, password: str, port: int = 5432):
-        """Initialize database credentials."""
         self.host = host
         self.dbname = dbname
         self.user = user
         self.password = password
         self.port = port
         self.conn = None
-    
+
     def _create_database_if_not_exists(self) -> None:
-        """Create database if it doesn't exist (connects to postgres db)."""
         try:
             admin_conn = psycopg.connect(
                 host=self.host,
@@ -31,7 +26,7 @@ class CinemaDatabaseInitializer:
                 port=self.port
             )
             admin_conn.autocommit = True
-            
+
             with admin_conn.cursor() as cur:
                 cur.execute(f"SELECT 1 FROM pg_database WHERE datname = %s", (self.dbname,))
                 if not cur.fetchone():
@@ -39,14 +34,13 @@ class CinemaDatabaseInitializer:
                     logger.info(f"Created database '{self.dbname}'")
                 else:
                     logger.info(f"Database '{self.dbname}' already exists")
-            
+
             admin_conn.close()
         except psycopg.Error as e:
             logger.error(f"Error creating database: {e}")
             raise
-    
+
     def connect(self) -> None:
-        """Connect to the cinema database."""
         try:
             self.conn = psycopg.connect(
                 host=self.host,
@@ -59,14 +53,12 @@ class CinemaDatabaseInitializer:
         except psycopg.Error as e:
             logger.error(f"Error connecting to database: {e}")
             raise
-    
+
     def create_schema(self) -> None:
-        """Create all tables with proper constraints, indexes, and isolation levels."""
         if not self.conn:
             raise RuntimeError("Not connected to database. Call connect() first.")
-        
+
         queries = [
-            # Create ENUM types
             """DO $$
             BEGIN
                 IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'reservation_status') THEN
@@ -88,7 +80,7 @@ class CinemaDatabaseInitializer:
                 END IF;
             END$$;""",
             
-            # Core tables
+            
             """CREATE TABLE IF NOT EXISTS cinemas (
                 cinema_id SERIAL PRIMARY KEY,
                 name VARCHAR(255) NOT NULL,
@@ -282,26 +274,24 @@ class CinemaDatabaseInitializer:
             raise
     
     def load_seed_data(self) -> None:
-        """Load initial seed data (hall types, seat types, payment methods, policies)."""
         if not self.conn:
             raise RuntimeError("Not connected to database")
         
         seed_queries = [
-            # Hall types
             """INSERT INTO hall_types (name) VALUES
                 ('Standard 2D') ON CONFLICT (name) DO NOTHING;""",
             
-            # Seat types
+            
             """INSERT INTO seat_types (name) VALUES
                 ('Standard'), ('VIP'), ('Wheelchair Accessible') 
                 ON CONFLICT (name) DO NOTHING;""",
             
-            # Payment methods
+            
             """INSERT INTO payment_methods (name) VALUES
                 ('Credit Card'), ('Debit Card'), ('PayPal'), ('Cash')
                 ON CONFLICT (name) DO NOTHING;""",
             
-            # Cancellation policies
+            
             """INSERT INTO cancellation_policies (name, refund_percent) VALUES
                 ('Full Refund', 100), ('50% Refund', 50), ('No Refund', 0)
                 ON CONFLICT (name) DO NOTHING;""",
@@ -319,14 +309,12 @@ class CinemaDatabaseInitializer:
             raise
     
     def close(self) -> None:
-        """Close database connection."""
         if self.conn:
             self.conn.close()
             logger.info("Database connection closed")
 
 
 async def initialize_database() -> None:
-    """Initialize database synchronously (creates schema if needed)."""
     initializer = CinemaDatabaseInitializer(
         host=DatabaseConfig.HOST,
         dbname=DatabaseConfig.NAME,

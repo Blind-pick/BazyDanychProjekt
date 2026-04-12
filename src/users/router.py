@@ -1,4 +1,3 @@
-"""Users domain API endpoints."""
 import logging
 from fastapi import APIRouter, HTTPException, status, Depends, Query
 
@@ -21,7 +20,6 @@ router = APIRouter(prefix=f"{AppConfig.API_PREFIX}/users", tags=["Users"])
     summary="Register new user"
 )
 async def register_user(user_data: UserCreate):
-    """Register a new user."""
     pool = get_pool()
     try:
         async with pool.transaction() as ctx:
@@ -36,7 +34,6 @@ async def register_user(user_data: UserCreate):
 
 @router.get("/{user_id}", response_model=User, summary="Get user by ID")
 async def get_user(user: User = Depends(get_valid_user)):
-    """Get user by ID."""
     return user
 
 
@@ -46,15 +43,13 @@ async def get_user_reservations(
     skip: int = Query(0, ge=0),
     limit: int = Query(20, ge=1, le=100)
 ):
-    """Get user's reservations."""
+    
     pool = get_pool()
     try:
         async with pool.acquire() as conn:
-            # Verify user exists
             await UserService.get_user_by_id(conn, user_id)
             
             async with conn.cursor() as cur:
-                # Get reservations
                 query = """
                     SELECT r.reservation_id, r.showtime_id, r.status, r.created_at,
                            m.title, s.start_datetime, c.name, c.city
@@ -92,7 +87,6 @@ async def get_user_reservations(
 
 @router.get("/{user_id}/tickets", response_model=dict, summary="Get user tickets")
 async def get_user_tickets(user_id: int, skip: int = Query(0, ge=0), limit: int = Query(20, ge=1, le=100)):
-    """Get user's tickets."""
     pool = get_pool()
     try:
         async with pool.acquire() as conn:

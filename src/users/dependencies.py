@@ -1,4 +1,3 @@
-"""Users domain dependencies."""
 import logging
 from fastapi import Depends, HTTPException, status
 
@@ -11,7 +10,6 @@ logger = logging.getLogger(__name__)
 
 
 async def get_valid_user(user_id: int) -> User:
-    """Dependency: validate and get user by ID."""
     try:
         conn = await get_db_connection()
         try:

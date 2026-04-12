@@ -1,4 +1,3 @@
-"""Cinemas domain API endpoints."""
 import logging
 from typing import Optional
 
@@ -27,11 +26,10 @@ router = APIRouter(
     description="Create a new cinema with name and city. Name+City combination must be unique."
 )
 async def create_cinema(cinema_data: CinemaCreate):
-    """Create a new cinema."""
     pool = get_pool()
     try:
         async with pool.transaction() as ctx:
-            # Check for duplicate
+            
             await ctx.cursor.execute(
                 "SELECT cinema_id FROM cinemas WHERE name = %s AND city = %s",
                 (cinema_data.name, cinema_data.city)
@@ -42,7 +40,6 @@ async def create_cinema(cinema_data: CinemaCreate):
                     detail=f"Cinema '{cinema_data.name}' in '{cinema_data.city}' already exists"
                 )
             
-            # Insert
             await ctx.cursor.execute(
                 """INSERT INTO cinemas (name, city) 
                    VALUES (%s, %s) 
@@ -83,7 +80,7 @@ async def list_cinemas(
     limit: int = Query(Constants.DEFAULT_LIMIT, ge=1, le=Constants.MAX_LIMIT, description="Number of items to return"),
     city: Optional[str] = Query(None, description="Filter by city (optional)")
 ):
-    """List cinemas with pagination."""
+    
     pool = get_pool()
     try:
         async with pool.acquire() as conn:
@@ -109,5 +106,4 @@ async def list_cinemas(
     description="Retrieve a specific cinema by its ID."
 )
 async def get_cinema(cinema: Cinema = Depends(get_valid_cinema)):
-    """Get a specific cinema by ID."""
     return cinema
