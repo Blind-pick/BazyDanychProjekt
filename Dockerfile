@@ -3,13 +3,14 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
 
-COPY ./db_interface/requirements.txt ./requirements.txt
+# Copy requirements and install
+COPY ./requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./db_interface /app
-COPY ./main.py /app/main.py
-COPY ./CinemaDatabaseCreator.py /app/CinemaDatabaseCreator.py
-COPY entrypoint.sh /app/entrypoint.sh
-RUN chmod +x /app/entrypoint.sh
+# Copy application code
+COPY ./src ./src
+COPY ./scripts ./scripts
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+EXPOSE 8000
+
+CMD sh -c 'until pg_isready -h $DB_HOST -p $DB_PORT -U $DB_USER; do echo "Waiting for database..."; sleep 2; done && echo "Database ready. Starting API..." && exec uvicorn src.main:app --host 0.0.0.0 --port 8000 --log-level info'

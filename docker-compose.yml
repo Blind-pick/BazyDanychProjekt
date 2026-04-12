@@ -1,26 +1,54 @@
 services:
   db:
-    image: postgres:15
+    image: postgres:15-alpine
+    container_name: cinema_db
     environment:
-      POSTGRES_DB: kino
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: pswd
+      POSTGRES_DB: ${DB_NAME:-kino}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-pswd}
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - cinema_network
+
   api:
     build: .
+    container_name: cinema_api
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     environment:
       DB_HOST: db
-      DB_NAME: kino
-      DB_USER: postgres
-      DB_PASSWORD: pswd
+      DB_NAME: ${DB_NAME:-kino}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-pswd}
       DB_PORT: 5432
+      DB_POOL_MIN_SIZE: ${DB_POOL_MIN_SIZE:-5}
+      DB_POOL_MAX_SIZE: ${DB_POOL_MAX_SIZE:-20}
+      ENVIRONMENT: ${ENVIRONMENT:-local}
     ports:
       - "8000:8000"
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - cinema_network
+
 volumes:
   pgdata:
+    driver: local
+
+networks:
+  cinema_network:
+    driver: bridge
+
