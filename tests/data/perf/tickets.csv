@@ -1,0 +1,2 @@
+ticket_showtime_id,ticket_seat_id,ticket_user_id,ticket_final_price,ticket_status,ticket_reservation_id
+1,1,1,30.00,valid,null

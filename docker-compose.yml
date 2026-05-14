@@ -31,7 +31,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:-pswd}
       DB_PORT: 5432
       DB_POOL_MIN_SIZE: ${DB_POOL_MIN_SIZE:-5}
-      DB_POOL_MAX_SIZE: ${DB_POOL_MAX_SIZE:-20}
+      DB_POOL_MAX_SIZE: ${DB_POOL_MAX_SIZE:-50}
       ENVIRONMENT: ${ENVIRONMENT:-local}
     ports:
       - "8000:8000"
@@ -44,8 +44,47 @@ services:
     networks:
       - cinema_network
 
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: cinema_prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - cinema_network
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: cinema_grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    networks:
+      - cinema_network
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
 volumes:
   pgdata:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
     driver: local
 
 networks:

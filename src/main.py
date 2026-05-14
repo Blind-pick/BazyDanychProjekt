@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
+from prometheus_fastapi_instrumentator import Instrumentator
 
 from src.config import AppConfig
 from src.database import init_db, close_db
@@ -51,6 +52,8 @@ app = FastAPI(
     redoc_url=AppConfig.REDOC_URL,
     lifespan=lifespan
 )
+
+Instrumentator().instrument(app).expose(app)
 
 
 @app.exception_handler(CinemaAPIException)

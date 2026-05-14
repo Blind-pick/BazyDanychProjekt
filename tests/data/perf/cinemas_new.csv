@@ -1,0 +1,5001 @@
+name,city
+Nowe Horyzonty Gdańsk 1,Łódź
+Kinepolis Warszawa 2,Rzeszów
+Kinepolis Kraków 3,Katowice
+Luna Łódź 4,Wrocław
+Muranów Wrocław 5,Lublin
+Kinepolis Lublin 6,Rzeszów
+Iluzjon Gdańsk 7,Szczecin
+Nowe Horyzonty Kraków 8,Wrocław
+Multikino Wrocław 9,Kraków
+Iluzjon Lublin 10,Rzeszów
+Nowe Horyzonty Rzeszów 11,Poznań
+Multikino Rzeszów 12,Gdańsk
+Kino Moskwa Gdańsk 13,Rzeszów
+Nowe Horyzonty Lublin 14,Poznań
+Luna Łódź 15,Gdańsk
+Cinema City Gdańsk 16,Gdańsk
+Cinema City Katowice 17,Lublin
+Kino Moskwa Poznań 18,Szczecin
+Cinema City Łódź 19,Kraków
+Iluzjon Rzeszów 20,Warszawa
+Cinema City Kraków 21,Rzeszów
+Nowe Horyzonty Łódź 22,Kraków
+Muranów Szczecin 23,Wrocław
+Iluzjon Kraków 24,Łódź
+Iluzjon Szczecin 25,Poznań
+Helios Katowice 26,Łódź
+Muranów Warszawa 27,Szczecin
+Iluzjon Łódź 28,Wrocław
+Kino Moskwa Warszawa 29,Lublin
+Helios Warszawa 30,Kraków
+Luna Rzeszów 31,Poznań
+Iluzjon Warszawa 32,Wrocław
+Helios Wrocław 33,Warszawa
+Iluzjon Gdańsk 34,Szczecin
+Kinepolis Gdańsk 35,Wrocław
+Muranów Katowice 36,Łódź
+Multikino Warszawa 37,Warszawa
+Muranów Rzeszów 38,Wrocław
+Luna Poznań 39,Rzeszów
+Luna Lublin 40,Gdańsk
+Multikino Poznań 41,Lublin
+Cinema City Łódź 42,Rzeszów
+Multikino Kraków 43,Łódź
+Nowe Horyzonty Warszawa 44,Katowice
+Kinepolis Poznań 45,Warszawa
+Kinepolis Katowice 46,Szczecin
+Helios Lublin 47,Wrocław
+Kino Moskwa Wrocław 48,Szczecin
+Cinema City Katowice 49,Rzeszów
+Kino Moskwa Szczecin 50,Kraków
+Kinepolis Szczecin 51,Lublin
+Nowe Horyzonty Rzeszów 52,Gdańsk
+Helios Szczecin 53,Katowice
+Kino Moskwa Gdańsk 54,Kraków
+Kino Moskwa Warszawa 55,Warszawa
+Helios Katowice 56,Szczecin
+Helios Poznań 57,Szczecin
+Iluzjon Warszawa 58,Poznań
+Helios Poznań 59,Warszawa
+Nowe Horyzonty Kraków 60,Gdańsk
+Multikino Szczecin 61,Szczecin
+Kino Moskwa Gdańsk 62,Szczecin
+Multikino Wrocław 63,Lublin
+Iluzjon Lublin 64,Poznań
+Helios Wrocław 65,Warszawa
+Multikino Lublin 66,Katowice
+Kino Moskwa Poznań 67,Lublin
+Luna Poznań 68,Warszawa
+Helios Wrocław 69,Gdańsk
+Iluzjon Kraków 70,Szczecin
+Helios Łódź 71,Katowice
+Muranów Kraków 72,Kraków
+Muranów Kraków 73,Wrocław
+Multikino Katowice 74,Poznań
+Kinepolis Katowice 75,Wrocław
+Kinepolis Warszawa 76,Kraków
+Muranów Szczecin 77,Łódź
+Helios Rzeszów 78,Łódź
+Muranów Szczecin 79,Rzeszów
+Muranów Gdańsk 80,Lublin
+Helios Katowice 81,Lublin
+Kinepolis Wrocław 82,Rzeszów
+Luna Katowice 83,Lublin
+Nowe Horyzonty Katowice 84,Gdańsk
+Helios Wrocław 85,Warszawa
+Luna Poznań 86,Warszawa
+Luna Poznań 87,Szczecin
+Nowe Horyzonty Kraków 88,Szczecin
+Iluzjon Lublin 89,Poznań
+Iluzjon Katowice 90,Wrocław
+Kino Moskwa Katowice 91,Warszawa
+Kino Moskwa Gdańsk 92,Warszawa
+Kinepolis Katowice 93,Poznań
+Muranów Katowice 94,Rzeszów
+Luna Kraków 95,Katowice
+Helios Rzeszów 96,Gdańsk
+Muranów Łódź 97,Łódź
+Iluzjon Rzeszów 98,Szczecin
+Cinema City Warszawa 99,Kraków
+Luna Wrocław 100,Wrocław
+Muranów Gdańsk 101,Kraków
+Muranów Poznań 102,Kraków
+Helios Warszawa 103,Gdańsk
+Iluzjon Kraków 104,Kraków
+Helios Kraków 105,Wrocław
+Multikino Łódź 106,Poznań
+Muranów Kraków 107,Gdańsk
+Cinema City Poznań 108,Łódź
+Luna Rzeszów 109,Rzeszów
+Iluzjon Katowice 110,Kraków
+Luna Wrocław 111,Kraków
+Multikino Katowice 112,Szczecin
+Multikino Wrocław 113,Łódź
+Nowe Horyzonty Łódź 114,Kraków
+Helios Poznań 115,Kraków
+Cinema City Warszawa 116,Szczecin
+Nowe Horyzonty Lublin 117,Lublin
+Iluzjon Kraków 118,Wrocław
+Kino Moskwa Warszawa 119,Kraków
+Cinema City Wrocław 120,Łódź
+Cinema City Poznań 121,Poznań
+Cinema City Rzeszów 122,Kraków
+Kino Moskwa Wrocław 123,Rzeszów
+Helios Rzeszów 124,Kraków
+Multikino Poznań 125,Wrocław
+Muranów Katowice 126,Warszawa
+Multikino Gdańsk 127,Katowice
+Multikino Lublin 128,Lublin
+Multikino Lublin 129,Rzeszów
+Kinepolis Poznań 130,Szczecin
+Helios Katowice 131,Wrocław
+Iluzjon Wrocław 132,Poznań
+Multikino Gdańsk 133,Katowice
+Kinepolis Lublin 134,Wrocław
+Multikino Kraków 135,Gdańsk
+Kinepolis Rzeszów 136,Gdańsk
+Iluzjon Gdańsk 137,Łódź
+Iluzjon Rzeszów 138,Łódź
+Iluzjon Warszawa 139,Warszawa
+Multikino Warszawa 140,Rzeszów
+Luna Warszawa 141,Gdańsk
+Helios Łódź 142,Rzeszów
+Kino Moskwa Szczecin 143,Wrocław
+Luna Wrocław 144,Łódź
+Cinema City Rzeszów 145,Katowice
+Multikino Lublin 146,Katowice
+Kinepolis Rzeszów 147,Poznań
+Nowe Horyzonty Lublin 148,Lublin
+Cinema City Wrocław 149,Gdańsk
+Iluzjon Lublin 150,Łódź
+Helios Lublin 151,Lublin
+Kino Moskwa Poznań 152,Łódź
+Kino Moskwa Szczecin 153,Kraków
+Luna Gdańsk 154,Katowice
+Kino Moskwa Kraków 155,Poznań
+Helios Gdańsk 156,Wrocław
+Helios Gdańsk 157,Rzeszów
+Kinepolis Szczecin 158,Rzeszów
+Nowe Horyzonty Wrocław 159,Kraków
+Multikino Wrocław 160,Katowice
+Kino Moskwa Lublin 161,Poznań
+Muranów Poznań 162,Szczecin
+Multikino Lublin 163,Łódź
+Muranów Szczecin 164,Gdańsk
+Kinepolis Łódź 165,Poznań
+Helios Poznań 166,Wrocław
+Muranów Katowice 167,Warszawa
+Kinepolis Poznań 168,Lublin
+Luna Lublin 169,Lublin
+Helios Gdańsk 170,Warszawa
+Nowe Horyzonty Katowice 171,Kraków
+Helios Poznań 172,Gdańsk
+Luna Warszawa 173,Wrocław
+Luna Poznań 174,Szczecin
+Nowe Horyzonty Warszawa 175,Szczecin
+Cinema City Poznań 176,Poznań
+Nowe Horyzonty Wrocław 177,Kraków
+Multikino Poznań 178,Poznań
+Multikino Poznań 179,Gdańsk
+Muranów Gdańsk 180,Gdańsk
+Helios Katowice 181,Gdańsk
+Muranów Katowice 182,Poznań
+Cinema City Rzeszów 183,Szczecin
+Kino Moskwa Rzeszów 184,Szczecin
+Nowe Horyzonty Wrocław 185,Katowice
+Iluzjon Gdańsk 186,Lublin
+Kino Moskwa Wrocław 187,Wrocław
+Kinepolis Kraków 188,Poznań
+Multikino Wrocław 189,Łódź
+Kino Moskwa Poznań 190,Rzeszów
+Luna Poznań 191,Warszawa
+Kino Moskwa Kraków 192,Katowice
+Iluzjon Wrocław 193,Kraków
+Helios Rzeszów 194,Rzeszów
+Kinepolis Poznań 195,Wrocław
+Cinema City Katowice 196,Poznań
+Multikino Wrocław 197,Rzeszów
+Muranów Warszawa 198,Rzeszów
+Iluzjon Warszawa 199,Kraków
+Nowe Horyzonty Łódź 200,Łódź
+Cinema City Rzeszów 201,Warszawa
+Luna Lublin 202,Gdańsk
+Multikino Poznań 203,Lublin
+Muranów Łódź 204,Łódź
+Kinepolis Szczecin 205,Szczecin
+Kino Moskwa Gdańsk 206,Gdańsk
+Helios Rzeszów 207,Lublin
+Cinema City Rzeszów 208,Poznań
+Multikino Kraków 209,Katowice
+Cinema City Wrocław 210,Poznań
+Kino Moskwa Katowice 211,Gdańsk
+Kinepolis Lublin 212,Lublin
+Kino Moskwa Kraków 213,Gdańsk
+Helios Gdańsk 214,Łódź
+Kino Moskwa Warszawa 215,Lublin
+Muranów Łódź 216,Rzeszów
+Iluzjon Gdańsk 217,Rzeszów
+Cinema City Wrocław 218,Warszawa
+Muranów Szczecin 219,Lublin
+Kino Moskwa Kraków 220,Poznań
+Muranów Katowice 221,Łódź
+Luna Poznań 222,Gdańsk
+Kinepolis Poznań 223,Kraków
+Cinema City Łódź 224,Katowice
+Muranów Poznań 225,Kraków
+Nowe Horyzonty Poznań 226,Gdańsk
+Luna Lublin 227,Katowice
+Nowe Horyzonty Lublin 228,Lublin
+Cinema City Kraków 229,Warszawa
+Helios Kraków 230,Łódź
+Iluzjon Wrocław 231,Łódź
+Iluzjon Kraków 232,Wrocław
+Helios Katowice 233,Katowice
+Kinepolis Rzeszów 234,Warszawa
+Nowe Horyzonty Szczecin 235,Katowice
+Kinepolis Warszawa 236,Szczecin
+Muranów Lublin 237,Kraków
+Cinema City Lublin 238,Katowice
+Helios Kraków 239,Poznań
+Cinema City Wrocław 240,Poznań
+Kino Moskwa Szczecin 241,Katowice
+Kino Moskwa Kraków 242,Wrocław
+Kinepolis Szczecin 243,Lublin
+Helios Lublin 244,Szczecin
+Nowe Horyzonty Wrocław 245,Gdańsk
+Kino Moskwa Warszawa 246,Wrocław
+Multikino Lublin 247,Warszawa
+Nowe Horyzonty Łódź 248,Szczecin
+Helios Lublin 249,Poznań
+Iluzjon Szczecin 250,Wrocław
+Kinepolis Wrocław 251,Katowice
+Muranów Katowice 252,Wrocław
+Cinema City Lublin 253,Poznań
+Iluzjon Poznań 254,Rzeszów
+Kino Moskwa Rzeszów 255,Łódź
+Luna Gdańsk 256,Kraków
+Muranów Katowice 257,Warszawa
+Kinepolis Poznań 258,Szczecin
+Kinepolis Lublin 259,Wrocław
+Helios Kraków 260,Rzeszów
+Kino Moskwa Wrocław 261,Szczecin
+Helios Szczecin 262,Kraków
+Multikino Katowice 263,Rzeszów
+Luna Poznań 264,Szczecin
+Luna Wrocław 265,Poznań
+Multikino Lublin 266,Łódź
+Iluzjon Szczecin 267,Gdańsk
+Cinema City Wrocław 268,Gdańsk
+Iluzjon Lublin 269,Poznań
+Cinema City Łódź 270,Poznań
+Luna Katowice 271,Warszawa
+Multikino Poznań 272,Katowice
+Muranów Gdańsk 273,Szczecin
+Nowe Horyzonty Szczecin 274,Katowice
+Helios Kraków 275,Rzeszów
+Kino Moskwa Warszawa 276,Wrocław
+Kinepolis Rzeszów 277,Łódź
+Kino Moskwa Kraków 278,Warszawa
+Muranów Katowice 279,Gdańsk
+Muranów Poznań 280,Lublin
+Cinema City Poznań 281,Łódź
+Muranów Gdańsk 282,Kraków
+Muranów Katowice 283,Lublin
+Nowe Horyzonty Katowice 284,Poznań
+Kino Moskwa Rzeszów 285,Wrocław
+Kinepolis Kraków 286,Katowice
+Cinema City Szczecin 287,Poznań
+Kino Moskwa Gdańsk 288,Rzeszów
+Cinema City Łódź 289,Warszawa
+Muranów Rzeszów 290,Lublin
+Nowe Horyzonty Łódź 291,Warszawa
+Nowe Horyzonty Katowice 292,Szczecin
+Iluzjon Lublin 293,Rzeszów
+Cinema City Łódź 294,Warszawa
+Cinema City Łódź 295,Łódź
+Kinepolis Rzeszów 296,Łódź
+Muranów Warszawa 297,Katowice
+Helios Rzeszów 298,Gdańsk
+Iluzjon Katowice 299,Kraków
+Multikino Łódź 300,Rzeszów
+Helios Lublin 301,Warszawa
+Cinema City Lublin 302,Kraków
+Luna Kraków 303,Poznań
+Muranów Kraków 304,Gdańsk
+Nowe Horyzonty Szczecin 305,Gdańsk
+Nowe Horyzonty Wrocław 306,Kraków
+Iluzjon Warszawa 307,Gdańsk
+Kino Moskwa Poznań 308,Rzeszów
+Muranów Poznań 309,Poznań
+Kino Moskwa Lublin 310,Warszawa
+Kinepolis Warszawa 311,Wrocław
+Multikino Kraków 312,Katowice
+Helios Gdańsk 313,Wrocław
+Muranów Katowice 314,Gdańsk
+Luna Kraków 315,Warszawa
+Kino Moskwa Katowice 316,Wrocław
+Multikino Wrocław 317,Lublin
+Helios Poznań 318,Poznań
+Muranów Poznań 319,Szczecin
+Muranów Gdańsk 320,Katowice
+Iluzjon Warszawa 321,Łódź
+Helios Katowice 322,Katowice
+Iluzjon Poznań 323,Szczecin
+Nowe Horyzonty Warszawa 324,Poznań
+Luna Kraków 325,Łódź
+Luna Łódź 326,Lublin
+Kinepolis Lublin 327,Katowice
+Kinepolis Kraków 328,Warszawa
+Nowe Horyzonty Szczecin 329,Szczecin
+Muranów Łódź 330,Lublin
+Kinepolis Poznań 331,Katowice
+Iluzjon Łódź 332,Warszawa
+Luna Wrocław 333,Lublin
+Muranów Rzeszów 334,Szczecin
+Multikino Poznań 335,Warszawa
+Luna Rzeszów 336,Gdańsk
+Muranów Warszawa 337,Poznań
+Kino Moskwa Łódź 338,Katowice
+Kino Moskwa Łódź 339,Kraków
+Iluzjon Kraków 340,Katowice
+Iluzjon Łódź 341,Gdańsk
+Muranów Poznań 342,Warszawa
+Iluzjon Katowice 343,Gdańsk
+Kinepolis Lublin 344,Szczecin
+Luna Lublin 345,Gdańsk
+Kino Moskwa Łódź 346,Warszawa
+Muranów Lublin 347,Wrocław
+Cinema City Rzeszów 348,Rzeszów
+Cinema City Wrocław 349,Lublin
+Nowe Horyzonty Warszawa 350,Szczecin
+Luna Kraków 351,Katowice
+Luna Rzeszów 352,Szczecin
+Luna Szczecin 353,Kraków
+Muranów Wrocław 354,Poznań
+Multikino Katowice 355,Warszawa
+Muranów Lublin 356,Łódź
+Cinema City Katowice 357,Szczecin
+Helios Wrocław 358,Wrocław
+Kino Moskwa Szczecin 359,Szczecin
+Luna Poznań 360,Wrocław
+Muranów Poznań 361,Katowice
+Iluzjon Kraków 362,Gdańsk
+Kinepolis Rzeszów 363,Warszawa
+Luna Wrocław 364,Rzeszów
+Multikino Kraków 365,Wrocław
+Multikino Gdańsk 366,Wrocław
+Iluzjon Łódź 367,Warszawa
+Kinepolis Łódź 368,Katowice
+Muranów Katowice 369,Łódź
+Iluzjon Kraków 370,Rzeszów
+Muranów Katowice 371,Poznań
+Kinepolis Poznań 372,Lublin
+Kino Moskwa Gdańsk 373,Łódź
+Multikino Szczecin 374,Łódź
+Nowe Horyzonty Warszawa 375,Gdańsk
+Helios Kraków 376,Lublin
+Multikino Poznań 377,Lublin
+Multikino Warszawa 378,Poznań
+Multikino Warszawa 379,Szczecin
+Helios Łódź 380,Wrocław
+Muranów Lublin 381,Poznań
+Kino Moskwa Gdańsk 382,Szczecin
+Luna Poznań 383,Szczecin
+Nowe Horyzonty Rzeszów 384,Katowice
+Cinema City Katowice 385,Gdańsk
+Iluzjon Lublin 386,Poznań
+Muranów Wrocław 387,Rzeszów
+Luna Kraków 388,Warszawa
+Iluzjon Poznań 389,Rzeszów
+Muranów Kraków 390,Warszawa
+Cinema City Poznań 391,Łódź
+Cinema City Łódź 392,Kraków
+Cinema City Gdańsk 393,Gdańsk
+Nowe Horyzonty Gdańsk 394,Wrocław
+Helios Lublin 395,Wrocław
+Nowe Horyzonty Rzeszów 396,Katowice
+Luna Łódź 397,Wrocław
+Kino Moskwa Gdańsk 398,Warszawa
+Helios Katowice 399,Lublin
+Luna Łódź 400,Wrocław
+Kino Moskwa Rzeszów 401,Gdańsk
+Cinema City Katowice 402,Szczecin
+Nowe Horyzonty Gdańsk 403,Łódź
+Muranów Szczecin 404,Rzeszów
+Cinema City Szczecin 405,Lublin
+Muranów Gdańsk 406,Warszawa
+Nowe Horyzonty Wrocław 407,Poznań
+Muranów Poznań 408,Rzeszów
+Luna Rzeszów 409,Gdańsk
+Luna Gdańsk 410,Kraków
+Luna Lublin 411,Lublin
+Muranów Łódź 412,Szczecin
+Cinema City Wrocław 413,Rzeszów
+Multikino Gdańsk 414,Wrocław
+Nowe Horyzonty Gdańsk 415,Warszawa
+Nowe Horyzonty Lublin 416,Łódź
+Cinema City Warszawa 417,Łódź
+Nowe Horyzonty Poznań 418,Szczecin
+Multikino Rzeszów 419,Lublin
+Nowe Horyzonty Gdańsk 420,Lublin
+Multikino Warszawa 421,Lublin
+Kinepolis Szczecin 422,Warszawa
+Kinepolis Katowice 423,Warszawa
+Helios Gdańsk 424,Rzeszów
+Nowe Horyzonty Lublin 425,Warszawa
+Muranów Kraków 426,Rzeszów
+Nowe Horyzonty Rzeszów 427,Lublin
+Iluzjon Kraków 428,Wrocław
+Muranów Lublin 429,Warszawa
+Helios Rzeszów 430,Łódź
+Muranów Lublin 431,Gdańsk
+Kino Moskwa Wrocław 432,Kraków
+Kino Moskwa Rzeszów 433,Łódź
+Cinema City Warszawa 434,Wrocław
+Iluzjon Katowice 435,Kraków
+Kino Moskwa Łódź 436,Poznań
+Iluzjon Szczecin 437,Lublin
+Kino Moskwa Gdańsk 438,Kraków
+Iluzjon Katowice 439,Rzeszów
+Kinepolis Poznań 440,Katowice
+Multikino Lublin 441,Rzeszów
+Kino Moskwa Rzeszów 442,Kraków
+Iluzjon Katowice 443,Łódź
+Iluzjon Szczecin 444,Gdańsk
+Cinema City Warszawa 445,Poznań
+Cinema City Wrocław 446,Katowice
+Luna Gdańsk 447,Wrocław
+Cinema City Łódź 448,Lublin
+Iluzjon Lublin 449,Rzeszów
+Kino Moskwa Lublin 450,Szczecin
+Kinepolis Warszawa 451,Warszawa
+Helios Kraków 452,Rzeszów
+Kinepolis Katowice 453,Szczecin
+Multikino Warszawa 454,Rzeszów
+Muranów Katowice 455,Gdańsk
+Helios Rzeszów 456,Rzeszów
+Luna Łódź 457,Wrocław
+Multikino Gdańsk 458,Rzeszów
+Luna Łódź 459,Rzeszów
+Cinema City Rzeszów 460,Wrocław
+Kinepolis Kraków 461,Lublin
+Helios Gdańsk 462,Gdańsk
+Luna Lublin 463,Warszawa
+Luna Łódź 464,Szczecin
+Multikino Gdańsk 465,Kraków
+Cinema City Łódź 466,Kraków
+Helios Poznań 467,Łódź
+Kino Moskwa Kraków 468,Katowice
+Luna Kraków 469,Wrocław
+Nowe Horyzonty Łódź 470,Gdańsk
+Multikino Szczecin 471,Lublin
+Iluzjon Poznań 472,Kraków
+Cinema City Gdańsk 473,Wrocław
+Kinepolis Kraków 474,Kraków
+Kinepolis Katowice 475,Kraków
+Muranów Lublin 476,Katowice
+Kino Moskwa Łódź 477,Łódź
+Luna Poznań 478,Gdańsk
+Luna Kraków 479,Szczecin
+Muranów Lublin 480,Wrocław
+Multikino Rzeszów 481,Kraków
+Kinepolis Kraków 482,Kraków
+Iluzjon Szczecin 483,Warszawa
+Kinepolis Łódź 484,Lublin
+Luna Łódź 485,Łódź
+Kino Moskwa Wrocław 486,Szczecin
+Cinema City Gdańsk 487,Gdańsk
+Kino Moskwa Lublin 488,Warszawa
+Cinema City Lublin 489,Wrocław
+Kino Moskwa Rzeszów 490,Szczecin
+Kino Moskwa Łódź 491,Katowice
+Luna Rzeszów 492,Warszawa
+Iluzjon Lublin 493,Gdańsk
+Kino Moskwa Poznań 494,Warszawa
+Cinema City Wrocław 495,Wrocław
+Nowe Horyzonty Kraków 496,Szczecin
+Kinepolis Warszawa 497,Rzeszów
+Kinepolis Łódź 498,Kraków
+Cinema City Szczecin 499,Poznań
+Luna Kraków 500,Rzeszów
+Cinema City Łódź 501,Łódź
+Luna Poznań 502,Poznań
+Iluzjon Poznań 503,Szczecin
+Muranów Kraków 504,Gdańsk
+Nowe Horyzonty Wrocław 505,Katowice
+Muranów Rzeszów 506,Gdańsk
+Kinepolis Katowice 507,Szczecin
+Luna Katowice 508,Łódź
+Kino Moskwa Rzeszów 509,Rzeszów
+Kinepolis Łódź 510,Wrocław
+Luna Warszawa 511,Łódź
+Iluzjon Warszawa 512,Katowice
+Multikino Katowice 513,Lublin
+Helios Warszawa 514,Gdańsk
+Multikino Gdańsk 515,Gdańsk
+Luna Katowice 516,Kraków
+Muranów Wrocław 517,Rzeszów
+Kinepolis Gdańsk 518,Gdańsk
+Kino Moskwa Rzeszów 519,Łódź
+Iluzjon Gdańsk 520,Warszawa
+Muranów Katowice 521,Wrocław
+Nowe Horyzonty Lublin 522,Lublin
+Muranów Szczecin 523,Poznań
+Iluzjon Kraków 524,Wrocław
+Iluzjon Lublin 525,Gdańsk
+Muranów Rzeszów 526,Warszawa
+Nowe Horyzonty Warszawa 527,Gdańsk
+Luna Wrocław 528,Gdańsk
+Nowe Horyzonty Kraków 529,Gdańsk
+Muranów Wrocław 530,Gdańsk
+Nowe Horyzonty Łódź 531,Rzeszów
+Kinepolis Łódź 532,Katowice
+Muranów Szczecin 533,Kraków
+Multikino Kraków 534,Katowice
+Luna Katowice 535,Lublin
+Helios Kraków 536,Wrocław
+Muranów Rzeszów 537,Szczecin
+Kinepolis Łódź 538,Warszawa
+Helios Kraków 539,Katowice
+Helios Katowice 540,Rzeszów
+Kinepolis Rzeszów 541,Łódź
+Luna Lublin 542,Kraków
+Kinepolis Poznań 543,Wrocław
+Kinepolis Kraków 544,Szczecin
+Iluzjon Lublin 545,Wrocław
+Cinema City Poznań 546,Lublin
+Kino Moskwa Szczecin 547,Poznań
+Cinema City Łódź 548,Kraków
+Kino Moskwa Wrocław 549,Szczecin
+Kino Moskwa Rzeszów 550,Gdańsk
+Cinema City Szczecin 551,Łódź
+Helios Gdańsk 552,Szczecin
+Cinema City Kraków 553,Kraków
+Multikino Gdańsk 554,Lublin
+Nowe Horyzonty Warszawa 555,Rzeszów
+Kinepolis Gdańsk 556,Katowice
+Luna Warszawa 557,Katowice
+Helios Kraków 558,Łódź
+Cinema City Katowice 559,Katowice
+Kino Moskwa Łódź 560,Szczecin
+Iluzjon Warszawa 561,Kraków
+Multikino Rzeszów 562,Wrocław
+Luna Poznań 563,Warszawa
+Kinepolis Łódź 564,Warszawa
+Nowe Horyzonty Poznań 565,Gdańsk
+Nowe Horyzonty Łódź 566,Łódź
+Iluzjon Wrocław 567,Warszawa
+Kinepolis Katowice 568,Wrocław
+Muranów Warszawa 569,Gdańsk
+Luna Lublin 570,Lublin
+Kino Moskwa Katowice 571,Warszawa
+Iluzjon Kraków 572,Kraków
+Iluzjon Lublin 573,Lublin
+Nowe Horyzonty Lublin 574,Warszawa
+Kinepolis Łódź 575,Wrocław
+Helios Katowice 576,Gdańsk
+Muranów Poznań 577,Lublin
+Kino Moskwa Kraków 578,Wrocław
+Helios Rzeszów 579,Łódź
+Muranów Wrocław 580,Kraków
+Muranów Warszawa 581,Lublin
+Nowe Horyzonty Szczecin 582,Wrocław
+Muranów Szczecin 583,Katowice
+Nowe Horyzonty Warszawa 584,Warszawa
+Kino Moskwa Katowice 585,Rzeszów
+Kino Moskwa Gdańsk 586,Kraków
+Muranów Lublin 587,Kraków
+Helios Szczecin 588,Warszawa
+Muranów Katowice 589,Rzeszów
+Nowe Horyzonty Wrocław 590,Poznań
+Iluzjon Szczecin 591,Poznań
+Luna Gdańsk 592,Poznań
+Muranów Lublin 593,Poznań
+Muranów Poznań 594,Szczecin
+Muranów Gdańsk 595,Katowice
+Kino Moskwa Warszawa 596,Łódź
+Luna Gdańsk 597,Gdańsk
+Cinema City Rzeszów 598,Kraków
+Kino Moskwa Gdańsk 599,Kraków
+Kino Moskwa Katowice 600,Wrocław
+Iluzjon Rzeszów 601,Wrocław
+Nowe Horyzonty Wrocław 602,Rzeszów
+Kino Moskwa Gdańsk 603,Kraków
+Kinepolis Łódź 604,Katowice
+Cinema City Warszawa 605,Lublin
+Nowe Horyzonty Szczecin 606,Rzeszów
+Muranów Gdańsk 607,Rzeszów
+Cinema City Gdańsk 608,Szczecin
+Cinema City Gdańsk 609,Wrocław
+Luna Rzeszów 610,Wrocław
+Nowe Horyzonty Łódź 611,Katowice
+Nowe Horyzonty Poznań 612,Szczecin
+Cinema City Katowice 613,Szczecin
+Kinepolis Łódź 614,Szczecin
+Cinema City Szczecin 615,Wrocław
+Nowe Horyzonty Rzeszów 616,Rzeszów
+Cinema City Szczecin 617,Wrocław
+Cinema City Łódź 618,Wrocław
+Multikino Gdańsk 619,Gdańsk
+Helios Rzeszów 620,Rzeszów
+Kinepolis Gdańsk 621,Poznań
+Kino Moskwa Rzeszów 622,Kraków
+Muranów Katowice 623,Warszawa
+Luna Kraków 624,Szczecin
+Cinema City Lublin 625,Szczecin
+Luna Gdańsk 626,Kraków
+Nowe Horyzonty Kraków 627,Lublin
+Nowe Horyzonty Warszawa 628,Łódź
+Kino Moskwa Łódź 629,Szczecin
+Cinema City Wrocław 630,Gdańsk
+Cinema City Lublin 631,Rzeszów
+Iluzjon Kraków 632,Katowice
+Luna Katowice 633,Kraków
+Cinema City Kraków 634,Kraków
+Muranów Kraków 635,Poznań
+Kino Moskwa Łódź 636,Łódź
+Kinepolis Łódź 637,Poznań
+Cinema City Lublin 638,Łódź
+Multikino Kraków 639,Kraków
+Kinepolis Warszawa 640,Łódź
+Helios Katowice 641,Warszawa
+Luna Łódź 642,Poznań
+Kino Moskwa Rzeszów 643,Kraków
+Luna Warszawa 644,Poznań
+Iluzjon Lublin 645,Katowice
+Cinema City Łódź 646,Warszawa
+Luna Katowice 647,Kraków
+Multikino Szczecin 648,Lublin
+Kino Moskwa Łódź 649,Katowice
+Helios Kraków 650,Poznań
+Nowe Horyzonty Lublin 651,Łódź
+Luna Rzeszów 652,Gdańsk
+Muranów Rzeszów 653,Gdańsk
+Kinepolis Wrocław 654,Łódź
+Iluzjon Poznań 655,Szczecin
+Nowe Horyzonty Gdańsk 656,Rzeszów
+Nowe Horyzonty Wrocław 657,Wrocław
+Kinepolis Gdańsk 658,Rzeszów
+Nowe Horyzonty Wrocław 659,Kraków
+Cinema City Katowice 660,Kraków
+Luna Katowice 661,Łódź
+Kinepolis Poznań 662,Warszawa
+Iluzjon Kraków 663,Poznań
+Multikino Poznań 664,Łódź
+Cinema City Rzeszów 665,Poznań
+Helios Warszawa 666,Szczecin
+Muranów Warszawa 667,Rzeszów
+Helios Łódź 668,Lublin
+Helios Lublin 669,Poznań
+Luna Warszawa 670,Warszawa
+Kino Moskwa Gdańsk 671,Gdańsk
+Kinepolis Gdańsk 672,Kraków
+Multikino Katowice 673,Lublin
+Helios Warszawa 674,Wrocław
+Cinema City Szczecin 675,Gdańsk
+Luna Łódź 676,Wrocław
+Cinema City Wrocław 677,Warszawa
+Luna Poznań 678,Poznań
+Multikino Kraków 679,Lublin
+Iluzjon Katowice 680,Wrocław
+Helios Warszawa 681,Katowice
+Kinepolis Kraków 682,Łódź
+Multikino Kraków 683,Katowice
+Muranów Szczecin 684,Wrocław
+Cinema City Katowice 685,Wrocław
+Muranów Szczecin 686,Kraków
+Multikino Łódź 687,Warszawa
+Kinepolis Łódź 688,Kraków
+Kinepolis Gdańsk 689,Kraków
+Luna Łódź 690,Kraków
+Luna Warszawa 691,Katowice
+Multikino Łódź 692,Warszawa
+Helios Rzeszów 693,Rzeszów
+Kino Moskwa Łódź 694,Poznań
+Luna Poznań 695,Wrocław
+Cinema City Łódź 696,Kraków
+Multikino Lublin 697,Rzeszów
+Muranów Lublin 698,Łódź
+Iluzjon Gdańsk 699,Katowice
+Helios Wrocław 700,Rzeszów
+Kino Moskwa Poznań 701,Gdańsk
+Luna Poznań 702,Rzeszów
+Nowe Horyzonty Wrocław 703,Lublin
+Kinepolis Kraków 704,Szczecin
+Kino Moskwa Kraków 705,Poznań
+Iluzjon Wrocław 706,Łódź
+Cinema City Rzeszów 707,Gdańsk
+Kino Moskwa Lublin 708,Wrocław
+Iluzjon Szczecin 709,Katowice
+Helios Kraków 710,Szczecin
+Multikino Łódź 711,Kraków
+Luna Wrocław 712,Szczecin
+Muranów Kraków 713,Poznań
+Nowe Horyzonty Warszawa 714,Warszawa
+Helios Wrocław 715,Wrocław
+Kinepolis Warszawa 716,Łódź
+Cinema City Łódź 717,Wrocław
+Helios Szczecin 718,Rzeszów
+Muranów Rzeszów 719,Warszawa
+Kinepolis Rzeszów 720,Lublin
+Helios Rzeszów 721,Lublin
+Nowe Horyzonty Kraków 722,Lublin
+Nowe Horyzonty Warszawa 723,Katowice
+Kino Moskwa Kraków 724,Gdańsk
+Multikino Warszawa 725,Łódź
+Kinepolis Kraków 726,Poznań
+Iluzjon Rzeszów 727,Katowice
+Kinepolis Lublin 728,Wrocław
+Cinema City Kraków 729,Poznań
+Kinepolis Gdańsk 730,Rzeszów
+Helios Gdańsk 731,Wrocław
+Cinema City Rzeszów 732,Gdańsk
+Kinepolis Lublin 733,Szczecin
+Kinepolis Katowice 734,Katowice
+Muranów Poznań 735,Wrocław
+Helios Szczecin 736,Kraków
+Kinepolis Gdańsk 737,Wrocław
+Nowe Horyzonty Lublin 738,Wrocław
+Kino Moskwa Kraków 739,Lublin
+Iluzjon Gdańsk 740,Rzeszów
+Iluzjon Wrocław 741,Katowice
+Iluzjon Rzeszów 742,Katowice
+Nowe Horyzonty Katowice 743,Rzeszów
+Kinepolis Kraków 744,Poznań
+Multikino Gdańsk 745,Poznań
+Iluzjon Katowice 746,Poznań
+Kinepolis Lublin 747,Szczecin
+Luna Szczecin 748,Lublin
+Iluzjon Wrocław 749,Łódź
+Muranów Gdańsk 750,Łódź
+Muranów Szczecin 751,Rzeszów
+Cinema City Kraków 752,Poznań
+Kinepolis Kraków 753,Wrocław
+Luna Warszawa 754,Gdańsk
+Iluzjon Warszawa 755,Lublin
+Kinepolis Łódź 756,Rzeszów
+Multikino Gdańsk 757,Gdańsk
+Luna Rzeszów 758,Wrocław
+Iluzjon Rzeszów 759,Gdańsk
+Multikino Warszawa 760,Rzeszów
+Nowe Horyzonty Gdańsk 761,Katowice
+Kino Moskwa Poznań 762,Rzeszów
+Kinepolis Wrocław 763,Wrocław
+Cinema City Poznań 764,Wrocław
+Helios Szczecin 765,Szczecin
+Helios Lublin 766,Wrocław
+Muranów Kraków 767,Warszawa
+Helios Kraków 768,Łódź
+Nowe Horyzonty Gdańsk 769,Szczecin
+Muranów Kraków 770,Warszawa
+Kinepolis Łódź 771,Rzeszów
+Helios Warszawa 772,Gdańsk
+Helios Poznań 773,Poznań
+Luna Łódź 774,Wrocław
+Luna Szczecin 775,Gdańsk
+Nowe Horyzonty Gdańsk 776,Łódź
+Cinema City Kraków 777,Rzeszów
+Nowe Horyzonty Gdańsk 778,Katowice
+Muranów Łódź 779,Lublin
+Cinema City Kraków 780,Lublin
+Kino Moskwa Łódź 781,Lublin
+Nowe Horyzonty Gdańsk 782,Kraków
+Helios Lublin 783,Rzeszów
+Luna Łódź 784,Wrocław
+Luna Łódź 785,Lublin
+Luna Gdańsk 786,Gdańsk
+Iluzjon Warszawa 787,Katowice
+Kinepolis Poznań 788,Kraków
+Helios Poznań 789,Kraków
+Helios Rzeszów 790,Łódź
+Kino Moskwa Kraków 791,Katowice
+Helios Poznań 792,Kraków
+Multikino Gdańsk 793,Gdańsk
+Multikino Katowice 794,Lublin
+Kinepolis Łódź 795,Lublin
+Multikino Wrocław 796,Łódź
+Nowe Horyzonty Łódź 797,Warszawa
+Helios Gdańsk 798,Łódź
+Iluzjon Wrocław 799,Kraków
+Luna Poznań 800,Rzeszów
+Muranów Szczecin 801,Wrocław
+Luna Poznań 802,Warszawa
+Helios Rzeszów 803,Gdańsk
+Muranów Wrocław 804,Szczecin
+Iluzjon Poznań 805,Kraków
+Kino Moskwa Warszawa 806,Katowice
+Cinema City Katowice 807,Łódź
+Cinema City Wrocław 808,Kraków
+Multikino Szczecin 809,Poznań
+Cinema City Warszawa 810,Wrocław
+Luna Wrocław 811,Wrocław
+Kinepolis Warszawa 812,Łódź
+Helios Łódź 813,Kraków
+Cinema City Wrocław 814,Kraków
+Multikino Lublin 815,Szczecin
+Cinema City Poznań 816,Gdańsk
+Muranów Katowice 817,Szczecin
+Multikino Rzeszów 818,Poznań
+Kinepolis Katowice 819,Wrocław
+Iluzjon Katowice 820,Poznań
+Kino Moskwa Szczecin 821,Gdańsk
+Muranów Gdańsk 822,Warszawa
+Luna Rzeszów 823,Gdańsk
+Kino Moskwa Rzeszów 824,Łódź
+Nowe Horyzonty Katowice 825,Warszawa
+Helios Poznań 826,Kraków
+Iluzjon Gdańsk 827,Lublin
+Iluzjon Katowice 828,Szczecin
+Helios Szczecin 829,Wrocław
+Multikino Katowice 830,Wrocław
+Luna Szczecin 831,Wrocław
+Kinepolis Szczecin 832,Lublin
+Luna Wrocław 833,Lublin
+Luna Katowice 834,Poznań
+Muranów Łódź 835,Rzeszów
+Multikino Poznań 836,Warszawa
+Cinema City Poznań 837,Łódź
+Kinepolis Katowice 838,Katowice
+Cinema City Kraków 839,Gdańsk
+Kino Moskwa Rzeszów 840,Warszawa
+Cinema City Wrocław 841,Lublin
+Iluzjon Kraków 842,Kraków
+Luna Rzeszów 843,Kraków
+Luna Łódź 844,Warszawa
+Helios Poznań 845,Kraków
+Kino Moskwa Łódź 846,Poznań
+Helios Warszawa 847,Lublin
+Kino Moskwa Warszawa 848,Szczecin
+Kinepolis Gdańsk 849,Gdańsk
+Kino Moskwa Wrocław 850,Lublin
+Kinepolis Poznań 851,Warszawa
+Luna Kraków 852,Lublin
+Muranów Rzeszów 853,Wrocław
+Luna Szczecin 854,Poznań
+Multikino Poznań 855,Poznań
+Kinepolis Gdańsk 856,Katowice
+Multikino Katowice 857,Warszawa
+Nowe Horyzonty Gdańsk 858,Rzeszów
+Cinema City Rzeszów 859,Gdańsk
+Nowe Horyzonty Katowice 860,Gdańsk
+Muranów Gdańsk 861,Lublin
+Kinepolis Gdańsk 862,Poznań
+Luna Wrocław 863,Rzeszów
+Nowe Horyzonty Łódź 864,Katowice
+Kinepolis Lublin 865,Rzeszów
+Nowe Horyzonty Łódź 866,Rzeszów
+Helios Łódź 867,Szczecin
+Luna Rzeszów 868,Szczecin
+Kino Moskwa Rzeszów 869,Warszawa
+Muranów Poznań 870,Warszawa
+Muranów Gdańsk 871,Szczecin
+Muranów Warszawa 872,Katowice
+Muranów Poznań 873,Szczecin
+Iluzjon Kraków 874,Poznań
+Iluzjon Szczecin 875,Lublin
+Cinema City Szczecin 876,Katowice
+Kinepolis Kraków 877,Gdańsk
+Multikino Wrocław 878,Łódź
+Kino Moskwa Łódź 879,Warszawa
+Nowe Horyzonty Lublin 880,Lublin
+Kinepolis Szczecin 881,Kraków
+Luna Katowice 882,Warszawa
+Multikino Łódź 883,Wrocław
+Nowe Horyzonty Wrocław 884,Wrocław
+Kinepolis Rzeszów 885,Poznań
+Helios Szczecin 886,Lublin
+Iluzjon Poznań 887,Katowice
+Nowe Horyzonty Rzeszów 888,Rzeszów
+Iluzjon Gdańsk 889,Gdańsk
+Kinepolis Rzeszów 890,Poznań
+Muranów Poznań 891,Gdańsk
+Iluzjon Rzeszów 892,Łódź
+Kino Moskwa Wrocław 893,Katowice
+Helios Gdańsk 894,Rzeszów
+Kinepolis Wrocław 895,Szczecin
+Luna Poznań 896,Wrocław
+Multikino Warszawa 897,Rzeszów
+Helios Warszawa 898,Gdańsk
+Iluzjon Katowice 899,Gdańsk
+Luna Lublin 900,Kraków
+Luna Kraków 901,Gdańsk
+Cinema City Gdańsk 902,Kraków
+Kino Moskwa Warszawa 903,Wrocław
+Multikino Wrocław 904,Wrocław
+Kino Moskwa Gdańsk 905,Katowice
+Kino Moskwa Rzeszów 906,Poznań
+Multikino Kraków 907,Kraków
+Nowe Horyzonty Katowice 908,Lublin
+Iluzjon Lublin 909,Kraków
+Kinepolis Szczecin 910,Wrocław
+Iluzjon Wrocław 911,Łódź
+Multikino Rzeszów 912,Katowice
+Iluzjon Szczecin 913,Kraków
+Kino Moskwa Wrocław 914,Warszawa
+Nowe Horyzonty Lublin 915,Łódź
+Kinepolis Poznań 916,Łódź
+Cinema City Szczecin 917,Rzeszów
+Luna Wrocław 918,Warszawa
+Iluzjon Gdańsk 919,Poznań
+Multikino Kraków 920,Warszawa
+Muranów Katowice 921,Rzeszów
+Cinema City Szczecin 922,Szczecin
+Cinema City Lublin 923,Wrocław
+Multikino Rzeszów 924,Warszawa
+Iluzjon Kraków 925,Łódź
+Nowe Horyzonty Szczecin 926,Wrocław
+Kino Moskwa Łódź 927,Rzeszów
+Kinepolis Warszawa 928,Katowice
+Helios Wrocław 929,Szczecin
+Luna Poznań 930,Rzeszów
+Nowe Horyzonty Poznań 931,Warszawa
+Kinepolis Warszawa 932,Katowice
+Kino Moskwa Lublin 933,Rzeszów
+Luna Wrocław 934,Kraków
+Nowe Horyzonty Rzeszów 935,Gdańsk
+Iluzjon Łódź 936,Kraków
+Muranów Gdańsk 937,Warszawa
+Muranów Łódź 938,Warszawa
+Nowe Horyzonty Rzeszów 939,Wrocław
+Kinepolis Lublin 940,Katowice
+Kino Moskwa Warszawa 941,Warszawa
+Muranów Łódź 942,Wrocław
+Multikino Lublin 943,Lublin
+Muranów Gdańsk 944,Gdańsk
+Nowe Horyzonty Łódź 945,Kraków
+Luna Gdańsk 946,Lublin
+Cinema City Szczecin 947,Szczecin
+Nowe Horyzonty Lublin 948,Katowice
+Iluzjon Kraków 949,Kraków
+Kinepolis Wrocław 950,Lublin
+Cinema City Łódź 951,Poznań
+Luna Kraków 952,Warszawa
+Muranów Kraków 953,Poznań
+Nowe Horyzonty Łódź 954,Kraków
+Luna Lublin 955,Gdańsk
+Kinepolis Katowice 956,Lublin
+Kinepolis Wrocław 957,Gdańsk
+Nowe Horyzonty Warszawa 958,Katowice
+Cinema City Gdańsk 959,Poznań
+Kino Moskwa Łódź 960,Wrocław
+Luna Łódź 961,Kraków
+Nowe Horyzonty Wrocław 962,Lublin
+Kinepolis Warszawa 963,Rzeszów
+Nowe Horyzonty Wrocław 964,Rzeszów
+Multikino Warszawa 965,Lublin
+Nowe Horyzonty Lublin 966,Lublin
+Kino Moskwa Gdańsk 967,Wrocław
+Nowe Horyzonty Szczecin 968,Wrocław
+Kinepolis Szczecin 969,Gdańsk
+Cinema City Lublin 970,Kraków
+Nowe Horyzonty Łódź 971,Szczecin
+Nowe Horyzonty Warszawa 972,Łódź
+Kinepolis Warszawa 973,Wrocław
+Helios Łódź 974,Rzeszów
+Kinepolis Łódź 975,Poznań
+Nowe Horyzonty Szczecin 976,Szczecin
+Nowe Horyzonty Lublin 977,Lublin
+Iluzjon Wrocław 978,Katowice
+Muranów Gdańsk 979,Kraków
+Muranów Poznań 980,Rzeszów
+Multikino Katowice 981,Gdańsk
+Cinema City Katowice 982,Poznań
+Cinema City Warszawa 983,Rzeszów
+Luna Poznań 984,Łódź
+Helios Gdańsk 985,Poznań
+Muranów Rzeszów 986,Gdańsk
+Cinema City Wrocław 987,Poznań
+Luna Kraków 988,Gdańsk
+Cinema City Poznań 989,Łódź
+Nowe Horyzonty Wrocław 990,Warszawa
+Multikino Warszawa 991,Lublin
+Helios Lublin 992,Szczecin
+Multikino Szczecin 993,Warszawa
+Muranów Kraków 994,Warszawa
+Muranów Szczecin 995,Lublin
+Luna Lublin 996,Gdańsk
+Kinepolis Poznań 997,Gdańsk
+Muranów Wrocław 998,Kraków
+Multikino Kraków 999,Rzeszów
+Cinema City Kraków 1000,Lublin
+Nowe Horyzonty Gdańsk 1001,Lublin
+Helios Wrocław 1002,Rzeszów
+Muranów Gdańsk 1003,Katowice
+Iluzjon Wrocław 1004,Lublin
+Cinema City Wrocław 1005,Wrocław
+Luna Szczecin 1006,Lublin
+Nowe Horyzonty Łódź 1007,Poznań
+Iluzjon Kraków 1008,Katowice
+Iluzjon Łódź 1009,Lublin
+Iluzjon Kraków 1010,Łódź
+Muranów Łódź 1011,Rzeszów
+Luna Kraków 1012,Rzeszów
+Luna Lublin 1013,Lublin
+Muranów Szczecin 1014,Łódź
+Kinepolis Poznań 1015,Kraków
+Helios Szczecin 1016,Wrocław
+Helios Katowice 1017,Rzeszów
+Muranów Gdańsk 1018,Warszawa
+Muranów Kraków 1019,Poznań
+Multikino Szczecin 1020,Warszawa
+Cinema City Szczecin 1021,Poznań
+Multikino Wrocław 1022,Rzeszów
+Nowe Horyzonty Katowice 1023,Katowice
+Kinepolis Łódź 1024,Szczecin
+Kino Moskwa Kraków 1025,Warszawa
+Luna Rzeszów 1026,Szczecin
+Luna Kraków 1027,Kraków
+Multikino Katowice 1028,Rzeszów
+Kino Moskwa Poznań 1029,Szczecin
+Kino Moskwa Wrocław 1030,Rzeszów
+Nowe Horyzonty Szczecin 1031,Warszawa
+Multikino Wrocław 1032,Łódź
+Kinepolis Wrocław 1033,Kraków
+Muranów Gdańsk 1034,Katowice
+Luna Łódź 1035,Łódź
+Helios Lublin 1036,Gdańsk
+Helios Szczecin 1037,Gdańsk
+Kinepolis Łódź 1038,Katowice
+Kino Moskwa Poznań 1039,Łódź
+Multikino Warszawa 1040,Łódź
+Kinepolis Kraków 1041,Lublin
+Kino Moskwa Wrocław 1042,Katowice
+Helios Poznań 1043,Kraków
+Multikino Szczecin 1044,Katowice
+Kino Moskwa Łódź 1045,Wrocław
+Muranów Szczecin 1046,Poznań
+Muranów Szczecin 1047,Gdańsk
+Cinema City Szczecin 1048,Warszawa
+Multikino Lublin 1049,Katowice
+Kino Moskwa Kraków 1050,Szczecin
+Nowe Horyzonty Poznań 1051,Lublin
+Nowe Horyzonty Poznań 1052,Warszawa
+Kino Moskwa Kraków 1053,Szczecin
+Muranów Wrocław 1054,Gdańsk
+Kinepolis Gdańsk 1055,Gdańsk
+Cinema City Poznań 1056,Lublin
+Multikino Lublin 1057,Łódź
+Cinema City Kraków 1058,Szczecin
+Luna Kraków 1059,Lublin
+Nowe Horyzonty Szczecin 1060,Warszawa
+Luna Gdańsk 1061,Kraków
+Helios Łódź 1062,Rzeszów
+Iluzjon Wrocław 1063,Rzeszów
+Kinepolis Gdańsk 1064,Rzeszów
+Helios Kraków 1065,Szczecin
+Cinema City Warszawa 1066,Szczecin
+Luna Poznań 1067,Warszawa
+Muranów Warszawa 1068,Kraków
+Kino Moskwa Poznań 1069,Katowice
+Cinema City Wrocław 1070,Szczecin
+Nowe Horyzonty Rzeszów 1071,Wrocław
+Kino Moskwa Wrocław 1072,Wrocław
+Helios Kraków 1073,Gdańsk
+Kino Moskwa Kraków 1074,Warszawa
+Kino Moskwa Wrocław 1075,Szczecin
+Iluzjon Katowice 1076,Poznań
+Muranów Poznań 1077,Poznań
+Luna Rzeszów 1078,Warszawa
+Nowe Horyzonty Szczecin 1079,Katowice
+Helios Lublin 1080,Kraków
+Kinepolis Wrocław 1081,Rzeszów
+Helios Lublin 1082,Gdańsk
+Luna Gdańsk 1083,Katowice
+Muranów Rzeszów 1084,Gdańsk
+Luna Poznań 1085,Szczecin
+Nowe Horyzonty Gdańsk 1086,Lublin
+Muranów Łódź 1087,Gdańsk
+Luna Kraków 1088,Wrocław
+Helios Gdańsk 1089,Katowice
+Iluzjon Szczecin 1090,Poznań
+Nowe Horyzonty Wrocław 1091,Katowice
+Multikino Szczecin 1092,Poznań
+Cinema City Lublin 1093,Lublin
+Multikino Lublin 1094,Kraków
+Helios Gdańsk 1095,Gdańsk
+Nowe Horyzonty Katowice 1096,Gdańsk
+Muranów Gdańsk 1097,Szczecin
+Muranów Lublin 1098,Warszawa
+Muranów Katowice 1099,Wrocław
+Kinepolis Katowice 1100,Rzeszów
+Muranów Lublin 1101,Gdańsk
+Nowe Horyzonty Rzeszów 1102,Rzeszów
+Luna Kraków 1103,Warszawa
+Luna Kraków 1104,Gdańsk
+Muranów Łódź 1105,Katowice
+Iluzjon Łódź 1106,Szczecin
+Helios Łódź 1107,Poznań
+Helios Warszawa 1108,Gdańsk
+Cinema City Wrocław 1109,Kraków
+Nowe Horyzonty Łódź 1110,Lublin
+Iluzjon Wrocław 1111,Łódź
+Luna Lublin 1112,Warszawa
+Luna Warszawa 1113,Rzeszów
+Iluzjon Lublin 1114,Szczecin
+Cinema City Rzeszów 1115,Warszawa
+Cinema City Rzeszów 1116,Lublin
+Kinepolis Rzeszów 1117,Katowice
+Multikino Gdańsk 1118,Lublin
+Helios Lublin 1119,Poznań
+Iluzjon Szczecin 1120,Szczecin
+Kino Moskwa Wrocław 1121,Lublin
+Iluzjon Rzeszów 1122,Rzeszów
+Multikino Poznań 1123,Wrocław
+Muranów Szczecin 1124,Łódź
+Helios Gdańsk 1125,Lublin
+Nowe Horyzonty Szczecin 1126,Gdańsk
+Luna Poznań 1127,Szczecin
+Kino Moskwa Wrocław 1128,Gdańsk
+Luna Warszawa 1129,Kraków
+Multikino Wrocław 1130,Rzeszów
+Nowe Horyzonty Szczecin 1131,Łódź
+Helios Poznań 1132,Szczecin
+Iluzjon Gdańsk 1133,Poznań
+Multikino Kraków 1134,Warszawa
+Helios Rzeszów 1135,Lublin
+Kino Moskwa Gdańsk 1136,Warszawa
+Multikino Gdańsk 1137,Lublin
+Multikino Warszawa 1138,Kraków
+Luna Lublin 1139,Łódź
+Nowe Horyzonty Warszawa 1140,Wrocław
+Muranów Katowice 1141,Wrocław
+Cinema City Szczecin 1142,Wrocław
+Cinema City Katowice 1143,Kraków
+Luna Poznań 1144,Gdańsk
+Multikino Katowice 1145,Poznań
+Kino Moskwa Wrocław 1146,Gdańsk
+Nowe Horyzonty Poznań 1147,Wrocław
+Helios Katowice 1148,Kraków
+Iluzjon Wrocław 1149,Rzeszów
+Multikino Lublin 1150,Katowice
+Cinema City Warszawa 1151,Szczecin
+Cinema City Poznań 1152,Szczecin
+Kinepolis Rzeszów 1153,Rzeszów
+Kinepolis Szczecin 1154,Wrocław
+Iluzjon Warszawa 1155,Lublin
+Muranów Lublin 1156,Gdańsk
+Multikino Gdańsk 1157,Gdańsk
+Nowe Horyzonty Łódź 1158,Lublin
+Kino Moskwa Poznań 1159,Katowice
+Kinepolis Łódź 1160,Lublin
+Muranów Warszawa 1161,Poznań
+Muranów Lublin 1162,Lublin
+Cinema City Gdańsk 1163,Lublin
+Luna Katowice 1164,Katowice
+Iluzjon Katowice 1165,Łódź
+Nowe Horyzonty Rzeszów 1166,Poznań
+Kinepolis Szczecin 1167,Rzeszów
+Helios Wrocław 1168,Warszawa
+Iluzjon Warszawa 1169,Szczecin
+Luna Lublin 1170,Warszawa
+Multikino Gdańsk 1171,Kraków
+Nowe Horyzonty Łódź 1172,Poznań
+Multikino Wrocław 1173,Rzeszów
+Muranów Kraków 1174,Szczecin
+Cinema City Szczecin 1175,Warszawa
+Iluzjon Gdańsk 1176,Wrocław
+Cinema City Kraków 1177,Gdańsk
+Iluzjon Katowice 1178,Kraków
+Kino Moskwa Łódź 1179,Katowice
+Kino Moskwa Lublin 1180,Poznań
+Nowe Horyzonty Wrocław 1181,Rzeszów
+Helios Szczecin 1182,Szczecin
+Kinepolis Poznań 1183,Gdańsk
+Nowe Horyzonty Łódź 1184,Poznań
+Multikino Łódź 1185,Szczecin
+Luna Gdańsk 1186,Poznań
+Kino Moskwa Szczecin 1187,Szczecin
+Cinema City Gdańsk 1188,Poznań
+Muranów Wrocław 1189,Łódź
+Multikino Wrocław 1190,Kraków
+Kinepolis Gdańsk 1191,Wrocław
+Luna Łódź 1192,Łódź
+Kino Moskwa Poznań 1193,Rzeszów
+Cinema City Wrocław 1194,Szczecin
+Kino Moskwa Poznań 1195,Wrocław
+Cinema City Poznań 1196,Szczecin
+Multikino Łódź 1197,Poznań
+Helios Lublin 1198,Szczecin
+Kinepolis Łódź 1199,Katowice
+Muranów Kraków 1200,Rzeszów
+Kinepolis Lublin 1201,Gdańsk
+Cinema City Gdańsk 1202,Katowice
+Helios Łódź 1203,Szczecin
+Multikino Katowice 1204,Kraków
+Cinema City Wrocław 1205,Gdańsk
+Helios Wrocław 1206,Poznań
+Multikino Poznań 1207,Lublin
+Cinema City Wrocław 1208,Warszawa
+Muranów Warszawa 1209,Kraków
+Cinema City Wrocław 1210,Rzeszów
+Kinepolis Łódź 1211,Warszawa
+Multikino Katowice 1212,Poznań
+Multikino Gdańsk 1213,Gdańsk
+Kinepolis Warszawa 1214,Kraków
+Muranów Kraków 1215,Katowice
+Iluzjon Lublin 1216,Poznań
+Luna Gdańsk 1217,Szczecin
+Muranów Łódź 1218,Gdańsk
+Multikino Gdańsk 1219,Kraków
+Kinepolis Rzeszów 1220,Wrocław
+Helios Lublin 1221,Rzeszów
+Muranów Warszawa 1222,Gdańsk
+Kino Moskwa Kraków 1223,Rzeszów
+Muranów Lublin 1224,Gdańsk
+Cinema City Rzeszów 1225,Rzeszów
+Muranów Kraków 1226,Wrocław
+Kino Moskwa Szczecin 1227,Łódź
+Nowe Horyzonty Gdańsk 1228,Lublin
+Muranów Katowice 1229,Gdańsk
+Iluzjon Rzeszów 1230,Szczecin
+Cinema City Rzeszów 1231,Kraków
+Iluzjon Szczecin 1232,Szczecin
+Nowe Horyzonty Kraków 1233,Warszawa
+Luna Kraków 1234,Łódź
+Kinepolis Poznań 1235,Katowice
+Helios Lublin 1236,Wrocław
+Cinema City Łódź 1237,Poznań
+Helios Kraków 1238,Gdańsk
+Muranów Poznań 1239,Katowice
+Helios Lublin 1240,Kraków
+Kinepolis Łódź 1241,Łódź
+Luna Poznań 1242,Poznań
+Helios Łódź 1243,Lublin
+Multikino Warszawa 1244,Lublin
+Multikino Łódź 1245,Szczecin
+Kino Moskwa Katowice 1246,Katowice
+Multikino Katowice 1247,Rzeszów
+Nowe Horyzonty Gdańsk 1248,Katowice
+Multikino Gdańsk 1249,Warszawa
+Kinepolis Rzeszów 1250,Katowice
+Cinema City Rzeszów 1251,Warszawa
+Kino Moskwa Kraków 1252,Kraków
+Cinema City Kraków 1253,Łódź
+Kinepolis Poznań 1254,Warszawa
+Cinema City Poznań 1255,Wrocław
+Helios Kraków 1256,Katowice
+Luna Warszawa 1257,Kraków
+Nowe Horyzonty Katowice 1258,Wrocław
+Nowe Horyzonty Rzeszów 1259,Szczecin
+Helios Rzeszów 1260,Szczecin
+Kino Moskwa Kraków 1261,Gdańsk
+Kino Moskwa Wrocław 1262,Poznań
+Helios Poznań 1263,Poznań
+Kinepolis Poznań 1264,Łódź
+Muranów Gdańsk 1265,Katowice
+Kino Moskwa Lublin 1266,Kraków
+Iluzjon Kraków 1267,Gdańsk
+Iluzjon Poznań 1268,Katowice
+Multikino Łódź 1269,Warszawa
+Muranów Szczecin 1270,Gdańsk
+Iluzjon Rzeszów 1271,Gdańsk
+Luna Łódź 1272,Poznań
+Luna Gdańsk 1273,Kraków
+Luna Szczecin 1274,Wrocław
+Luna Warszawa 1275,Poznań
+Kino Moskwa Szczecin 1276,Katowice
+Kino Moskwa Rzeszów 1277,Łódź
+Iluzjon Rzeszów 1278,Wrocław
+Multikino Katowice 1279,Katowice
+Multikino Gdańsk 1280,Łódź
+Muranów Warszawa 1281,Rzeszów
+Iluzjon Szczecin 1282,Poznań
+Iluzjon Szczecin 1283,Kraków
+Kino Moskwa Wrocław 1284,Poznań
+Cinema City Gdańsk 1285,Kraków
+Helios Gdańsk 1286,Lublin
+Helios Łódź 1287,Rzeszów
+Luna Lublin 1288,Poznań
+Kinepolis Gdańsk 1289,Poznań
+Nowe Horyzonty Wrocław 1290,Wrocław
+Nowe Horyzonty Łódź 1291,Katowice
+Iluzjon Rzeszów 1292,Wrocław
+Muranów Wrocław 1293,Gdańsk
+Nowe Horyzonty Lublin 1294,Szczecin
+Cinema City Rzeszów 1295,Warszawa
+Cinema City Łódź 1296,Lublin
+Cinema City Poznań 1297,Warszawa
+Helios Lublin 1298,Poznań
+Cinema City Poznań 1299,Warszawa
+Helios Gdańsk 1300,Łódź
+Muranów Katowice 1301,Poznań
+Cinema City Katowice 1302,Rzeszów
+Nowe Horyzonty Szczecin 1303,Wrocław
+Iluzjon Kraków 1304,Katowice
+Iluzjon Warszawa 1305,Gdańsk
+Luna Rzeszów 1306,Rzeszów
+Iluzjon Rzeszów 1307,Gdańsk
+Iluzjon Wrocław 1308,Łódź
+Muranów Łódź 1309,Szczecin
+Helios Łódź 1310,Katowice
+Luna Warszawa 1311,Poznań
+Helios Lublin 1312,Kraków
+Multikino Katowice 1313,Warszawa
+Kino Moskwa Gdańsk 1314,Kraków
+Kinepolis Gdańsk 1315,Wrocław
+Helios Wrocław 1316,Kraków
+Multikino Szczecin 1317,Wrocław
+Muranów Szczecin 1318,Szczecin
+Multikino Łódź 1319,Gdańsk
+Helios Warszawa 1320,Szczecin
+Muranów Warszawa 1321,Poznań
+Cinema City Kraków 1322,Warszawa
+Kino Moskwa Gdańsk 1323,Wrocław
+Muranów Szczecin 1324,Rzeszów
+Muranów Lublin 1325,Warszawa
+Kino Moskwa Rzeszów 1326,Rzeszów
+Multikino Łódź 1327,Kraków
+Helios Rzeszów 1328,Warszawa
+Multikino Gdańsk 1329,Katowice
+Cinema City Lublin 1330,Gdańsk
+Nowe Horyzonty Katowice 1331,Kraków
+Helios Lublin 1332,Rzeszów
+Iluzjon Łódź 1333,Szczecin
+Multikino Poznań 1334,Wrocław
+Luna Katowice 1335,Wrocław
+Kinepolis Gdańsk 1336,Wrocław
+Iluzjon Łódź 1337,Poznań
+Multikino Warszawa 1338,Szczecin
+Multikino Katowice 1339,Katowice
+Luna Warszawa 1340,Katowice
+Nowe Horyzonty Lublin 1341,Gdańsk
+Nowe Horyzonty Lublin 1342,Rzeszów
+Kinepolis Kraków 1343,Łódź
+Nowe Horyzonty Szczecin 1344,Łódź
+Luna Wrocław 1345,Kraków
+Nowe Horyzonty Szczecin 1346,Wrocław
+Kino Moskwa Łódź 1347,Szczecin
+Iluzjon Rzeszów 1348,Katowice
+Helios Gdańsk 1349,Łódź
+Iluzjon Gdańsk 1350,Rzeszów
+Multikino Kraków 1351,Łódź
+Luna Gdańsk 1352,Gdańsk
+Helios Katowice 1353,Lublin
+Multikino Rzeszów 1354,Łódź
+Muranów Warszawa 1355,Warszawa
+Iluzjon Warszawa 1356,Katowice
+Nowe Horyzonty Wrocław 1357,Kraków
+Iluzjon Rzeszów 1358,Gdańsk
+Cinema City Kraków 1359,Wrocław
+Kinepolis Katowice 1360,Łódź
+Kino Moskwa Katowice 1361,Poznań
+Multikino Poznań 1362,Wrocław
+Muranów Kraków 1363,Warszawa
+Multikino Warszawa 1364,Poznań
+Multikino Kraków 1365,Szczecin
+Helios Katowice 1366,Warszawa
+Iluzjon Gdańsk 1367,Wrocław
+Luna Rzeszów 1368,Łódź
+Luna Gdańsk 1369,Rzeszów
+Nowe Horyzonty Lublin 1370,Wrocław
+Cinema City Rzeszów 1371,Szczecin
+Muranów Łódź 1372,Warszawa
+Multikino Szczecin 1373,Gdańsk
+Luna Kraków 1374,Łódź
+Kinepolis Kraków 1375,Szczecin
+Multikino Szczecin 1376,Gdańsk
+Kinepolis Rzeszów 1377,Łódź
+Muranów Katowice 1378,Poznań
+Nowe Horyzonty Poznań 1379,Szczecin
+Helios Szczecin 1380,Lublin
+Kinepolis Łódź 1381,Lublin
+Kino Moskwa Katowice 1382,Wrocław
+Iluzjon Rzeszów 1383,Warszawa
+Kino Moskwa Warszawa 1384,Kraków
+Multikino Rzeszów 1385,Łódź
+Cinema City Gdańsk 1386,Gdańsk
+Iluzjon Lublin 1387,Łódź
+Kinepolis Rzeszów 1388,Warszawa
+Luna Rzeszów 1389,Lublin
+Iluzjon Wrocław 1390,Katowice
+Nowe Horyzonty Lublin 1391,Rzeszów
+Cinema City Kraków 1392,Kraków
+Kino Moskwa Rzeszów 1393,Łódź
+Luna Rzeszów 1394,Lublin
+Kino Moskwa Lublin 1395,Rzeszów
+Multikino Lublin 1396,Szczecin
+Luna Poznań 1397,Wrocław
+Helios Poznań 1398,Rzeszów
+Muranów Rzeszów 1399,Katowice
+Muranów Gdańsk 1400,Szczecin
+Luna Kraków 1401,Wrocław
+Multikino Rzeszów 1402,Kraków
+Iluzjon Lublin 1403,Łódź
+Luna Rzeszów 1404,Szczecin
+Kino Moskwa Szczecin 1405,Wrocław
+Luna Łódź 1406,Szczecin
+Helios Katowice 1407,Szczecin
+Muranów Wrocław 1408,Kraków
+Iluzjon Wrocław 1409,Lublin
+Luna Kraków 1410,Rzeszów
+Luna Wrocław 1411,Lublin
+Multikino Katowice 1412,Gdańsk
+Cinema City Kraków 1413,Katowice
+Muranów Gdańsk 1414,Warszawa
+Iluzjon Gdańsk 1415,Łódź
+Multikino Lublin 1416,Gdańsk
+Muranów Lublin 1417,Lublin
+Kinepolis Szczecin 1418,Rzeszów
+Luna Szczecin 1419,Gdańsk
+Luna Lublin 1420,Warszawa
+Nowe Horyzonty Kraków 1421,Wrocław
+Muranów Szczecin 1422,Lublin
+Cinema City Wrocław 1423,Wrocław
+Muranów Szczecin 1424,Rzeszów
+Nowe Horyzonty Szczecin 1425,Gdańsk
+Cinema City Warszawa 1426,Lublin
+Muranów Rzeszów 1427,Wrocław
+Cinema City Łódź 1428,Lublin
+Helios Kraków 1429,Lublin
+Helios Rzeszów 1430,Katowice
+Cinema City Kraków 1431,Poznań
+Kino Moskwa Rzeszów 1432,Gdańsk
+Iluzjon Kraków 1433,Wrocław
+Muranów Warszawa 1434,Warszawa
+Kinepolis Gdańsk 1435,Lublin
+Multikino Poznań 1436,Kraków
+Cinema City Kraków 1437,Poznań
+Multikino Rzeszów 1438,Łódź
+Kinepolis Gdańsk 1439,Poznań
+Cinema City Katowice 1440,Katowice
+Kinepolis Szczecin 1441,Łódź
+Nowe Horyzonty Kraków 1442,Poznań
+Nowe Horyzonty Gdańsk 1443,Katowice
+Cinema City Szczecin 1444,Szczecin
+Nowe Horyzonty Gdańsk 1445,Warszawa
+Multikino Katowice 1446,Warszawa
+Kinepolis Wrocław 1447,Katowice
+Kinepolis Gdańsk 1448,Szczecin
+Kinepolis Kraków 1449,Kraków
+Helios Poznań 1450,Poznań
+Multikino Rzeszów 1451,Poznań
+Multikino Lublin 1452,Łódź
+Nowe Horyzonty Lublin 1453,Kraków
+Muranów Gdańsk 1454,Szczecin
+Kino Moskwa Poznań 1455,Kraków
+Helios Wrocław 1456,Poznań
+Kinepolis Kraków 1457,Wrocław
+Luna Katowice 1458,Kraków
+Iluzjon Szczecin 1459,Warszawa
+Multikino Łódź 1460,Kraków
+Helios Gdańsk 1461,Wrocław
+Kino Moskwa Wrocław 1462,Warszawa
+Iluzjon Łódź 1463,Gdańsk
+Nowe Horyzonty Wrocław 1464,Kraków
+Cinema City Poznań 1465,Łódź
+Helios Warszawa 1466,Gdańsk
+Kino Moskwa Poznań 1467,Lublin
+Kino Moskwa Łódź 1468,Gdańsk
+Iluzjon Katowice 1469,Gdańsk
+Helios Poznań 1470,Kraków
+Kinepolis Gdańsk 1471,Katowice
+Kino Moskwa Łódź 1472,Katowice
+Kino Moskwa Poznań 1473,Rzeszów
+Nowe Horyzonty Wrocław 1474,Katowice
+Cinema City Kraków 1475,Katowice
+Helios Katowice 1476,Poznań
+Kino Moskwa Kraków 1477,Lublin
+Kino Moskwa Poznań 1478,Lublin
+Helios Wrocław 1479,Rzeszów
+Helios Lublin 1480,Lublin
+Kinepolis Gdańsk 1481,Katowice
+Multikino Katowice 1482,Łódź
+Cinema City Gdańsk 1483,Rzeszów
+Nowe Horyzonty Łódź 1484,Lublin
+Cinema City Warszawa 1485,Katowice
+Luna Gdańsk 1486,Warszawa
+Iluzjon Katowice 1487,Kraków
+Iluzjon Warszawa 1488,Szczecin
+Luna Szczecin 1489,Lublin
+Kinepolis Poznań 1490,Łódź
+Multikino Łódź 1491,Wrocław
+Multikino Wrocław 1492,Katowice
+Nowe Horyzonty Poznań 1493,Szczecin
+Helios Kraków 1494,Katowice
+Cinema City Szczecin 1495,Poznań
+Nowe Horyzonty Katowice 1496,Poznań
+Helios Wrocław 1497,Katowice
+Muranów Warszawa 1498,Kraków
+Luna Kraków 1499,Szczecin
+Helios Kraków 1500,Szczecin
+Iluzjon Warszawa 1501,Wrocław
+Cinema City Wrocław 1502,Rzeszów
+Helios Szczecin 1503,Kraków
+Kinepolis Lublin 1504,Lublin
+Kinepolis Szczecin 1505,Szczecin
+Iluzjon Lublin 1506,Katowice
+Cinema City Rzeszów 1507,Kraków
+Multikino Warszawa 1508,Warszawa
+Helios Rzeszów 1509,Poznań
+Multikino Katowice 1510,Warszawa
+Kinepolis Łódź 1511,Gdańsk
+Muranów Poznań 1512,Rzeszów
+Multikino Rzeszów 1513,Poznań
+Muranów Wrocław 1514,Gdańsk
+Luna Kraków 1515,Rzeszów
+Iluzjon Katowice 1516,Lublin
+Kinepolis Rzeszów 1517,Łódź
+Kino Moskwa Katowice 1518,Wrocław
+Kinepolis Poznań 1519,Gdańsk
+Multikino Gdańsk 1520,Szczecin
+Kinepolis Szczecin 1521,Lublin
+Nowe Horyzonty Szczecin 1522,Wrocław
+Nowe Horyzonty Wrocław 1523,Wrocław
+Kino Moskwa Łódź 1524,Katowice
+Cinema City Wrocław 1525,Poznań
+Kinepolis Poznań 1526,Łódź
+Luna Szczecin 1527,Poznań
+Kinepolis Warszawa 1528,Lublin
+Multikino Kraków 1529,Katowice
+Muranów Warszawa 1530,Wrocław
+Cinema City Wrocław 1531,Kraków
+Iluzjon Wrocław 1532,Wrocław
+Helios Katowice 1533,Gdańsk
+Kino Moskwa Warszawa 1534,Warszawa
+Muranów Łódź 1535,Rzeszów
+Cinema City Rzeszów 1536,Katowice
+Iluzjon Poznań 1537,Warszawa
+Luna Kraków 1538,Rzeszów
+Nowe Horyzonty Rzeszów 1539,Lublin
+Cinema City Gdańsk 1540,Kraków
+Nowe Horyzonty Gdańsk 1541,Katowice
+Muranów Katowice 1542,Kraków
+Kino Moskwa Szczecin 1543,Łódź
+Helios Wrocław 1544,Szczecin
+Helios Lublin 1545,Katowice
+Muranów Rzeszów 1546,Poznań
+Kinepolis Rzeszów 1547,Szczecin
+Multikino Lublin 1548,Kraków
+Kino Moskwa Rzeszów 1549,Rzeszów
+Cinema City Łódź 1550,Gdańsk
+Iluzjon Gdańsk 1551,Rzeszów
+Cinema City Lublin 1552,Łódź
+Kino Moskwa Poznań 1553,Łódź
+Luna Kraków 1554,Gdańsk
+Iluzjon Gdańsk 1555,Lublin
+Multikino Gdańsk 1556,Wrocław
+Muranów Gdańsk 1557,Katowice
+Helios Warszawa 1558,Kraków
+Cinema City Kraków 1559,Wrocław
+Cinema City Wrocław 1560,Szczecin
+Nowe Horyzonty Katowice 1561,Łódź
+Nowe Horyzonty Warszawa 1562,Łódź
+Iluzjon Rzeszów 1563,Gdańsk
+Multikino Gdańsk 1564,Kraków
+Kino Moskwa Lublin 1565,Kraków
+Helios Wrocław 1566,Lublin
+Nowe Horyzonty Katowice 1567,Łódź
+Kinepolis Katowice 1568,Poznań
+Kino Moskwa Poznań 1569,Kraków
+Kinepolis Gdańsk 1570,Łódź
+Multikino Poznań 1571,Warszawa
+Kino Moskwa Łódź 1572,Katowice
+Luna Kraków 1573,Poznań
+Muranów Lublin 1574,Warszawa
+Iluzjon Łódź 1575,Warszawa
+Kino Moskwa Lublin 1576,Gdańsk
+Luna Łódź 1577,Warszawa
+Muranów Poznań 1578,Rzeszów
+Iluzjon Wrocław 1579,Wrocław
+Kinepolis Wrocław 1580,Katowice
+Cinema City Lublin 1581,Lublin
+Luna Warszawa 1582,Lublin
+Kino Moskwa Wrocław 1583,Rzeszów
+Muranów Kraków 1584,Kraków
+Iluzjon Lublin 1585,Gdańsk
+Multikino Poznań 1586,Lublin
+Helios Rzeszów 1587,Kraków
+Kino Moskwa Poznań 1588,Łódź
+Iluzjon Rzeszów 1589,Łódź
+Cinema City Kraków 1590,Lublin
+Kinepolis Poznań 1591,Wrocław
+Multikino Poznań 1592,Rzeszów
+Kino Moskwa Kraków 1593,Katowice
+Nowe Horyzonty Lublin 1594,Rzeszów
+Kinepolis Warszawa 1595,Gdańsk
+Nowe Horyzonty Gdańsk 1596,Lublin
+Helios Gdańsk 1597,Łódź
+Helios Lublin 1598,Kraków
+Iluzjon Gdańsk 1599,Katowice
+Helios Gdańsk 1600,Wrocław
+Nowe Horyzonty Gdańsk 1601,Rzeszów
+Multikino Warszawa 1602,Poznań
+Kino Moskwa Wrocław 1603,Gdańsk
+Nowe Horyzonty Warszawa 1604,Poznań
+Nowe Horyzonty Rzeszów 1605,Łódź
+Multikino Kraków 1606,Łódź
+Kino Moskwa Wrocław 1607,Gdańsk
+Muranów Warszawa 1608,Kraków
+Multikino Poznań 1609,Warszawa
+Muranów Łódź 1610,Rzeszów
+Multikino Szczecin 1611,Gdańsk
+Iluzjon Gdańsk 1612,Katowice
+Nowe Horyzonty Łódź 1613,Kraków
+Helios Kraków 1614,Kraków
+Kino Moskwa Szczecin 1615,Warszawa
+Iluzjon Łódź 1616,Łódź
+Nowe Horyzonty Warszawa 1617,Szczecin
+Cinema City Katowice 1618,Katowice
+Muranów Lublin 1619,Wrocław
+Nowe Horyzonty Warszawa 1620,Rzeszów
+Multikino Poznań 1621,Warszawa
+Iluzjon Gdańsk 1622,Gdańsk
+Cinema City Rzeszów 1623,Szczecin
+Kino Moskwa Łódź 1624,Gdańsk
+Cinema City Gdańsk 1625,Katowice
+Nowe Horyzonty Warszawa 1626,Katowice
+Cinema City Szczecin 1627,Wrocław
+Muranów Lublin 1628,Katowice
+Muranów Warszawa 1629,Lublin
+Helios Rzeszów 1630,Katowice
+Kinepolis Szczecin 1631,Wrocław
+Kino Moskwa Szczecin 1632,Poznań
+Nowe Horyzonty Katowice 1633,Gdańsk
+Nowe Horyzonty Warszawa 1634,Łódź
+Kinepolis Poznań 1635,Wrocław
+Nowe Horyzonty Kraków 1636,Warszawa
+Muranów Szczecin 1637,Gdańsk
+Helios Katowice 1638,Katowice
+Kinepolis Wrocław 1639,Szczecin
+Luna Kraków 1640,Warszawa
+Multikino Poznań 1641,Poznań
+Multikino Wrocław 1642,Łódź
+Iluzjon Katowice 1643,Warszawa
+Muranów Warszawa 1644,Kraków
+Multikino Łódź 1645,Wrocław
+Muranów Kraków 1646,Kraków
+Helios Rzeszów 1647,Łódź
+Multikino Poznań 1648,Poznań
+Multikino Rzeszów 1649,Gdańsk
+Helios Warszawa 1650,Szczecin
+Muranów Kraków 1651,Wrocław
+Luna Kraków 1652,Gdańsk
+Multikino Wrocław 1653,Gdańsk
+Iluzjon Wrocław 1654,Poznań
+Kinepolis Szczecin 1655,Poznań
+Multikino Poznań 1656,Gdańsk
+Kino Moskwa Lublin 1657,Szczecin
+Iluzjon Rzeszów 1658,Wrocław
+Kino Moskwa Łódź 1659,Warszawa
+Kinepolis Lublin 1660,Gdańsk
+Nowe Horyzonty Szczecin 1661,Wrocław
+Cinema City Kraków 1662,Kraków
+Multikino Łódź 1663,Katowice
+Iluzjon Lublin 1664,Poznań
+Iluzjon Szczecin 1665,Łódź
+Kinepolis Wrocław 1666,Lublin
+Luna Poznań 1667,Poznań
+Nowe Horyzonty Katowice 1668,Kraków
+Kino Moskwa Rzeszów 1669,Łódź
+Muranów Poznań 1670,Wrocław
+Kinepolis Wrocław 1671,Kraków
+Nowe Horyzonty Rzeszów 1672,Rzeszów
+Kino Moskwa Katowice 1673,Kraków
+Iluzjon Katowice 1674,Łódź
+Multikino Gdańsk 1675,Katowice
+Multikino Gdańsk 1676,Poznań
+Cinema City Wrocław 1677,Katowice
+Helios Wrocław 1678,Katowice
+Luna Wrocław 1679,Lublin
+Iluzjon Wrocław 1680,Rzeszów
+Kinepolis Katowice 1681,Wrocław
+Muranów Kraków 1682,Kraków
+Multikino Łódź 1683,Szczecin
+Luna Lublin 1684,Rzeszów
+Helios Lublin 1685,Lublin
+Iluzjon Gdańsk 1686,Gdańsk
+Helios Gdańsk 1687,Łódź
+Kino Moskwa Wrocław 1688,Szczecin
+Kinepolis Kraków 1689,Kraków
+Iluzjon Rzeszów 1690,Lublin
+Kinepolis Gdańsk 1691,Kraków
+Nowe Horyzonty Rzeszów 1692,Rzeszów
+Luna Szczecin 1693,Gdańsk
+Muranów Rzeszów 1694,Łódź
+Kinepolis Katowice 1695,Kraków
+Luna Łódź 1696,Warszawa
+Helios Warszawa 1697,Łódź
+Kino Moskwa Wrocław 1698,Łódź
+Helios Lublin 1699,Katowice
+Nowe Horyzonty Kraków 1700,Wrocław
+Kinepolis Lublin 1701,Lublin
+Kino Moskwa Katowice 1702,Wrocław
+Muranów Kraków 1703,Warszawa
+Iluzjon Szczecin 1704,Poznań
+Kinepolis Katowice 1705,Warszawa
+Luna Gdańsk 1706,Katowice
+Muranów Kraków 1707,Rzeszów
+Helios Łódź 1708,Łódź
+Helios Wrocław 1709,Łódź
+Iluzjon Rzeszów 1710,Katowice
+Helios Szczecin 1711,Lublin
+Helios Wrocław 1712,Gdańsk
+Kino Moskwa Kraków 1713,Kraków
+Cinema City Lublin 1714,Lublin
+Muranów Kraków 1715,Warszawa
+Kinepolis Kraków 1716,Katowice
+Helios Katowice 1717,Poznań
+Helios Rzeszów 1718,Szczecin
+Kinepolis Wrocław 1719,Gdańsk
+Kinepolis Szczecin 1720,Kraków
+Kino Moskwa Rzeszów 1721,Katowice
+Kino Moskwa Wrocław 1722,Kraków
+Kinepolis Warszawa 1723,Rzeszów
+Iluzjon Kraków 1724,Łódź
+Nowe Horyzonty Kraków 1725,Lublin
+Cinema City Warszawa 1726,Szczecin
+Helios Warszawa 1727,Kraków
+Multikino Katowice 1728,Katowice
+Kinepolis Katowice 1729,Poznań
+Multikino Szczecin 1730,Katowice
+Kino Moskwa Kraków 1731,Rzeszów
+Kino Moskwa Rzeszów 1732,Kraków
+Cinema City Kraków 1733,Katowice
+Helios Kraków 1734,Łódź
+Multikino Rzeszów 1735,Poznań
+Cinema City Łódź 1736,Kraków
+Helios Poznań 1737,Gdańsk
+Multikino Poznań 1738,Gdańsk
+Kinepolis Kraków 1739,Gdańsk
+Kino Moskwa Gdańsk 1740,Szczecin
+Helios Katowice 1741,Poznań
+Helios Katowice 1742,Rzeszów
+Multikino Kraków 1743,Lublin
+Luna Warszawa 1744,Wrocław
+Kinepolis Katowice 1745,Gdańsk
+Muranów Łódź 1746,Poznań
+Cinema City Katowice 1747,Gdańsk
+Nowe Horyzonty Katowice 1748,Rzeszów
+Muranów Wrocław 1749,Kraków
+Multikino Katowice 1750,Lublin
+Multikino Rzeszów 1751,Warszawa
+Iluzjon Gdańsk 1752,Poznań
+Muranów Poznań 1753,Wrocław
+Kino Moskwa Gdańsk 1754,Gdańsk
+Kino Moskwa Warszawa 1755,Kraków
+Iluzjon Wrocław 1756,Lublin
+Kino Moskwa Katowice 1757,Lublin
+Kino Moskwa Wrocław 1758,Poznań
+Luna Rzeszów 1759,Gdańsk
+Nowe Horyzonty Kraków 1760,Poznań
+Muranów Katowice 1761,Lublin
+Luna Katowice 1762,Rzeszów
+Cinema City Lublin 1763,Poznań
+Nowe Horyzonty Szczecin 1764,Gdańsk
+Kino Moskwa Kraków 1765,Szczecin
+Kino Moskwa Kraków 1766,Rzeszów
+Kino Moskwa Łódź 1767,Lublin
+Kinepolis Poznań 1768,Katowice
+Iluzjon Wrocław 1769,Lublin
+Helios Poznań 1770,Wrocław
+Helios Warszawa 1771,Gdańsk
+Kinepolis Wrocław 1772,Lublin
+Iluzjon Poznań 1773,Gdańsk
+Luna Poznań 1774,Rzeszów
+Cinema City Rzeszów 1775,Szczecin
+Kinepolis Wrocław 1776,Łódź
+Nowe Horyzonty Gdańsk 1777,Rzeszów
+Cinema City Katowice 1778,Poznań
+Luna Warszawa 1779,Lublin
+Muranów Lublin 1780,Poznań
+Multikino Rzeszów 1781,Łódź
+Kinepolis Łódź 1782,Łódź
+Kinepolis Gdańsk 1783,Katowice
+Kinepolis Gdańsk 1784,Kraków
+Helios Szczecin 1785,Kraków
+Cinema City Wrocław 1786,Wrocław
+Luna Katowice 1787,Warszawa
+Kinepolis Kraków 1788,Warszawa
+Helios Lublin 1789,Poznań
+Kino Moskwa Warszawa 1790,Łódź
+Kino Moskwa Rzeszów 1791,Warszawa
+Helios Kraków 1792,Szczecin
+Luna Poznań 1793,Poznań
+Iluzjon Rzeszów 1794,Katowice
+Kino Moskwa Lublin 1795,Katowice
+Multikino Poznań 1796,Szczecin
+Helios Lublin 1797,Warszawa
+Nowe Horyzonty Warszawa 1798,Rzeszów
+Kinepolis Wrocław 1799,Katowice
+Muranów Warszawa 1800,Lublin
+Kinepolis Gdańsk 1801,Katowice
+Luna Wrocław 1802,Wrocław
+Iluzjon Łódź 1803,Kraków
+Nowe Horyzonty Gdańsk 1804,Łódź
+Multikino Rzeszów 1805,Gdańsk
+Muranów Warszawa 1806,Rzeszów
+Cinema City Łódź 1807,Katowice
+Cinema City Lublin 1808,Szczecin
+Kino Moskwa Wrocław 1809,Warszawa
+Multikino Warszawa 1810,Warszawa
+Luna Łódź 1811,Lublin
+Iluzjon Katowice 1812,Poznań
+Luna Warszawa 1813,Kraków
+Iluzjon Szczecin 1814,Poznań
+Kino Moskwa Rzeszów 1815,Warszawa
+Kino Moskwa Szczecin 1816,Gdańsk
+Muranów Wrocław 1817,Katowice
+Nowe Horyzonty Szczecin 1818,Szczecin
+Kino Moskwa Wrocław 1819,Lublin
+Luna Łódź 1820,Wrocław
+Cinema City Wrocław 1821,Warszawa
+Multikino Wrocław 1822,Poznań
+Multikino Szczecin 1823,Poznań
+Muranów Lublin 1824,Rzeszów
+Muranów Gdańsk 1825,Poznań
+Kinepolis Katowice 1826,Katowice
+Nowe Horyzonty Kraków 1827,Wrocław
+Nowe Horyzonty Wrocław 1828,Katowice
+Nowe Horyzonty Lublin 1829,Wrocław
+Multikino Szczecin 1830,Łódź
+Kinepolis Warszawa 1831,Lublin
+Luna Rzeszów 1832,Szczecin
+Kinepolis Kraków 1833,Szczecin
+Helios Kraków 1834,Rzeszów
+Multikino Warszawa 1835,Katowice
+Nowe Horyzonty Szczecin 1836,Katowice
+Multikino Gdańsk 1837,Rzeszów
+Muranów Gdańsk 1838,Gdańsk
+Luna Gdańsk 1839,Rzeszów
+Iluzjon Katowice 1840,Poznań
+Kino Moskwa Lublin 1841,Rzeszów
+Helios Lublin 1842,Wrocław
+Nowe Horyzonty Rzeszów 1843,Rzeszów
+Kinepolis Łódź 1844,Kraków
+Muranów Szczecin 1845,Poznań
+Luna Gdańsk 1846,Łódź
+Muranów Katowice 1847,Warszawa
+Kino Moskwa Rzeszów 1848,Poznań
+Iluzjon Łódź 1849,Gdańsk
+Iluzjon Rzeszów 1850,Katowice
+Kino Moskwa Wrocław 1851,Warszawa
+Iluzjon Wrocław 1852,Warszawa
+Iluzjon Wrocław 1853,Katowice
+Nowe Horyzonty Katowice 1854,Łódź
+Helios Rzeszów 1855,Szczecin
+Cinema City Warszawa 1856,Gdańsk
+Multikino Gdańsk 1857,Szczecin
+Muranów Szczecin 1858,Kraków
+Luna Wrocław 1859,Łódź
+Iluzjon Łódź 1860,Kraków
+Muranów Łódź 1861,Poznań
+Nowe Horyzonty Gdańsk 1862,Warszawa
+Iluzjon Szczecin 1863,Gdańsk
+Nowe Horyzonty Lublin 1864,Gdańsk
+Multikino Lublin 1865,Poznań
+Luna Łódź 1866,Wrocław
+Kinepolis Łódź 1867,Rzeszów
+Kino Moskwa Poznań 1868,Wrocław
+Cinema City Łódź 1869,Poznań
+Kinepolis Szczecin 1870,Poznań
+Kino Moskwa Katowice 1871,Gdańsk
+Helios Katowice 1872,Rzeszów
+Muranów Katowice 1873,Rzeszów
+Multikino Katowice 1874,Warszawa
+Multikino Łódź 1875,Szczecin
+Cinema City Poznań 1876,Łódź
+Iluzjon Łódź 1877,Gdańsk
+Luna Wrocław 1878,Warszawa
+Kino Moskwa Kraków 1879,Warszawa
+Nowe Horyzonty Rzeszów 1880,Warszawa
+Luna Warszawa 1881,Rzeszów
+Helios Warszawa 1882,Gdańsk
+Iluzjon Łódź 1883,Kraków
+Multikino Gdańsk 1884,Szczecin
+Muranów Katowice 1885,Kraków
+Kino Moskwa Katowice 1886,Kraków
+Luna Lublin 1887,Szczecin
+Nowe Horyzonty Gdańsk 1888,Poznań
+Kinepolis Kraków 1889,Lublin
+Multikino Poznań 1890,Rzeszów
+Kinepolis Poznań 1891,Lublin
+Muranów Wrocław 1892,Łódź
+Luna Łódź 1893,Gdańsk
+Muranów Wrocław 1894,Poznań
+Iluzjon Gdańsk 1895,Kraków
+Iluzjon Szczecin 1896,Poznań
+Nowe Horyzonty Warszawa 1897,Kraków
+Multikino Wrocław 1898,Kraków
+Kinepolis Warszawa 1899,Gdańsk
+Helios Rzeszów 1900,Warszawa
+Muranów Wrocław 1901,Poznań
+Multikino Szczecin 1902,Warszawa
+Kino Moskwa Warszawa 1903,Łódź
+Kino Moskwa Warszawa 1904,Łódź
+Kino Moskwa Rzeszów 1905,Katowice
+Muranów Poznań 1906,Rzeszów
+Nowe Horyzonty Wrocław 1907,Rzeszów
+Kinepolis Poznań 1908,Katowice
+Nowe Horyzonty Szczecin 1909,Poznań
+Multikino Poznań 1910,Poznań
+Iluzjon Warszawa 1911,Katowice
+Muranów Katowice 1912,Warszawa
+Helios Gdańsk 1913,Lublin
+Iluzjon Katowice 1914,Łódź
+Multikino Gdańsk 1915,Katowice
+Kinepolis Szczecin 1916,Warszawa
+Kino Moskwa Szczecin 1917,Lublin
+Cinema City Szczecin 1918,Łódź
+Kinepolis Poznań 1919,Szczecin
+Helios Lublin 1920,Lublin
+Nowe Horyzonty Warszawa 1921,Wrocław
+Cinema City Rzeszów 1922,Gdańsk
+Helios Szczecin 1923,Gdańsk
+Muranów Warszawa 1924,Katowice
+Nowe Horyzonty Wrocław 1925,Gdańsk
+Iluzjon Łódź 1926,Wrocław
+Multikino Kraków 1927,Warszawa
+Iluzjon Wrocław 1928,Rzeszów
+Iluzjon Rzeszów 1929,Kraków
+Kino Moskwa Wrocław 1930,Poznań
+Luna Wrocław 1931,Wrocław
+Kinepolis Łódź 1932,Kraków
+Kinepolis Warszawa 1933,Wrocław
+Helios Łódź 1934,Poznań
+Kino Moskwa Gdańsk 1935,Kraków
+Luna Lublin 1936,Wrocław
+Muranów Szczecin 1937,Kraków
+Muranów Katowice 1938,Katowice
+Kino Moskwa Warszawa 1939,Katowice
+Luna Lublin 1940,Rzeszów
+Nowe Horyzonty Lublin 1941,Łódź
+Muranów Łódź 1942,Poznań
+Muranów Wrocław 1943,Rzeszów
+Helios Poznań 1944,Lublin
+Kinepolis Łódź 1945,Warszawa
+Kino Moskwa Katowice 1946,Warszawa
+Helios Wrocław 1947,Gdańsk
+Helios Katowice 1948,Rzeszów
+Luna Lublin 1949,Poznań
+Cinema City Warszawa 1950,Wrocław
+Helios Gdańsk 1951,Gdańsk
+Helios Szczecin 1952,Szczecin
+Kinepolis Warszawa 1953,Katowice
+Multikino Wrocław 1954,Szczecin
+Iluzjon Wrocław 1955,Kraków
+Multikino Łódź 1956,Warszawa
+Multikino Kraków 1957,Warszawa
+Kino Moskwa Warszawa 1958,Katowice
+Multikino Wrocław 1959,Wrocław
+Cinema City Lublin 1960,Katowice
+Helios Poznań 1961,Szczecin
+Luna Katowice 1962,Warszawa
+Cinema City Rzeszów 1963,Warszawa
+Cinema City Poznań 1964,Kraków
+Luna Szczecin 1965,Rzeszów
+Iluzjon Szczecin 1966,Kraków
+Luna Poznań 1967,Katowice
+Helios Warszawa 1968,Kraków
+Muranów Szczecin 1969,Kraków
+Cinema City Lublin 1970,Rzeszów
+Cinema City Gdańsk 1971,Łódź
+Muranów Katowice 1972,Lublin
+Cinema City Gdańsk 1973,Lublin
+Kino Moskwa Lublin 1974,Rzeszów
+Cinema City Katowice 1975,Szczecin
+Luna Gdańsk 1976,Szczecin
+Multikino Rzeszów 1977,Szczecin
+Kinepolis Kraków 1978,Katowice
+Multikino Kraków 1979,Poznań
+Iluzjon Warszawa 1980,Gdańsk
+Multikino Lublin 1981,Rzeszów
+Helios Lublin 1982,Poznań
+Nowe Horyzonty Warszawa 1983,Katowice
+Helios Rzeszów 1984,Wrocław
+Muranów Lublin 1985,Wrocław
+Kino Moskwa Łódź 1986,Szczecin
+Cinema City Łódź 1987,Katowice
+Nowe Horyzonty Lublin 1988,Lublin
+Luna Katowice 1989,Łódź
+Multikino Poznań 1990,Szczecin
+Luna Szczecin 1991,Poznań
+Nowe Horyzonty Wrocław 1992,Szczecin
+Kinepolis Łódź 1993,Szczecin
+Helios Kraków 1994,Gdańsk
+Nowe Horyzonty Kraków 1995,Łódź
+Luna Gdańsk 1996,Poznań
+Luna Wrocław 1997,Szczecin
+Kino Moskwa Gdańsk 1998,Łódź
+Cinema City Szczecin 1999,Katowice
+Kino Moskwa Gdańsk 2000,Poznań
+Muranów Wrocław 2001,Rzeszów
+Kino Moskwa Katowice 2002,Warszawa
+Iluzjon Poznań 2003,Katowice
+Cinema City Łódź 2004,Warszawa
+Multikino Kraków 2005,Łódź
+Luna Wrocław 2006,Kraków
+Muranów Gdańsk 2007,Warszawa
+Multikino Kraków 2008,Wrocław
+Luna Gdańsk 2009,Rzeszów
+Muranów Kraków 2010,Kraków
+Multikino Kraków 2011,Lublin
+Nowe Horyzonty Rzeszów 2012,Łódź
+Luna Warszawa 2013,Poznań
+Multikino Poznań 2014,Gdańsk
+Cinema City Warszawa 2015,Katowice
+Kino Moskwa Szczecin 2016,Wrocław
+Nowe Horyzonty Wrocław 2017,Rzeszów
+Kinepolis Łódź 2018,Wrocław
+Muranów Gdańsk 2019,Katowice
+Cinema City Poznań 2020,Kraków
+Multikino Szczecin 2021,Wrocław
+Kinepolis Szczecin 2022,Gdańsk
+Luna Warszawa 2023,Katowice
+Muranów Szczecin 2024,Warszawa
+Muranów Poznań 2025,Łódź
+Cinema City Gdańsk 2026,Gdańsk
+Kino Moskwa Warszawa 2027,Szczecin
+Nowe Horyzonty Wrocław 2028,Warszawa
+Cinema City Kraków 2029,Warszawa
+Nowe Horyzonty Poznań 2030,Wrocław
+Kinepolis Katowice 2031,Warszawa
+Muranów Wrocław 2032,Gdańsk
+Multikino Gdańsk 2033,Kraków
+Luna Szczecin 2034,Wrocław
+Nowe Horyzonty Wrocław 2035,Gdańsk
+Cinema City Lublin 2036,Katowice
+Iluzjon Warszawa 2037,Gdańsk
+Muranów Katowice 2038,Rzeszów
+Cinema City Kraków 2039,Wrocław
+Nowe Horyzonty Gdańsk 2040,Warszawa
+Kinepolis Szczecin 2041,Kraków
+Helios Kraków 2042,Szczecin
+Nowe Horyzonty Szczecin 2043,Warszawa
+Muranów Łódź 2044,Łódź
+Kinepolis Gdańsk 2045,Rzeszów
+Multikino Wrocław 2046,Wrocław
+Muranów Warszawa 2047,Kraków
+Muranów Lublin 2048,Lublin
+Multikino Szczecin 2049,Lublin
+Kinepolis Rzeszów 2050,Lublin
+Nowe Horyzonty Gdańsk 2051,Łódź
+Helios Wrocław 2052,Szczecin
+Cinema City Szczecin 2053,Warszawa
+Nowe Horyzonty Gdańsk 2054,Szczecin
+Multikino Katowice 2055,Szczecin
+Helios Poznań 2056,Lublin
+Helios Rzeszów 2057,Warszawa
+Luna Lublin 2058,Lublin
+Helios Gdańsk 2059,Warszawa
+Helios Wrocław 2060,Poznań
+Nowe Horyzonty Wrocław 2061,Łódź
+Kino Moskwa Wrocław 2062,Warszawa
+Iluzjon Gdańsk 2063,Łódź
+Kinepolis Wrocław 2064,Rzeszów
+Muranów Szczecin 2065,Katowice
+Cinema City Kraków 2066,Lublin
+Muranów Poznań 2067,Kraków
+Kinepolis Gdańsk 2068,Rzeszów
+Cinema City Szczecin 2069,Łódź
+Iluzjon Kraków 2070,Wrocław
+Luna Lublin 2071,Katowice
+Muranów Łódź 2072,Gdańsk
+Kino Moskwa Łódź 2073,Lublin
+Iluzjon Gdańsk 2074,Łódź
+Multikino Rzeszów 2075,Katowice
+Kinepolis Poznań 2076,Gdańsk
+Multikino Warszawa 2077,Wrocław
+Luna Kraków 2078,Rzeszów
+Cinema City Rzeszów 2079,Poznań
+Multikino Katowice 2080,Lublin
+Iluzjon Poznań 2081,Warszawa
+Luna Warszawa 2082,Szczecin
+Nowe Horyzonty Łódź 2083,Poznań
+Iluzjon Rzeszów 2084,Gdańsk
+Helios Warszawa 2085,Łódź
+Nowe Horyzonty Warszawa 2086,Warszawa
+Muranów Poznań 2087,Łódź
+Luna Warszawa 2088,Warszawa
+Kino Moskwa Katowice 2089,Poznań
+Iluzjon Katowice 2090,Wrocław
+Luna Gdańsk 2091,Warszawa
+Iluzjon Łódź 2092,Szczecin
+Luna Łódź 2093,Wrocław
+Helios Kraków 2094,Gdańsk
+Kinepolis Łódź 2095,Szczecin
+Helios Wrocław 2096,Wrocław
+Muranów Wrocław 2097,Lublin
+Iluzjon Rzeszów 2098,Kraków
+Kinepolis Lublin 2099,Katowice
+Iluzjon Lublin 2100,Kraków
+Nowe Horyzonty Gdańsk 2101,Łódź
+Muranów Łódź 2102,Warszawa
+Cinema City Łódź 2103,Katowice
+Kinepolis Łódź 2104,Łódź
+Cinema City Rzeszów 2105,Gdańsk
+Nowe Horyzonty Katowice 2106,Poznań
+Cinema City Gdańsk 2107,Katowice
+Kinepolis Rzeszów 2108,Warszawa
+Cinema City Rzeszów 2109,Warszawa
+Muranów Warszawa 2110,Warszawa
+Helios Wrocław 2111,Warszawa
+Luna Szczecin 2112,Kraków
+Iluzjon Gdańsk 2113,Wrocław
+Nowe Horyzonty Lublin 2114,Wrocław
+Multikino Łódź 2115,Lublin
+Cinema City Wrocław 2116,Szczecin
+Helios Rzeszów 2117,Poznań
+Nowe Horyzonty Katowice 2118,Lublin
+Iluzjon Katowice 2119,Rzeszów
+Kino Moskwa Katowice 2120,Gdańsk
+Iluzjon Lublin 2121,Łódź
+Nowe Horyzonty Gdańsk 2122,Łódź
+Helios Szczecin 2123,Warszawa
+Iluzjon Gdańsk 2124,Gdańsk
+Kinepolis Gdańsk 2125,Lublin
+Kinepolis Poznań 2126,Gdańsk
+Cinema City Gdańsk 2127,Szczecin
+Nowe Horyzonty Rzeszów 2128,Łódź
+Nowe Horyzonty Łódź 2129,Rzeszów
+Kino Moskwa Łódź 2130,Poznań
+Helios Łódź 2131,Katowice
+Multikino Szczecin 2132,Poznań
+Multikino Katowice 2133,Warszawa
+Kino Moskwa Gdańsk 2134,Poznań
+Luna Szczecin 2135,Łódź
+Muranów Poznań 2136,Lublin
+Iluzjon Gdańsk 2137,Lublin
+Kinepolis Kraków 2138,Gdańsk
+Kinepolis Lublin 2139,Rzeszów
+Luna Gdańsk 2140,Katowice
+Kinepolis Warszawa 2141,Szczecin
+Iluzjon Łódź 2142,Gdańsk
+Luna Lublin 2143,Szczecin
+Iluzjon Warszawa 2144,Szczecin
+Nowe Horyzonty Lublin 2145,Kraków
+Iluzjon Kraków 2146,Szczecin
+Nowe Horyzonty Łódź 2147,Katowice
+Cinema City Kraków 2148,Warszawa
+Multikino Warszawa 2149,Wrocław
+Multikino Kraków 2150,Rzeszów
+Helios Warszawa 2151,Rzeszów
+Cinema City Rzeszów 2152,Kraków
+Cinema City Gdańsk 2153,Wrocław
+Multikino Kraków 2154,Łódź
+Nowe Horyzonty Rzeszów 2155,Warszawa
+Luna Rzeszów 2156,Katowice
+Luna Szczecin 2157,Poznań
+Helios Poznań 2158,Łódź
+Nowe Horyzonty Katowice 2159,Lublin
+Cinema City Katowice 2160,Kraków
+Kino Moskwa Szczecin 2161,Katowice
+Cinema City Katowice 2162,Poznań
+Multikino Wrocław 2163,Gdańsk
+Iluzjon Katowice 2164,Łódź
+Cinema City Warszawa 2165,Szczecin
+Luna Wrocław 2166,Szczecin
+Kino Moskwa Rzeszów 2167,Rzeszów
+Muranów Gdańsk 2168,Lublin
+Muranów Wrocław 2169,Poznań
+Muranów Łódź 2170,Lublin
+Helios Wrocław 2171,Lublin
+Luna Szczecin 2172,Katowice
+Nowe Horyzonty Rzeszów 2173,Szczecin
+Luna Wrocław 2174,Wrocław
+Muranów Poznań 2175,Wrocław
+Nowe Horyzonty Szczecin 2176,Łódź
+Helios Kraków 2177,Warszawa
+Helios Rzeszów 2178,Rzeszów
+Kinepolis Gdańsk 2179,Poznań
+Nowe Horyzonty Poznań 2180,Łódź
+Helios Szczecin 2181,Kraków
+Helios Łódź 2182,Kraków
+Nowe Horyzonty Szczecin 2183,Katowice
+Cinema City Poznań 2184,Szczecin
+Iluzjon Szczecin 2185,Poznań
+Luna Łódź 2186,Gdańsk
+Kino Moskwa Lublin 2187,Katowice
+Iluzjon Wrocław 2188,Warszawa
+Kino Moskwa Warszawa 2189,Katowice
+Luna Szczecin 2190,Kraków
+Kino Moskwa Gdańsk 2191,Katowice
+Cinema City Kraków 2192,Warszawa
+Multikino Gdańsk 2193,Wrocław
+Multikino Wrocław 2194,Katowice
+Luna Poznań 2195,Łódź
+Luna Wrocław 2196,Warszawa
+Multikino Szczecin 2197,Szczecin
+Kinepolis Gdańsk 2198,Wrocław
+Multikino Szczecin 2199,Katowice
+Iluzjon Katowice 2200,Rzeszów
+Kino Moskwa Kraków 2201,Wrocław
+Iluzjon Poznań 2202,Szczecin
+Kinepolis Poznań 2203,Poznań
+Iluzjon Szczecin 2204,Kraków
+Helios Katowice 2205,Łódź
+Multikino Lublin 2206,Katowice
+Kinepolis Wrocław 2207,Kraków
+Helios Wrocław 2208,Szczecin
+Iluzjon Rzeszów 2209,Kraków
+Luna Gdańsk 2210,Łódź
+Helios Rzeszów 2211,Lublin
+Kinepolis Warszawa 2212,Kraków
+Iluzjon Wrocław 2213,Gdańsk
+Cinema City Szczecin 2214,Lublin
+Luna Lublin 2215,Poznań
+Iluzjon Gdańsk 2216,Wrocław
+Helios Poznań 2217,Kraków
+Multikino Rzeszów 2218,Szczecin
+Iluzjon Szczecin 2219,Lublin
+Helios Lublin 2220,Łódź
+Iluzjon Katowice 2221,Łódź
+Muranów Poznań 2222,Lublin
+Cinema City Gdańsk 2223,Wrocław
+Kino Moskwa Rzeszów 2224,Poznań
+Nowe Horyzonty Warszawa 2225,Katowice
+Iluzjon Kraków 2226,Szczecin
+Kino Moskwa Katowice 2227,Łódź
+Kino Moskwa Lublin 2228,Wrocław
+Multikino Kraków 2229,Wrocław
+Kinepolis Lublin 2230,Szczecin
+Luna Warszawa 2231,Warszawa
+Multikino Wrocław 2232,Katowice
+Cinema City Lublin 2233,Gdańsk
+Helios Katowice 2234,Lublin
+Nowe Horyzonty Poznań 2235,Katowice
+Luna Warszawa 2236,Szczecin
+Kinepolis Lublin 2237,Rzeszów
+Helios Wrocław 2238,Rzeszów
+Multikino Wrocław 2239,Wrocław
+Muranów Warszawa 2240,Lublin
+Kinepolis Warszawa 2241,Szczecin
+Iluzjon Warszawa 2242,Szczecin
+Iluzjon Wrocław 2243,Lublin
+Multikino Gdańsk 2244,Rzeszów
+Multikino Rzeszów 2245,Szczecin
+Kino Moskwa Warszawa 2246,Lublin
+Cinema City Poznań 2247,Poznań
+Iluzjon Gdańsk 2248,Poznań
+Kinepolis Warszawa 2249,Rzeszów
+Muranów Katowice 2250,Lublin
+Nowe Horyzonty Warszawa 2251,Kraków
+Cinema City Warszawa 2252,Gdańsk
+Cinema City Lublin 2253,Warszawa
+Iluzjon Wrocław 2254,Kraków
+Cinema City Łódź 2255,Gdańsk
+Muranów Poznań 2256,Łódź
+Helios Warszawa 2257,Lublin
+Iluzjon Lublin 2258,Kraków
+Multikino Gdańsk 2259,Gdańsk
+Cinema City Rzeszów 2260,Rzeszów
+Kinepolis Wrocław 2261,Kraków
+Helios Poznań 2262,Lublin
+Nowe Horyzonty Kraków 2263,Łódź
+Helios Szczecin 2264,Rzeszów
+Muranów Wrocław 2265,Gdańsk
+Iluzjon Warszawa 2266,Szczecin
+Nowe Horyzonty Szczecin 2267,Gdańsk
+Muranów Gdańsk 2268,Wrocław
+Iluzjon Warszawa 2269,Katowice
+Luna Warszawa 2270,Katowice
+Nowe Horyzonty Warszawa 2271,Poznań
+Iluzjon Łódź 2272,Kraków
+Iluzjon Poznań 2273,Kraków
+Luna Katowice 2274,Poznań
+Nowe Horyzonty Gdańsk 2275,Łódź
+Iluzjon Łódź 2276,Lublin
+Iluzjon Gdańsk 2277,Lublin
+Muranów Katowice 2278,Warszawa
+Muranów Szczecin 2279,Lublin
+Kino Moskwa Rzeszów 2280,Kraków
+Nowe Horyzonty Warszawa 2281,Poznań
+Nowe Horyzonty Kraków 2282,Gdańsk
+Nowe Horyzonty Lublin 2283,Szczecin
+Nowe Horyzonty Szczecin 2284,Lublin
+Muranów Kraków 2285,Łódź
+Kinepolis Katowice 2286,Łódź
+Luna Łódź 2287,Łódź
+Cinema City Katowice 2288,Poznań
+Multikino Łódź 2289,Gdańsk
+Kino Moskwa Wrocław 2290,Poznań
+Kinepolis Łódź 2291,Wrocław
+Muranów Szczecin 2292,Lublin
+Iluzjon Gdańsk 2293,Poznań
+Nowe Horyzonty Katowice 2294,Wrocław
+Iluzjon Katowice 2295,Gdańsk
+Kino Moskwa Kraków 2296,Łódź
+Multikino Szczecin 2297,Kraków
+Kino Moskwa Gdańsk 2298,Wrocław
+Helios Szczecin 2299,Kraków
+Kinepolis Wrocław 2300,Kraków
+Muranów Poznań 2301,Katowice
+Iluzjon Kraków 2302,Warszawa
+Multikino Warszawa 2303,Katowice
+Multikino Gdańsk 2304,Katowice
+Helios Warszawa 2305,Rzeszów
+Muranów Rzeszów 2306,Gdańsk
+Kinepolis Poznań 2307,Łódź
+Muranów Wrocław 2308,Szczecin
+Iluzjon Warszawa 2309,Lublin
+Kinepolis Szczecin 2310,Warszawa
+Iluzjon Rzeszów 2311,Kraków
+Multikino Katowice 2312,Wrocław
+Luna Rzeszów 2313,Rzeszów
+Muranów Wrocław 2314,Warszawa
+Iluzjon Poznań 2315,Katowice
+Cinema City Katowice 2316,Lublin
+Kino Moskwa Wrocław 2317,Kraków
+Cinema City Warszawa 2318,Łódź
+Nowe Horyzonty Katowice 2319,Gdańsk
+Iluzjon Lublin 2320,Gdańsk
+Nowe Horyzonty Wrocław 2321,Gdańsk
+Muranów Poznań 2322,Poznań
+Nowe Horyzonty Warszawa 2323,Gdańsk
+Multikino Warszawa 2324,Szczecin
+Muranów Warszawa 2325,Kraków
+Multikino Rzeszów 2326,Wrocław
+Luna Gdańsk 2327,Łódź
+Luna Warszawa 2328,Szczecin
+Kino Moskwa Rzeszów 2329,Szczecin
+Helios Szczecin 2330,Gdańsk
+Luna Kraków 2331,Gdańsk
+Multikino Gdańsk 2332,Łódź
+Multikino Lublin 2333,Lublin
+Luna Rzeszów 2334,Gdańsk
+Multikino Lublin 2335,Wrocław
+Luna Warszawa 2336,Wrocław
+Multikino Poznań 2337,Gdańsk
+Kino Moskwa Kraków 2338,Warszawa
+Kinepolis Łódź 2339,Warszawa
+Kinepolis Lublin 2340,Warszawa
+Muranów Rzeszów 2341,Lublin
+Kinepolis Lublin 2342,Szczecin
+Kinepolis Katowice 2343,Łódź
+Cinema City Gdańsk 2344,Rzeszów
+Helios Lublin 2345,Kraków
+Nowe Horyzonty Katowice 2346,Rzeszów
+Nowe Horyzonty Katowice 2347,Szczecin
+Iluzjon Katowice 2348,Kraków
+Nowe Horyzonty Szczecin 2349,Kraków
+Kino Moskwa Wrocław 2350,Warszawa
+Helios Rzeszów 2351,Łódź
+Iluzjon Kraków 2352,Poznań
+Helios Poznań 2353,Łódź
+Luna Rzeszów 2354,Warszawa
+Luna Kraków 2355,Poznań
+Iluzjon Katowice 2356,Wrocław
+Iluzjon Gdańsk 2357,Wrocław
+Muranów Łódź 2358,Gdańsk
+Kino Moskwa Poznań 2359,Rzeszów
+Kinepolis Wrocław 2360,Rzeszów
+Iluzjon Rzeszów 2361,Poznań
+Muranów Warszawa 2362,Gdańsk
+Muranów Rzeszów 2363,Lublin
+Kinepolis Lublin 2364,Lublin
+Luna Szczecin 2365,Wrocław
+Nowe Horyzonty Łódź 2366,Rzeszów
+Luna Szczecin 2367,Szczecin
+Iluzjon Rzeszów 2368,Lublin
+Iluzjon Gdańsk 2369,Gdańsk
+Multikino Poznań 2370,Warszawa
+Multikino Katowice 2371,Wrocław
+Nowe Horyzonty Kraków 2372,Katowice
+Muranów Wrocław 2373,Łódź
+Cinema City Katowice 2374,Katowice
+Kino Moskwa Szczecin 2375,Poznań
+Cinema City Łódź 2376,Szczecin
+Helios Poznań 2377,Katowice
+Kinepolis Rzeszów 2378,Łódź
+Nowe Horyzonty Kraków 2379,Gdańsk
+Kinepolis Wrocław 2380,Katowice
+Multikino Warszawa 2381,Warszawa
+Luna Poznań 2382,Poznań
+Nowe Horyzonty Rzeszów 2383,Rzeszów
+Muranów Katowice 2384,Szczecin
+Luna Kraków 2385,Kraków
+Luna Poznań 2386,Rzeszów
+Cinema City Wrocław 2387,Warszawa
+Cinema City Lublin 2388,Wrocław
+Nowe Horyzonty Rzeszów 2389,Lublin
+Muranów Gdańsk 2390,Lublin
+Cinema City Rzeszów 2391,Łódź
+Multikino Łódź 2392,Łódź
+Muranów Kraków 2393,Katowice
+Kino Moskwa Kraków 2394,Gdańsk
+Muranów Gdańsk 2395,Poznań
+Luna Poznań 2396,Lublin
+Multikino Szczecin 2397,Wrocław
+Iluzjon Poznań 2398,Łódź
+Muranów Łódź 2399,Gdańsk
+Nowe Horyzonty Łódź 2400,Szczecin
+Kinepolis Warszawa 2401,Szczecin
+Cinema City Gdańsk 2402,Gdańsk
+Luna Warszawa 2403,Gdańsk
+Muranów Gdańsk 2404,Poznań
+Nowe Horyzonty Łódź 2405,Katowice
+Luna Rzeszów 2406,Łódź
+Kinepolis Łódź 2407,Gdańsk
+Helios Gdańsk 2408,Warszawa
+Iluzjon Poznań 2409,Szczecin
+Helios Kraków 2410,Szczecin
+Muranów Gdańsk 2411,Łódź
+Multikino Wrocław 2412,Kraków
+Iluzjon Kraków 2413,Lublin
+Kino Moskwa Gdańsk 2414,Gdańsk
+Muranów Szczecin 2415,Warszawa
+Luna Lublin 2416,Lublin
+Helios Rzeszów 2417,Rzeszów
+Nowe Horyzonty Poznań 2418,Łódź
+Nowe Horyzonty Szczecin 2419,Warszawa
+Iluzjon Katowice 2420,Lublin
+Kino Moskwa Gdańsk 2421,Łódź
+Kino Moskwa Gdańsk 2422,Warszawa
+Nowe Horyzonty Katowice 2423,Szczecin
+Multikino Łódź 2424,Wrocław
+Kino Moskwa Łódź 2425,Katowice
+Kinepolis Katowice 2426,Katowice
+Helios Kraków 2427,Łódź
+Kino Moskwa Kraków 2428,Katowice
+Iluzjon Rzeszów 2429,Lublin
+Iluzjon Szczecin 2430,Łódź
+Multikino Warszawa 2431,Gdańsk
+Kino Moskwa Łódź 2432,Łódź
+Muranów Łódź 2433,Warszawa
+Luna Kraków 2434,Warszawa
+Luna Kraków 2435,Poznań
+Multikino Rzeszów 2436,Wrocław
+Helios Szczecin 2437,Poznań
+Cinema City Poznań 2438,Warszawa
+Kinepolis Poznań 2439,Łódź
+Nowe Horyzonty Łódź 2440,Lublin
+Multikino Łódź 2441,Kraków
+Cinema City Kraków 2442,Łódź
+Kinepolis Warszawa 2443,Rzeszów
+Luna Warszawa 2444,Rzeszów
+Iluzjon Szczecin 2445,Katowice
+Luna Gdańsk 2446,Łódź
+Kino Moskwa Warszawa 2447,Rzeszów
+Nowe Horyzonty Katowice 2448,Poznań
+Kinepolis Warszawa 2449,Warszawa
+Multikino Warszawa 2450,Łódź
+Kinepolis Szczecin 2451,Rzeszów
+Multikino Wrocław 2452,Katowice
+Luna Wrocław 2453,Łódź
+Kinepolis Warszawa 2454,Gdańsk
+Kinepolis Szczecin 2455,Katowice
+Kino Moskwa Łódź 2456,Katowice
+Luna Poznań 2457,Łódź
+Iluzjon Kraków 2458,Wrocław
+Iluzjon Wrocław 2459,Poznań
+Iluzjon Warszawa 2460,Kraków
+Cinema City Katowice 2461,Szczecin
+Multikino Warszawa 2462,Kraków
+Helios Szczecin 2463,Poznań
+Kinepolis Poznań 2464,Warszawa
+Muranów Gdańsk 2465,Gdańsk
+Multikino Szczecin 2466,Rzeszów
+Helios Kraków 2467,Katowice
+Cinema City Rzeszów 2468,Lublin
+Iluzjon Wrocław 2469,Lublin
+Nowe Horyzonty Katowice 2470,Gdańsk
+Muranów Łódź 2471,Kraków
+Kino Moskwa Lublin 2472,Szczecin
+Muranów Rzeszów 2473,Poznań
+Luna Poznań 2474,Lublin
+Multikino Katowice 2475,Katowice
+Multikino Lublin 2476,Łódź
+Helios Katowice 2477,Poznań
+Kino Moskwa Gdańsk 2478,Warszawa
+Muranów Kraków 2479,Wrocław
+Cinema City Warszawa 2480,Gdańsk
+Iluzjon Łódź 2481,Lublin
+Luna Rzeszów 2482,Warszawa
+Multikino Łódź 2483,Gdańsk
+Kinepolis Rzeszów 2484,Katowice
+Iluzjon Poznań 2485,Poznań
+Kinepolis Lublin 2486,Wrocław
+Muranów Szczecin 2487,Łódź
+Nowe Horyzonty Lublin 2488,Kraków
+Iluzjon Warszawa 2489,Poznań
+Helios Szczecin 2490,Kraków
+Luna Łódź 2491,Rzeszów
+Kino Moskwa Szczecin 2492,Poznań
+Luna Warszawa 2493,Kraków
+Helios Lublin 2494,Szczecin
+Helios Gdańsk 2495,Poznań
+Luna Kraków 2496,Lublin
+Luna Lublin 2497,Warszawa
+Kinepolis Poznań 2498,Szczecin
+Iluzjon Szczecin 2499,Łódź
+Kinepolis Szczecin 2500,Katowice
+Nowe Horyzonty Rzeszów 2501,Łódź
+Multikino Łódź 2502,Poznań
+Cinema City Kraków 2503,Katowice
+Cinema City Warszawa 2504,Warszawa
+Kino Moskwa Wrocław 2505,Kraków
+Iluzjon Wrocław 2506,Lublin
+Kinepolis Szczecin 2507,Warszawa
+Nowe Horyzonty Gdańsk 2508,Katowice
+Multikino Łódź 2509,Poznań
+Kino Moskwa Poznań 2510,Poznań
+Helios Łódź 2511,Rzeszów
+Multikino Łódź 2512,Gdańsk
+Helios Łódź 2513,Lublin
+Helios Łódź 2514,Szczecin
+Nowe Horyzonty Katowice 2515,Gdańsk
+Kinepolis Warszawa 2516,Kraków
+Kino Moskwa Wrocław 2517,Łódź
+Luna Szczecin 2518,Warszawa
+Multikino Gdańsk 2519,Szczecin
+Nowe Horyzonty Gdańsk 2520,Szczecin
+Multikino Poznań 2521,Lublin
+Helios Warszawa 2522,Łódź
+Helios Rzeszów 2523,Rzeszów
+Kinepolis Gdańsk 2524,Rzeszów
+Helios Rzeszów 2525,Warszawa
+Multikino Rzeszów 2526,Rzeszów
+Iluzjon Gdańsk 2527,Warszawa
+Kino Moskwa Katowice 2528,Poznań
+Kinepolis Poznań 2529,Lublin
+Iluzjon Gdańsk 2530,Katowice
+Helios Rzeszów 2531,Szczecin
+Luna Szczecin 2532,Katowice
+Kino Moskwa Poznań 2533,Wrocław
+Cinema City Rzeszów 2534,Rzeszów
+Iluzjon Warszawa 2535,Wrocław
+Multikino Kraków 2536,Warszawa
+Luna Wrocław 2537,Szczecin
+Iluzjon Gdańsk 2538,Szczecin
+Luna Rzeszów 2539,Gdańsk
+Kinepolis Gdańsk 2540,Poznań
+Kinepolis Katowice 2541,Lublin
+Cinema City Wrocław 2542,Poznań
+Kinepolis Gdańsk 2543,Rzeszów
+Helios Łódź 2544,Wrocław
+Luna Łódź 2545,Wrocław
+Luna Łódź 2546,Katowice
+Muranów Łódź 2547,Kraków
+Nowe Horyzonty Wrocław 2548,Łódź
+Kino Moskwa Szczecin 2549,Rzeszów
+Kinepolis Kraków 2550,Szczecin
+Luna Rzeszów 2551,Lublin
+Nowe Horyzonty Gdańsk 2552,Lublin
+Iluzjon Lublin 2553,Gdańsk
+Helios Lublin 2554,Poznań
+Luna Kraków 2555,Rzeszów
+Kinepolis Wrocław 2556,Łódź
+Muranów Katowice 2557,Łódź
+Multikino Wrocław 2558,Rzeszów
+Kinepolis Łódź 2559,Gdańsk
+Nowe Horyzonty Wrocław 2560,Lublin
+Kino Moskwa Poznań 2561,Gdańsk
+Nowe Horyzonty Wrocław 2562,Rzeszów
+Luna Łódź 2563,Łódź
+Kino Moskwa Kraków 2564,Kraków
+Luna Wrocław 2565,Łódź
+Muranów Wrocław 2566,Szczecin
+Kinepolis Katowice 2567,Szczecin
+Kinepolis Szczecin 2568,Lublin
+Kino Moskwa Kraków 2569,Poznań
+Iluzjon Łódź 2570,Warszawa
+Multikino Gdańsk 2571,Katowice
+Kinepolis Katowice 2572,Poznań
+Cinema City Gdańsk 2573,Poznań
+Iluzjon Poznań 2574,Szczecin
+Kinepolis Łódź 2575,Katowice
+Luna Wrocław 2576,Gdańsk
+Iluzjon Kraków 2577,Lublin
+Kino Moskwa Lublin 2578,Kraków
+Kinepolis Kraków 2579,Szczecin
+Iluzjon Szczecin 2580,Łódź
+Kinepolis Warszawa 2581,Warszawa
+Kino Moskwa Warszawa 2582,Wrocław
+Helios Rzeszów 2583,Kraków
+Iluzjon Lublin 2584,Szczecin
+Nowe Horyzonty Łódź 2585,Katowice
+Muranów Lublin 2586,Łódź
+Multikino Poznań 2587,Katowice
+Multikino Warszawa 2588,Kraków
+Muranów Szczecin 2589,Lublin
+Luna Szczecin 2590,Lublin
+Luna Łódź 2591,Kraków
+Kino Moskwa Warszawa 2592,Wrocław
+Muranów Kraków 2593,Szczecin
+Iluzjon Szczecin 2594,Katowice
+Muranów Szczecin 2595,Lublin
+Kino Moskwa Katowice 2596,Katowice
+Cinema City Szczecin 2597,Rzeszów
+Kinepolis Warszawa 2598,Łódź
+Muranów Warszawa 2599,Rzeszów
+Cinema City Wrocław 2600,Wrocław
+Kinepolis Katowice 2601,Szczecin
+Cinema City Lublin 2602,Szczecin
+Nowe Horyzonty Szczecin 2603,Wrocław
+Cinema City Rzeszów 2604,Warszawa
+Helios Katowice 2605,Poznań
+Kinepolis Kraków 2606,Szczecin
+Kino Moskwa Gdańsk 2607,Warszawa
+Nowe Horyzonty Łódź 2608,Łódź
+Muranów Gdańsk 2609,Gdańsk
+Nowe Horyzonty Szczecin 2610,Szczecin
+Kino Moskwa Katowice 2611,Poznań
+Muranów Katowice 2612,Lublin
+Helios Poznań 2613,Gdańsk
+Nowe Horyzonty Poznań 2614,Poznań
+Nowe Horyzonty Rzeszów 2615,Katowice
+Muranów Warszawa 2616,Łódź
+Muranów Szczecin 2617,Gdańsk
+Muranów Poznań 2618,Kraków
+Iluzjon Szczecin 2619,Katowice
+Cinema City Kraków 2620,Wrocław
+Luna Kraków 2621,Rzeszów
+Kinepolis Lublin 2622,Łódź
+Kinepolis Wrocław 2623,Warszawa
+Kino Moskwa Szczecin 2624,Wrocław
+Cinema City Rzeszów 2625,Katowice
+Cinema City Poznań 2626,Kraków
+Multikino Rzeszów 2627,Lublin
+Muranów Katowice 2628,Szczecin
+Nowe Horyzonty Katowice 2629,Warszawa
+Muranów Poznań 2630,Wrocław
+Cinema City Łódź 2631,Szczecin
+Kino Moskwa Kraków 2632,Gdańsk
+Iluzjon Warszawa 2633,Warszawa
+Cinema City Kraków 2634,Gdańsk
+Muranów Warszawa 2635,Łódź
+Kinepolis Kraków 2636,Łódź
+Luna Poznań 2637,Szczecin
+Kinepolis Poznań 2638,Poznań
+Cinema City Lublin 2639,Gdańsk
+Kinepolis Warszawa 2640,Kraków
+Multikino Katowice 2641,Warszawa
+Luna Łódź 2642,Katowice
+Nowe Horyzonty Wrocław 2643,Kraków
+Cinema City Gdańsk 2644,Lublin
+Cinema City Wrocław 2645,Lublin
+Muranów Kraków 2646,Wrocław
+Nowe Horyzonty Lublin 2647,Poznań
+Muranów Katowice 2648,Rzeszów
+Helios Wrocław 2649,Łódź
+Iluzjon Poznań 2650,Warszawa
+Helios Poznań 2651,Katowice
+Muranów Warszawa 2652,Łódź
+Luna Lublin 2653,Wrocław
+Muranów Kraków 2654,Wrocław
+Nowe Horyzonty Szczecin 2655,Warszawa
+Kino Moskwa Rzeszów 2656,Rzeszów
+Helios Wrocław 2657,Wrocław
+Muranów Katowice 2658,Lublin
+Luna Katowice 2659,Wrocław
+Cinema City Lublin 2660,Łódź
+Nowe Horyzonty Warszawa 2661,Rzeszów
+Muranów Wrocław 2662,Rzeszów
+Helios Lublin 2663,Wrocław
+Muranów Lublin 2664,Katowice
+Kinepolis Wrocław 2665,Katowice
+Helios Gdańsk 2666,Poznań
+Nowe Horyzonty Kraków 2667,Kraków
+Cinema City Rzeszów 2668,Szczecin
+Muranów Łódź 2669,Wrocław
+Iluzjon Gdańsk 2670,Warszawa
+Kinepolis Kraków 2671,Katowice
+Nowe Horyzonty Kraków 2672,Szczecin
+Kinepolis Rzeszów 2673,Poznań
+Cinema City Kraków 2674,Kraków
+Cinema City Warszawa 2675,Wrocław
+Nowe Horyzonty Lublin 2676,Łódź
+Kinepolis Poznań 2677,Kraków
+Luna Katowice 2678,Szczecin
+Muranów Łódź 2679,Katowice
+Multikino Kraków 2680,Poznań
+Helios Rzeszów 2681,Szczecin
+Kinepolis Gdańsk 2682,Katowice
+Iluzjon Łódź 2683,Gdańsk
+Multikino Kraków 2684,Wrocław
+Luna Rzeszów 2685,Kraków
+Helios Kraków 2686,Szczecin
+Helios Warszawa 2687,Poznań
+Cinema City Gdańsk 2688,Łódź
+Cinema City Łódź 2689,Gdańsk
+Kino Moskwa Szczecin 2690,Katowice
+Kino Moskwa Łódź 2691,Kraków
+Cinema City Gdańsk 2692,Gdańsk
+Luna Łódź 2693,Łódź
+Iluzjon Wrocław 2694,Gdańsk
+Kino Moskwa Wrocław 2695,Gdańsk
+Cinema City Katowice 2696,Rzeszów
+Iluzjon Łódź 2697,Poznań
+Kino Moskwa Rzeszów 2698,Poznań
+Iluzjon Rzeszów 2699,Wrocław
+Helios Gdańsk 2700,Gdańsk
+Kino Moskwa Rzeszów 2701,Lublin
+Kino Moskwa Kraków 2702,Lublin
+Muranów Gdańsk 2703,Lublin
+Kino Moskwa Poznań 2704,Lublin
+Cinema City Rzeszów 2705,Poznań
+Kinepolis Lublin 2706,Warszawa
+Iluzjon Katowice 2707,Poznań
+Helios Katowice 2708,Wrocław
+Luna Łódź 2709,Szczecin
+Nowe Horyzonty Gdańsk 2710,Szczecin
+Cinema City Katowice 2711,Szczecin
+Multikino Katowice 2712,Wrocław
+Cinema City Poznań 2713,Rzeszów
+Cinema City Gdańsk 2714,Warszawa
+Kino Moskwa Warszawa 2715,Szczecin
+Luna Gdańsk 2716,Katowice
+Cinema City Katowice 2717,Wrocław
+Helios Rzeszów 2718,Wrocław
+Kinepolis Rzeszów 2719,Szczecin
+Muranów Rzeszów 2720,Łódź
+Kino Moskwa Rzeszów 2721,Szczecin
+Kino Moskwa Katowice 2722,Poznań
+Cinema City Rzeszów 2723,Rzeszów
+Helios Łódź 2724,Lublin
+Multikino Gdańsk 2725,Łódź
+Helios Rzeszów 2726,Szczecin
+Multikino Rzeszów 2727,Szczecin
+Iluzjon Łódź 2728,Warszawa
+Kino Moskwa Wrocław 2729,Łódź
+Nowe Horyzonty Wrocław 2730,Poznań
+Cinema City Lublin 2731,Szczecin
+Muranów Katowice 2732,Rzeszów
+Kino Moskwa Kraków 2733,Lublin
+Kinepolis Gdańsk 2734,Kraków
+Nowe Horyzonty Lublin 2735,Rzeszów
+Luna Kraków 2736,Łódź
+Luna Wrocław 2737,Katowice
+Iluzjon Lublin 2738,Rzeszów
+Kino Moskwa Warszawa 2739,Szczecin
+Kino Moskwa Wrocław 2740,Szczecin
+Luna Poznań 2741,Lublin
+Muranów Rzeszów 2742,Szczecin
+Kinepolis Katowice 2743,Lublin
+Cinema City Poznań 2744,Gdańsk
+Kino Moskwa Gdańsk 2745,Lublin
+Multikino Poznań 2746,Szczecin
+Luna Poznań 2747,Gdańsk
+Nowe Horyzonty Warszawa 2748,Poznań
+Cinema City Wrocław 2749,Gdańsk
+Luna Katowice 2750,Szczecin
+Kino Moskwa Lublin 2751,Poznań
+Kino Moskwa Katowice 2752,Kraków
+Luna Szczecin 2753,Wrocław
+Luna Łódź 2754,Łódź
+Luna Lublin 2755,Gdańsk
+Kinepolis Rzeszów 2756,Warszawa
+Nowe Horyzonty Wrocław 2757,Warszawa
+Helios Wrocław 2758,Rzeszów
+Helios Poznań 2759,Wrocław
+Luna Gdańsk 2760,Warszawa
+Kino Moskwa Poznań 2761,Katowice
+Kinepolis Kraków 2762,Wrocław
+Iluzjon Łódź 2763,Wrocław
+Muranów Wrocław 2764,Rzeszów
+Muranów Szczecin 2765,Poznań
+Kinepolis Poznań 2766,Poznań
+Helios Rzeszów 2767,Lublin
+Nowe Horyzonty Łódź 2768,Gdańsk
+Muranów Katowice 2769,Wrocław
+Muranów Łódź 2770,Rzeszów
+Nowe Horyzonty Poznań 2771,Lublin
+Cinema City Rzeszów 2772,Kraków
+Kinepolis Warszawa 2773,Poznań
+Luna Rzeszów 2774,Wrocław
+Nowe Horyzonty Szczecin 2775,Rzeszów
+Kinepolis Gdańsk 2776,Warszawa
+Luna Poznań 2777,Rzeszów
+Cinema City Rzeszów 2778,Gdańsk
+Muranów Lublin 2779,Lublin
+Cinema City Warszawa 2780,Łódź
+Iluzjon Katowice 2781,Szczecin
+Multikino Poznań 2782,Łódź
+Helios Rzeszów 2783,Łódź
+Helios Kraków 2784,Rzeszów
+Kino Moskwa Wrocław 2785,Wrocław
+Cinema City Gdańsk 2786,Lublin
+Luna Wrocław 2787,Gdańsk
+Cinema City Lublin 2788,Kraków
+Helios Poznań 2789,Rzeszów
+Helios Łódź 2790,Katowice
+Multikino Wrocław 2791,Gdańsk
+Luna Łódź 2792,Lublin
+Helios Gdańsk 2793,Kraków
+Luna Poznań 2794,Wrocław
+Kino Moskwa Szczecin 2795,Szczecin
+Multikino Gdańsk 2796,Szczecin
+Luna Kraków 2797,Łódź
+Helios Rzeszów 2798,Szczecin
+Cinema City Poznań 2799,Szczecin
+Muranów Rzeszów 2800,Lublin
+Nowe Horyzonty Gdańsk 2801,Rzeszów
+Helios Kraków 2802,Gdańsk
+Helios Kraków 2803,Lublin
+Iluzjon Warszawa 2804,Katowice
+Multikino Warszawa 2805,Kraków
+Cinema City Łódź 2806,Gdańsk
+Kino Moskwa Łódź 2807,Warszawa
+Helios Gdańsk 2808,Kraków
+Multikino Gdańsk 2809,Poznań
+Kinepolis Katowice 2810,Szczecin
+Helios Kraków 2811,Szczecin
+Nowe Horyzonty Rzeszów 2812,Rzeszów
+Iluzjon Warszawa 2813,Szczecin
+Iluzjon Gdańsk 2814,Łódź
+Kino Moskwa Szczecin 2815,Gdańsk
+Muranów Lublin 2816,Gdańsk
+Multikino Kraków 2817,Kraków
+Luna Warszawa 2818,Rzeszów
+Iluzjon Wrocław 2819,Kraków
+Kino Moskwa Wrocław 2820,Poznań
+Muranów Katowice 2821,Lublin
+Luna Kraków 2822,Kraków
+Luna Wrocław 2823,Kraków
+Cinema City Rzeszów 2824,Katowice
+Multikino Lublin 2825,Szczecin
+Muranów Warszawa 2826,Wrocław
+Luna Szczecin 2827,Lublin
+Helios Lublin 2828,Rzeszów
+Multikino Warszawa 2829,Lublin
+Iluzjon Katowice 2830,Rzeszów
+Iluzjon Lublin 2831,Kraków
+Multikino Rzeszów 2832,Szczecin
+Luna Szczecin 2833,Lublin
+Nowe Horyzonty Lublin 2834,Lublin
+Iluzjon Poznań 2835,Rzeszów
+Muranów Katowice 2836,Lublin
+Luna Poznań 2837,Łódź
+Kinepolis Kraków 2838,Kraków
+Luna Gdańsk 2839,Łódź
+Cinema City Rzeszów 2840,Katowice
+Nowe Horyzonty Łódź 2841,Warszawa
+Helios Kraków 2842,Warszawa
+Cinema City Poznań 2843,Poznań
+Helios Wrocław 2844,Katowice
+Kinepolis Łódź 2845,Kraków
+Kinepolis Rzeszów 2846,Lublin
+Nowe Horyzonty Gdańsk 2847,Warszawa
+Cinema City Katowice 2848,Wrocław
+Kinepolis Łódź 2849,Łódź
+Iluzjon Gdańsk 2850,Warszawa
+Nowe Horyzonty Łódź 2851,Gdańsk
+Luna Gdańsk 2852,Szczecin
+Kinepolis Poznań 2853,Łódź
+Helios Kraków 2854,Kraków
+Multikino Rzeszów 2855,Katowice
+Cinema City Łódź 2856,Łódź
+Cinema City Kraków 2857,Łódź
+Nowe Horyzonty Warszawa 2858,Kraków
+Kinepolis Łódź 2859,Lublin
+Luna Katowice 2860,Kraków
+Luna Katowice 2861,Gdańsk
+Iluzjon Rzeszów 2862,Kraków
+Muranów Łódź 2863,Warszawa
+Multikino Katowice 2864,Rzeszów
+Helios Łódź 2865,Łódź
+Muranów Wrocław 2866,Katowice
+Kino Moskwa Gdańsk 2867,Warszawa
+Helios Gdańsk 2868,Rzeszów
+Kino Moskwa Gdańsk 2869,Kraków
+Cinema City Rzeszów 2870,Lublin
+Iluzjon Lublin 2871,Warszawa
+Iluzjon Warszawa 2872,Rzeszów
+Multikino Warszawa 2873,Łódź
+Luna Katowice 2874,Łódź
+Iluzjon Rzeszów 2875,Katowice
+Multikino Warszawa 2876,Katowice
+Kino Moskwa Katowice 2877,Rzeszów
+Helios Lublin 2878,Łódź
+Kinepolis Wrocław 2879,Szczecin
+Multikino Łódź 2880,Kraków
+Iluzjon Warszawa 2881,Rzeszów
+Nowe Horyzonty Łódź 2882,Katowice
+Helios Szczecin 2883,Warszawa
+Luna Poznań 2884,Katowice
+Cinema City Gdańsk 2885,Szczecin
+Cinema City Poznań 2886,Katowice
+Kino Moskwa Kraków 2887,Warszawa
+Cinema City Gdańsk 2888,Kraków
+Helios Szczecin 2889,Łódź
+Nowe Horyzonty Rzeszów 2890,Wrocław
+Cinema City Warszawa 2891,Katowice
+Helios Katowice 2892,Łódź
+Kinepolis Łódź 2893,Łódź
+Multikino Lublin 2894,Szczecin
+Iluzjon Poznań 2895,Warszawa
+Iluzjon Lublin 2896,Poznań
+Luna Rzeszów 2897,Poznań
+Muranów Kraków 2898,Gdańsk
+Kinepolis Rzeszów 2899,Rzeszów
+Helios Lublin 2900,Kraków
+Kinepolis Wrocław 2901,Rzeszów
+Kino Moskwa Wrocław 2902,Łódź
+Luna Szczecin 2903,Kraków
+Nowe Horyzonty Rzeszów 2904,Poznań
+Iluzjon Katowice 2905,Wrocław
+Iluzjon Rzeszów 2906,Katowice
+Luna Poznań 2907,Gdańsk
+Iluzjon Wrocław 2908,Rzeszów
+Kinepolis Wrocław 2909,Warszawa
+Kinepolis Kraków 2910,Kraków
+Iluzjon Poznań 2911,Łódź
+Kinepolis Rzeszów 2912,Łódź
+Helios Lublin 2913,Szczecin
+Muranów Wrocław 2914,Rzeszów
+Cinema City Kraków 2915,Poznań
+Luna Rzeszów 2916,Wrocław
+Multikino Szczecin 2917,Rzeszów
+Muranów Lublin 2918,Lublin
+Multikino Szczecin 2919,Rzeszów
+Helios Wrocław 2920,Łódź
+Helios Kraków 2921,Kraków
+Luna Poznań 2922,Szczecin
+Iluzjon Lublin 2923,Łódź
+Kino Moskwa Szczecin 2924,Łódź
+Muranów Kraków 2925,Lublin
+Iluzjon Kraków 2926,Poznań
+Kino Moskwa Warszawa 2927,Poznań
+Helios Warszawa 2928,Lublin
+Luna Łódź 2929,Warszawa
+Helios Rzeszów 2930,Szczecin
+Nowe Horyzonty Szczecin 2931,Szczecin
+Kino Moskwa Rzeszów 2932,Poznań
+Nowe Horyzonty Wrocław 2933,Szczecin
+Helios Rzeszów 2934,Łódź
+Iluzjon Poznań 2935,Rzeszów
+Muranów Warszawa 2936,Łódź
+Muranów Lublin 2937,Łódź
+Cinema City Kraków 2938,Szczecin
+Luna Kraków 2939,Katowice
+Multikino Wrocław 2940,Wrocław
+Iluzjon Poznań 2941,Warszawa
+Iluzjon Poznań 2942,Kraków
+Helios Lublin 2943,Warszawa
+Luna Kraków 2944,Wrocław
+Kino Moskwa Gdańsk 2945,Wrocław
+Helios Rzeszów 2946,Warszawa
+Helios Katowice 2947,Lublin
+Kinepolis Gdańsk 2948,Warszawa
+Iluzjon Katowice 2949,Szczecin
+Cinema City Rzeszów 2950,Kraków
+Iluzjon Szczecin 2951,Szczecin
+Kino Moskwa Poznań 2952,Katowice
+Kinepolis Szczecin 2953,Rzeszów
+Kino Moskwa Gdańsk 2954,Gdańsk
+Iluzjon Katowice 2955,Łódź
+Kino Moskwa Katowice 2956,Rzeszów
+Kino Moskwa Gdańsk 2957,Rzeszów
+Cinema City Kraków 2958,Lublin
+Iluzjon Łódź 2959,Gdańsk
+Kino Moskwa Kraków 2960,Katowice
+Kino Moskwa Wrocław 2961,Warszawa
+Kinepolis Lublin 2962,Poznań
+Iluzjon Szczecin 2963,Poznań
+Kinepolis Katowice 2964,Wrocław
+Iluzjon Kraków 2965,Gdańsk
+Cinema City Szczecin 2966,Lublin
+Iluzjon Rzeszów 2967,Wrocław
+Luna Łódź 2968,Rzeszów
+Nowe Horyzonty Wrocław 2969,Szczecin
+Kinepolis Lublin 2970,Rzeszów
+Luna Katowice 2971,Kraków
+Iluzjon Wrocław 2972,Gdańsk
+Kino Moskwa Warszawa 2973,Gdańsk
+Cinema City Katowice 2974,Poznań
+Helios Warszawa 2975,Wrocław
+Kinepolis Szczecin 2976,Poznań
+Muranów Gdańsk 2977,Poznań
+Muranów Wrocław 2978,Kraków
+Iluzjon Kraków 2979,Warszawa
+Multikino Warszawa 2980,Łódź
+Luna Łódź 2981,Gdańsk
+Multikino Kraków 2982,Rzeszów
+Luna Poznań 2983,Warszawa
+Nowe Horyzonty Poznań 2984,Warszawa
+Kino Moskwa Katowice 2985,Poznań
+Iluzjon Łódź 2986,Łódź
+Kino Moskwa Wrocław 2987,Rzeszów
+Luna Poznań 2988,Katowice
+Iluzjon Łódź 2989,Poznań
+Iluzjon Lublin 2990,Wrocław
+Luna Rzeszów 2991,Poznań
+Muranów Gdańsk 2992,Poznań
+Iluzjon Łódź 2993,Kraków
+Muranów Lublin 2994,Wrocław
+Iluzjon Łódź 2995,Lublin
+Kinepolis Kraków 2996,Poznań
+Kino Moskwa Wrocław 2997,Kraków
+Kino Moskwa Wrocław 2998,Wrocław
+Nowe Horyzonty Rzeszów 2999,Katowice
+Helios Gdańsk 3000,Szczecin
+Iluzjon Szczecin 3001,Rzeszów
+Luna Lublin 3002,Szczecin
+Luna Wrocław 3003,Poznań
+Helios Kraków 3004,Wrocław
+Cinema City Lublin 3005,Katowice
+Kino Moskwa Lublin 3006,Kraków
+Muranów Łódź 3007,Łódź
+Muranów Warszawa 3008,Szczecin
+Kinepolis Katowice 3009,Łódź
+Kinepolis Szczecin 3010,Wrocław
+Cinema City Kraków 3011,Warszawa
+Cinema City Kraków 3012,Kraków
+Cinema City Gdańsk 3013,Wrocław
+Luna Łódź 3014,Szczecin
+Helios Wrocław 3015,Rzeszów
+Helios Lublin 3016,Wrocław
+Muranów Szczecin 3017,Rzeszów
+Cinema City Warszawa 3018,Lublin
+Cinema City Wrocław 3019,Gdańsk
+Iluzjon Kraków 3020,Poznań
+Kino Moskwa Poznań 3021,Gdańsk
+Nowe Horyzonty Kraków 3022,Łódź
+Luna Warszawa 3023,Rzeszów
+Cinema City Katowice 3024,Rzeszów
+Multikino Lublin 3025,Lublin
+Nowe Horyzonty Warszawa 3026,Lublin
+Muranów Katowice 3027,Gdańsk
+Kino Moskwa Katowice 3028,Warszawa
+Luna Lublin 3029,Warszawa
+Nowe Horyzonty Katowice 3030,Wrocław
+Kino Moskwa Gdańsk 3031,Poznań
+Muranów Warszawa 3032,Kraków
+Cinema City Rzeszów 3033,Łódź
+Cinema City Katowice 3034,Łódź
+Muranów Poznań 3035,Wrocław
+Muranów Rzeszów 3036,Gdańsk
+Kinepolis Kraków 3037,Rzeszów
+Kino Moskwa Wrocław 3038,Warszawa
+Luna Lublin 3039,Warszawa
+Iluzjon Rzeszów 3040,Gdańsk
+Cinema City Katowice 3041,Wrocław
+Kinepolis Rzeszów 3042,Rzeszów
+Kinepolis Wrocław 3043,Łódź
+Luna Łódź 3044,Lublin
+Cinema City Szczecin 3045,Wrocław
+Luna Wrocław 3046,Poznań
+Luna Rzeszów 3047,Szczecin
+Helios Lublin 3048,Gdańsk
+Cinema City Gdańsk 3049,Szczecin
+Nowe Horyzonty Lublin 3050,Kraków
+Kinepolis Łódź 3051,Rzeszów
+Cinema City Kraków 3052,Gdańsk
+Kino Moskwa Katowice 3053,Warszawa
+Nowe Horyzonty Poznań 3054,Katowice
+Kino Moskwa Poznań 3055,Kraków
+Kinepolis Kraków 3056,Katowice
+Luna Poznań 3057,Łódź
+Kinepolis Rzeszów 3058,Warszawa
+Multikino Lublin 3059,Katowice
+Muranów Wrocław 3060,Katowice
+Muranów Gdańsk 3061,Szczecin
+Helios Lublin 3062,Rzeszów
+Muranów Poznań 3063,Poznań
+Kino Moskwa Poznań 3064,Łódź
+Nowe Horyzonty Gdańsk 3065,Warszawa
+Helios Poznań 3066,Katowice
+Cinema City Kraków 3067,Lublin
+Iluzjon Szczecin 3068,Warszawa
+Nowe Horyzonty Lublin 3069,Rzeszów
+Iluzjon Gdańsk 3070,Warszawa
+Nowe Horyzonty Katowice 3071,Poznań
+Kinepolis Wrocław 3072,Wrocław
+Helios Łódź 3073,Gdańsk
+Luna Warszawa 3074,Warszawa
+Multikino Poznań 3075,Gdańsk
+Nowe Horyzonty Rzeszów 3076,Gdańsk
+Luna Gdańsk 3077,Kraków
+Multikino Warszawa 3078,Rzeszów
+Cinema City Katowice 3079,Gdańsk
+Iluzjon Gdańsk 3080,Poznań
+Muranów Lublin 3081,Łódź
+Kinepolis Wrocław 3082,Lublin
+Kino Moskwa Łódź 3083,Gdańsk
+Kino Moskwa Warszawa 3084,Warszawa
+Cinema City Gdańsk 3085,Wrocław
+Multikino Gdańsk 3086,Gdańsk
+Helios Rzeszów 3087,Gdańsk
+Multikino Gdańsk 3088,Lublin
+Kino Moskwa Katowice 3089,Gdańsk
+Iluzjon Lublin 3090,Rzeszów
+Kino Moskwa Kraków 3091,Katowice
+Cinema City Warszawa 3092,Rzeszów
+Multikino Rzeszów 3093,Wrocław
+Iluzjon Warszawa 3094,Katowice
+Cinema City Rzeszów 3095,Kraków
+Helios Katowice 3096,Poznań
+Cinema City Warszawa 3097,Rzeszów
+Kino Moskwa Kraków 3098,Szczecin
+Iluzjon Gdańsk 3099,Rzeszów
+Iluzjon Rzeszów 3100,Lublin
+Cinema City Lublin 3101,Szczecin
+Muranów Warszawa 3102,Łódź
+Luna Warszawa 3103,Rzeszów
+Nowe Horyzonty Łódź 3104,Warszawa
+Nowe Horyzonty Gdańsk 3105,Wrocław
+Kino Moskwa Kraków 3106,Łódź
+Kino Moskwa Lublin 3107,Warszawa
+Iluzjon Łódź 3108,Szczecin
+Iluzjon Łódź 3109,Gdańsk
+Luna Warszawa 3110,Warszawa
+Muranów Wrocław 3111,Lublin
+Kino Moskwa Warszawa 3112,Warszawa
+Cinema City Rzeszów 3113,Lublin
+Luna Warszawa 3114,Szczecin
+Luna Wrocław 3115,Gdańsk
+Kinepolis Poznań 3116,Gdańsk
+Iluzjon Kraków 3117,Łódź
+Iluzjon Rzeszów 3118,Wrocław
+Kinepolis Rzeszów 3119,Rzeszów
+Nowe Horyzonty Gdańsk 3120,Łódź
+Kinepolis Poznań 3121,Rzeszów
+Helios Poznań 3122,Wrocław
+Kino Moskwa Poznań 3123,Lublin
+Luna Gdańsk 3124,Poznań
+Iluzjon Katowice 3125,Rzeszów
+Cinema City Wrocław 3126,Gdańsk
+Nowe Horyzonty Warszawa 3127,Warszawa
+Cinema City Gdańsk 3128,Szczecin
+Iluzjon Gdańsk 3129,Poznań
+Helios Kraków 3130,Poznań
+Multikino Poznań 3131,Katowice
+Nowe Horyzonty Rzeszów 3132,Poznań
+Helios Katowice 3133,Poznań
+Iluzjon Szczecin 3134,Wrocław
+Iluzjon Rzeszów 3135,Rzeszów
+Iluzjon Rzeszów 3136,Rzeszów
+Helios Łódź 3137,Gdańsk
+Luna Lublin 3138,Gdańsk
+Kino Moskwa Kraków 3139,Kraków
+Nowe Horyzonty Katowice 3140,Łódź
+Multikino Szczecin 3141,Łódź
+Kinepolis Lublin 3142,Szczecin
+Cinema City Łódź 3143,Kraków
+Iluzjon Szczecin 3144,Gdańsk
+Kinepolis Wrocław 3145,Szczecin
+Muranów Kraków 3146,Poznań
+Kino Moskwa Warszawa 3147,Katowice
+Iluzjon Szczecin 3148,Łódź
+Kinepolis Łódź 3149,Wrocław
+Muranów Warszawa 3150,Poznań
+Kino Moskwa Poznań 3151,Wrocław
+Kinepolis Gdańsk 3152,Poznań
+Cinema City Rzeszów 3153,Kraków
+Muranów Kraków 3154,Wrocław
+Muranów Łódź 3155,Katowice
+Iluzjon Wrocław 3156,Szczecin
+Helios Kraków 3157,Katowice
+Multikino Kraków 3158,Katowice
+Luna Łódź 3159,Poznań
+Muranów Wrocław 3160,Wrocław
+Helios Lublin 3161,Gdańsk
+Multikino Warszawa 3162,Łódź
+Kinepolis Warszawa 3163,Lublin
+Luna Lublin 3164,Katowice
+Iluzjon Gdańsk 3165,Kraków
+Nowe Horyzonty Szczecin 3166,Katowice
+Kinepolis Warszawa 3167,Warszawa
+Luna Gdańsk 3168,Lublin
+Muranów Rzeszów 3169,Katowice
+Kinepolis Lublin 3170,Poznań
+Muranów Lublin 3171,Katowice
+Luna Lublin 3172,Kraków
+Nowe Horyzonty Gdańsk 3173,Łódź
+Multikino Szczecin 3174,Poznań
+Luna Lublin 3175,Lublin
+Multikino Rzeszów 3176,Kraków
+Luna Kraków 3177,Kraków
+Helios Łódź 3178,Lublin
+Cinema City Katowice 3179,Wrocław
+Kinepolis Wrocław 3180,Rzeszów
+Multikino Warszawa 3181,Gdańsk
+Iluzjon Poznań 3182,Poznań
+Helios Gdańsk 3183,Kraków
+Multikino Kraków 3184,Wrocław
+Cinema City Szczecin 3185,Wrocław
+Iluzjon Wrocław 3186,Lublin
+Helios Szczecin 3187,Poznań
+Kinepolis Katowice 3188,Rzeszów
+Helios Gdańsk 3189,Lublin
+Kinepolis Kraków 3190,Rzeszów
+Helios Szczecin 3191,Katowice
+Iluzjon Katowice 3192,Rzeszów
+Luna Katowice 3193,Lublin
+Nowe Horyzonty Warszawa 3194,Kraków
+Kinepolis Wrocław 3195,Wrocław
+Iluzjon Wrocław 3196,Warszawa
+Kinepolis Lublin 3197,Wrocław
+Nowe Horyzonty Poznań 3198,Lublin
+Multikino Rzeszów 3199,Szczecin
+Kino Moskwa Łódź 3200,Gdańsk
+Kinepolis Gdańsk 3201,Wrocław
+Kinepolis Rzeszów 3202,Wrocław
+Cinema City Warszawa 3203,Gdańsk
+Muranów Kraków 3204,Gdańsk
+Luna Szczecin 3205,Szczecin
+Kino Moskwa Poznań 3206,Wrocław
+Kino Moskwa Katowice 3207,Wrocław
+Nowe Horyzonty Gdańsk 3208,Szczecin
+Luna Łódź 3209,Poznań
+Iluzjon Warszawa 3210,Łódź
+Iluzjon Katowice 3211,Łódź
+Iluzjon Lublin 3212,Warszawa
+Helios Lublin 3213,Kraków
+Kino Moskwa Szczecin 3214,Katowice
+Helios Lublin 3215,Wrocław
+Iluzjon Łódź 3216,Lublin
+Luna Szczecin 3217,Kraków
+Cinema City Katowice 3218,Poznań
+Muranów Łódź 3219,Szczecin
+Luna Katowice 3220,Gdańsk
+Muranów Poznań 3221,Wrocław
+Cinema City Warszawa 3222,Wrocław
+Kinepolis Kraków 3223,Wrocław
+Cinema City Katowice 3224,Łódź
+Luna Lublin 3225,Katowice
+Cinema City Katowice 3226,Gdańsk
+Luna Poznań 3227,Gdańsk
+Muranów Gdańsk 3228,Lublin
+Kino Moskwa Lublin 3229,Katowice
+Cinema City Kraków 3230,Poznań
+Iluzjon Gdańsk 3231,Lublin
+Kino Moskwa Łódź 3232,Gdańsk
+Iluzjon Poznań 3233,Szczecin
+Nowe Horyzonty Kraków 3234,Warszawa
+Muranów Gdańsk 3235,Kraków
+Iluzjon Kraków 3236,Poznań
+Kinepolis Warszawa 3237,Wrocław
+Kino Moskwa Warszawa 3238,Łódź
+Multikino Rzeszów 3239,Poznań
+Nowe Horyzonty Lublin 3240,Szczecin
+Helios Wrocław 3241,Łódź
+Helios Poznań 3242,Gdańsk
+Multikino Lublin 3243,Poznań
+Luna Katowice 3244,Rzeszów
+Nowe Horyzonty Warszawa 3245,Wrocław
+Cinema City Katowice 3246,Szczecin
+Kino Moskwa Poznań 3247,Gdańsk
+Multikino Gdańsk 3248,Warszawa
+Kinepolis Wrocław 3249,Lublin
+Kino Moskwa Wrocław 3250,Szczecin
+Helios Lublin 3251,Łódź
+Cinema City Szczecin 3252,Wrocław
+Multikino Rzeszów 3253,Katowice
+Kinepolis Wrocław 3254,Warszawa
+Muranów Poznań 3255,Łódź
+Cinema City Lublin 3256,Warszawa
+Kinepolis Katowice 3257,Wrocław
+Kinepolis Lublin 3258,Gdańsk
+Multikino Wrocław 3259,Katowice
+Multikino Kraków 3260,Poznań
+Kinepolis Łódź 3261,Warszawa
+Luna Kraków 3262,Poznań
+Kinepolis Rzeszów 3263,Wrocław
+Luna Rzeszów 3264,Poznań
+Iluzjon Katowice 3265,Wrocław
+Kino Moskwa Łódź 3266,Poznań
+Nowe Horyzonty Kraków 3267,Gdańsk
+Helios Poznań 3268,Rzeszów
+Helios Warszawa 3269,Rzeszów
+Cinema City Poznań 3270,Łódź
+Helios Wrocław 3271,Katowice
+Muranów Rzeszów 3272,Kraków
+Muranów Warszawa 3273,Gdańsk
+Helios Katowice 3274,Warszawa
+Luna Kraków 3275,Łódź
+Iluzjon Gdańsk 3276,Lublin
+Muranów Poznań 3277,Kraków
+Muranów Szczecin 3278,Gdańsk
+Nowe Horyzonty Kraków 3279,Kraków
+Kino Moskwa Lublin 3280,Lublin
+Nowe Horyzonty Warszawa 3281,Gdańsk
+Muranów Szczecin 3282,Gdańsk
+Cinema City Szczecin 3283,Katowice
+Nowe Horyzonty Kraków 3284,Warszawa
+Kinepolis Katowice 3285,Wrocław
+Iluzjon Lublin 3286,Lublin
+Luna Łódź 3287,Rzeszów
+Nowe Horyzonty Lublin 3288,Gdańsk
+Muranów Warszawa 3289,Poznań
+Kinepolis Warszawa 3290,Łódź
+Iluzjon Gdańsk 3291,Warszawa
+Luna Rzeszów 3292,Warszawa
+Luna Wrocław 3293,Kraków
+Kino Moskwa Łódź 3294,Gdańsk
+Nowe Horyzonty Kraków 3295,Kraków
+Nowe Horyzonty Gdańsk 3296,Łódź
+Nowe Horyzonty Lublin 3297,Warszawa
+Nowe Horyzonty Katowice 3298,Łódź
+Helios Katowice 3299,Katowice
+Nowe Horyzonty Łódź 3300,Poznań
+Luna Katowice 3301,Kraków
+Muranów Szczecin 3302,Gdańsk
+Helios Szczecin 3303,Lublin
+Muranów Gdańsk 3304,Rzeszów
+Cinema City Wrocław 3305,Lublin
+Kino Moskwa Szczecin 3306,Lublin
+Kino Moskwa Łódź 3307,Gdańsk
+Kino Moskwa Gdańsk 3308,Katowice
+Cinema City Lublin 3309,Katowice
+Helios Gdańsk 3310,Poznań
+Luna Wrocław 3311,Lublin
+Luna Warszawa 3312,Warszawa
+Multikino Rzeszów 3313,Poznań
+Nowe Horyzonty Rzeszów 3314,Łódź
+Multikino Katowice 3315,Gdańsk
+Kinepolis Kraków 3316,Rzeszów
+Cinema City Kraków 3317,Warszawa
+Cinema City Wrocław 3318,Łódź
+Kino Moskwa Lublin 3319,Poznań
+Kino Moskwa Gdańsk 3320,Katowice
+Helios Warszawa 3321,Wrocław
+Kino Moskwa Katowice 3322,Warszawa
+Nowe Horyzonty Kraków 3323,Katowice
+Iluzjon Wrocław 3324,Kraków
+Cinema City Katowice 3325,Poznań
+Multikino Poznań 3326,Rzeszów
+Nowe Horyzonty Wrocław 3327,Kraków
+Nowe Horyzonty Łódź 3328,Lublin
+Muranów Gdańsk 3329,Szczecin
+Nowe Horyzonty Rzeszów 3330,Szczecin
+Kino Moskwa Poznań 3331,Katowice
+Luna Łódź 3332,Katowice
+Iluzjon Lublin 3333,Katowice
+Muranów Lublin 3334,Katowice
+Kino Moskwa Warszawa 3335,Lublin
+Kinepolis Rzeszów 3336,Łódź
+Luna Katowice 3337,Wrocław
+Muranów Warszawa 3338,Rzeszów
+Multikino Szczecin 3339,Szczecin
+Luna Warszawa 3340,Szczecin
+Cinema City Gdańsk 3341,Lublin
+Nowe Horyzonty Łódź 3342,Wrocław
+Kino Moskwa Kraków 3343,Kraków
+Helios Rzeszów 3344,Rzeszów
+Luna Lublin 3345,Wrocław
+Kino Moskwa Szczecin 3346,Poznań
+Kinepolis Gdańsk 3347,Wrocław
+Muranów Rzeszów 3348,Warszawa
+Kino Moskwa Wrocław 3349,Szczecin
+Multikino Warszawa 3350,Lublin
+Helios Kraków 3351,Warszawa
+Muranów Kraków 3352,Warszawa
+Cinema City Katowice 3353,Warszawa
+Muranów Warszawa 3354,Szczecin
+Kinepolis Łódź 3355,Rzeszów
+Luna Katowice 3356,Katowice
+Helios Lublin 3357,Wrocław
+Nowe Horyzonty Gdańsk 3358,Łódź
+Nowe Horyzonty Kraków 3359,Katowice
+Nowe Horyzonty Łódź 3360,Rzeszów
+Muranów Katowice 3361,Łódź
+Muranów Kraków 3362,Rzeszów
+Multikino Warszawa 3363,Wrocław
+Iluzjon Lublin 3364,Kraków
+Muranów Katowice 3365,Warszawa
+Kino Moskwa Rzeszów 3366,Wrocław
+Muranów Katowice 3367,Kraków
+Kinepolis Gdańsk 3368,Gdańsk
+Kinepolis Warszawa 3369,Kraków
+Muranów Rzeszów 3370,Gdańsk
+Helios Gdańsk 3371,Rzeszów
+Helios Łódź 3372,Poznań
+Luna Gdańsk 3373,Kraków
+Kino Moskwa Kraków 3374,Poznań
+Multikino Wrocław 3375,Kraków
+Kino Moskwa Łódź 3376,Warszawa
+Kino Moskwa Katowice 3377,Rzeszów
+Multikino Lublin 3378,Łódź
+Multikino Warszawa 3379,Szczecin
+Cinema City Kraków 3380,Lublin
+Helios Katowice 3381,Poznań
+Muranów Warszawa 3382,Katowice
+Multikino Warszawa 3383,Gdańsk
+Kino Moskwa Gdańsk 3384,Katowice
+Multikino Gdańsk 3385,Katowice
+Muranów Kraków 3386,Kraków
+Helios Kraków 3387,Gdańsk
+Luna Lublin 3388,Wrocław
+Muranów Gdańsk 3389,Łódź
+Helios Gdańsk 3390,Lublin
+Multikino Kraków 3391,Łódź
+Muranów Lublin 3392,Wrocław
+Kinepolis Katowice 3393,Katowice
+Muranów Katowice 3394,Lublin
+Helios Łódź 3395,Rzeszów
+Nowe Horyzonty Wrocław 3396,Gdańsk
+Luna Szczecin 3397,Kraków
+Nowe Horyzonty Kraków 3398,Kraków
+Multikino Rzeszów 3399,Kraków
+Iluzjon Gdańsk 3400,Warszawa
+Kinepolis Gdańsk 3401,Warszawa
+Kinepolis Katowice 3402,Warszawa
+Helios Rzeszów 3403,Kraków
+Multikino Gdańsk 3404,Rzeszów
+Muranów Warszawa 3405,Gdańsk
+Muranów Lublin 3406,Gdańsk
+Muranów Łódź 3407,Kraków
+Multikino Lublin 3408,Łódź
+Helios Poznań 3409,Łódź
+Multikino Katowice 3410,Gdańsk
+Kino Moskwa Rzeszów 3411,Szczecin
+Kinepolis Lublin 3412,Wrocław
+Multikino Katowice 3413,Wrocław
+Luna Kraków 3414,Warszawa
+Muranów Lublin 3415,Kraków
+Luna Poznań 3416,Kraków
+Muranów Katowice 3417,Szczecin
+Helios Gdańsk 3418,Rzeszów
+Nowe Horyzonty Warszawa 3419,Warszawa
+Iluzjon Gdańsk 3420,Rzeszów
+Nowe Horyzonty Rzeszów 3421,Poznań
+Nowe Horyzonty Kraków 3422,Katowice
+Kinepolis Warszawa 3423,Warszawa
+Helios Rzeszów 3424,Poznań
+Cinema City Warszawa 3425,Gdańsk
+Kinepolis Rzeszów 3426,Rzeszów
+Iluzjon Szczecin 3427,Katowice
+Helios Kraków 3428,Rzeszów
+Multikino Rzeszów 3429,Szczecin
+Kinepolis Szczecin 3430,Warszawa
+Kino Moskwa Kraków 3431,Szczecin
+Kinepolis Poznań 3432,Kraków
+Iluzjon Gdańsk 3433,Lublin
+Luna Warszawa 3434,Łódź
+Muranów Warszawa 3435,Katowice
+Cinema City Łódź 3436,Warszawa
+Cinema City Warszawa 3437,Lublin
+Kinepolis Gdańsk 3438,Katowice
+Kinepolis Rzeszów 3439,Wrocław
+Muranów Katowice 3440,Warszawa
+Kino Moskwa Gdańsk 3441,Katowice
+Cinema City Kraków 3442,Wrocław
+Kino Moskwa Rzeszów 3443,Wrocław
+Luna Szczecin 3444,Rzeszów
+Kino Moskwa Gdańsk 3445,Lublin
+Luna Kraków 3446,Lublin
+Iluzjon Poznań 3447,Kraków
+Kinepolis Kraków 3448,Lublin
+Kino Moskwa Gdańsk 3449,Łódź
+Multikino Kraków 3450,Gdańsk
+Cinema City Kraków 3451,Warszawa
+Helios Kraków 3452,Warszawa
+Cinema City Katowice 3453,Katowice
+Muranów Wrocław 3454,Kraków
+Iluzjon Warszawa 3455,Łódź
+Helios Gdańsk 3456,Szczecin
+Multikino Rzeszów 3457,Gdańsk
+Muranów Wrocław 3458,Gdańsk
+Cinema City Warszawa 3459,Lublin
+Kinepolis Warszawa 3460,Szczecin
+Multikino Gdańsk 3461,Rzeszów
+Nowe Horyzonty Katowice 3462,Rzeszów
+Kinepolis Kraków 3463,Gdańsk
+Kino Moskwa Katowice 3464,Łódź
+Cinema City Rzeszów 3465,Poznań
+Nowe Horyzonty Łódź 3466,Poznań
+Luna Lublin 3467,Szczecin
+Luna Łódź 3468,Rzeszów
+Iluzjon Poznań 3469,Wrocław
+Iluzjon Katowice 3470,Rzeszów
+Iluzjon Rzeszów 3471,Katowice
+Iluzjon Szczecin 3472,Warszawa
+Nowe Horyzonty Warszawa 3473,Łódź
+Nowe Horyzonty Katowice 3474,Szczecin
+Muranów Gdańsk 3475,Wrocław
+Iluzjon Gdańsk 3476,Łódź
+Helios Szczecin 3477,Rzeszów
+Helios Wrocław 3478,Szczecin
+Luna Kraków 3479,Rzeszów
+Nowe Horyzonty Łódź 3480,Kraków
+Helios Łódź 3481,Katowice
+Kino Moskwa Kraków 3482,Poznań
+Cinema City Wrocław 3483,Gdańsk
+Helios Katowice 3484,Poznań
+Muranów Kraków 3485,Katowice
+Luna Warszawa 3486,Lublin
+Iluzjon Katowice 3487,Katowice
+Nowe Horyzonty Rzeszów 3488,Poznań
+Cinema City Kraków 3489,Katowice
+Nowe Horyzonty Szczecin 3490,Rzeszów
+Kinepolis Wrocław 3491,Szczecin
+Luna Kraków 3492,Rzeszów
+Iluzjon Gdańsk 3493,Poznań
+Muranów Wrocław 3494,Poznań
+Multikino Wrocław 3495,Warszawa
+Kinepolis Rzeszów 3496,Katowice
+Nowe Horyzonty Wrocław 3497,Lublin
+Kinepolis Szczecin 3498,Kraków
+Helios Warszawa 3499,Warszawa
+Muranów Łódź 3500,Warszawa
+Muranów Szczecin 3501,Poznań
+Kinepolis Łódź 3502,Gdańsk
+Luna Warszawa 3503,Rzeszów
+Helios Warszawa 3504,Poznań
+Muranów Gdańsk 3505,Łódź
+Kinepolis Rzeszów 3506,Rzeszów
+Nowe Horyzonty Kraków 3507,Lublin
+Luna Łódź 3508,Warszawa
+Kinepolis Gdańsk 3509,Lublin
+Muranów Poznań 3510,Katowice
+Multikino Łódź 3511,Poznań
+Luna Warszawa 3512,Kraków
+Nowe Horyzonty Szczecin 3513,Wrocław
+Iluzjon Rzeszów 3514,Kraków
+Helios Łódź 3515,Rzeszów
+Cinema City Rzeszów 3516,Kraków
+Multikino Rzeszów 3517,Łódź
+Kino Moskwa Poznań 3518,Szczecin
+Muranów Łódź 3519,Rzeszów
+Nowe Horyzonty Poznań 3520,Lublin
+Multikino Gdańsk 3521,Lublin
+Cinema City Kraków 3522,Poznań
+Multikino Warszawa 3523,Kraków
+Iluzjon Katowice 3524,Łódź
+Helios Poznań 3525,Kraków
+Muranów Poznań 3526,Katowice
+Cinema City Szczecin 3527,Wrocław
+Multikino Poznań 3528,Katowice
+Muranów Katowice 3529,Lublin
+Luna Poznań 3530,Szczecin
+Nowe Horyzonty Gdańsk 3531,Szczecin
+Multikino Lublin 3532,Szczecin
+Cinema City Warszawa 3533,Rzeszów
+Luna Gdańsk 3534,Poznań
+Multikino Warszawa 3535,Łódź
+Luna Warszawa 3536,Szczecin
+Helios Lublin 3537,Szczecin
+Cinema City Poznań 3538,Szczecin
+Nowe Horyzonty Łódź 3539,Łódź
+Cinema City Warszawa 3540,Łódź
+Kinepolis Łódź 3541,Łódź
+Iluzjon Łódź 3542,Kraków
+Multikino Lublin 3543,Poznań
+Kino Moskwa Łódź 3544,Katowice
+Luna Gdańsk 3545,Wrocław
+Iluzjon Rzeszów 3546,Kraków
+Nowe Horyzonty Lublin 3547,Poznań
+Kinepolis Gdańsk 3548,Warszawa
+Luna Kraków 3549,Katowice
+Nowe Horyzonty Kraków 3550,Gdańsk
+Multikino Rzeszów 3551,Gdańsk
+Kino Moskwa Wrocław 3552,Wrocław
+Helios Warszawa 3553,Rzeszów
+Iluzjon Łódź 3554,Wrocław
+Nowe Horyzonty Szczecin 3555,Łódź
+Helios Poznań 3556,Gdańsk
+Iluzjon Łódź 3557,Warszawa
+Helios Wrocław 3558,Łódź
+Cinema City Łódź 3559,Katowice
+Cinema City Gdańsk 3560,Gdańsk
+Helios Katowice 3561,Łódź
+Helios Szczecin 3562,Gdańsk
+Kinepolis Wrocław 3563,Rzeszów
+Kinepolis Rzeszów 3564,Katowice
+Multikino Łódź 3565,Poznań
+Luna Rzeszów 3566,Wrocław
+Helios Poznań 3567,Poznań
+Iluzjon Wrocław 3568,Wrocław
+Muranów Łódź 3569,Wrocław
+Kinepolis Lublin 3570,Wrocław
+Helios Szczecin 3571,Szczecin
+Luna Warszawa 3572,Katowice
+Cinema City Lublin 3573,Warszawa
+Muranów Gdańsk 3574,Kraków
+Muranów Gdańsk 3575,Kraków
+Nowe Horyzonty Wrocław 3576,Gdańsk
+Nowe Horyzonty Wrocław 3577,Kraków
+Multikino Warszawa 3578,Szczecin
+Multikino Wrocław 3579,Poznań
+Nowe Horyzonty Łódź 3580,Warszawa
+Helios Gdańsk 3581,Warszawa
+Helios Gdańsk 3582,Rzeszów
+Nowe Horyzonty Gdańsk 3583,Wrocław
+Nowe Horyzonty Gdańsk 3584,Wrocław
+Muranów Lublin 3585,Warszawa
+Luna Lublin 3586,Rzeszów
+Multikino Lublin 3587,Łódź
+Cinema City Katowice 3588,Lublin
+Iluzjon Lublin 3589,Warszawa
+Multikino Szczecin 3590,Gdańsk
+Nowe Horyzonty Łódź 3591,Katowice
+Nowe Horyzonty Kraków 3592,Poznań
+Muranów Warszawa 3593,Wrocław
+Nowe Horyzonty Katowice 3594,Katowice
+Kinepolis Rzeszów 3595,Lublin
+Luna Wrocław 3596,Lublin
+Muranów Warszawa 3597,Kraków
+Muranów Rzeszów 3598,Rzeszów
+Iluzjon Gdańsk 3599,Szczecin
+Multikino Warszawa 3600,Katowice
+Kinepolis Szczecin 3601,Gdańsk
+Kinepolis Gdańsk 3602,Szczecin
+Luna Łódź 3603,Rzeszów
+Kino Moskwa Łódź 3604,Warszawa
+Kino Moskwa Wrocław 3605,Gdańsk
+Multikino Katowice 3606,Rzeszów
+Luna Szczecin 3607,Poznań
+Helios Kraków 3608,Poznań
+Kino Moskwa Szczecin 3609,Łódź
+Luna Kraków 3610,Poznań
+Helios Łódź 3611,Warszawa
+Cinema City Wrocław 3612,Łódź
+Kino Moskwa Rzeszów 3613,Gdańsk
+Nowe Horyzonty Warszawa 3614,Łódź
+Cinema City Kraków 3615,Wrocław
+Multikino Katowice 3616,Katowice
+Nowe Horyzonty Rzeszów 3617,Wrocław
+Nowe Horyzonty Rzeszów 3618,Poznań
+Cinema City Łódź 3619,Warszawa
+Cinema City Lublin 3620,Warszawa
+Kino Moskwa Łódź 3621,Gdańsk
+Iluzjon Łódź 3622,Wrocław
+Luna Szczecin 3623,Gdańsk
+Nowe Horyzonty Rzeszów 3624,Kraków
+Nowe Horyzonty Katowice 3625,Szczecin
+Iluzjon Łódź 3626,Rzeszów
+Muranów Łódź 3627,Poznań
+Luna Szczecin 3628,Gdańsk
+Muranów Rzeszów 3629,Lublin
+Helios Katowice 3630,Katowice
+Cinema City Lublin 3631,Kraków
+Kino Moskwa Gdańsk 3632,Warszawa
+Iluzjon Gdańsk 3633,Łódź
+Helios Szczecin 3634,Poznań
+Muranów Warszawa 3635,Rzeszów
+Kino Moskwa Wrocław 3636,Łódź
+Muranów Szczecin 3637,Katowice
+Luna Poznań 3638,Kraków
+Kinepolis Kraków 3639,Wrocław
+Muranów Poznań 3640,Wrocław
+Nowe Horyzonty Poznań 3641,Poznań
+Cinema City Rzeszów 3642,Łódź
+Nowe Horyzonty Poznań 3643,Lublin
+Helios Rzeszów 3644,Wrocław
+Iluzjon Gdańsk 3645,Szczecin
+Helios Łódź 3646,Poznań
+Cinema City Szczecin 3647,Rzeszów
+Nowe Horyzonty Rzeszów 3648,Lublin
+Kinepolis Rzeszów 3649,Szczecin
+Iluzjon Warszawa 3650,Łódź
+Kinepolis Lublin 3651,Gdańsk
+Muranów Lublin 3652,Gdańsk
+Helios Łódź 3653,Katowice
+Kino Moskwa Poznań 3654,Lublin
+Muranów Łódź 3655,Lublin
+Muranów Łódź 3656,Wrocław
+Multikino Poznań 3657,Kraków
+Helios Poznań 3658,Kraków
+Muranów Warszawa 3659,Lublin
+Nowe Horyzonty Poznań 3660,Szczecin
+Muranów Kraków 3661,Kraków
+Muranów Poznań 3662,Gdańsk
+Cinema City Lublin 3663,Łódź
+Iluzjon Wrocław 3664,Kraków
+Kino Moskwa Kraków 3665,Szczecin
+Kinepolis Katowice 3666,Katowice
+Helios Szczecin 3667,Poznań
+Kinepolis Rzeszów 3668,Gdańsk
+Cinema City Łódź 3669,Rzeszów
+Nowe Horyzonty Szczecin 3670,Kraków
+Kinepolis Kraków 3671,Wrocław
+Helios Łódź 3672,Katowice
+Cinema City Wrocław 3673,Łódź
+Kinepolis Wrocław 3674,Poznań
+Kino Moskwa Wrocław 3675,Poznań
+Cinema City Szczecin 3676,Rzeszów
+Cinema City Gdańsk 3677,Łódź
+Helios Warszawa 3678,Łódź
+Cinema City Szczecin 3679,Katowice
+Iluzjon Lublin 3680,Łódź
+Multikino Szczecin 3681,Szczecin
+Luna Warszawa 3682,Kraków
+Luna Wrocław 3683,Warszawa
+Multikino Gdańsk 3684,Gdańsk
+Kino Moskwa Wrocław 3685,Łódź
+Multikino Gdańsk 3686,Lublin
+Cinema City Poznań 3687,Warszawa
+Helios Gdańsk 3688,Gdańsk
+Luna Lublin 3689,Poznań
+Cinema City Katowice 3690,Lublin
+Kino Moskwa Lublin 3691,Gdańsk
+Muranów Gdańsk 3692,Gdańsk
+Helios Gdańsk 3693,Wrocław
+Iluzjon Kraków 3694,Gdańsk
+Kinepolis Warszawa 3695,Kraków
+Kino Moskwa Poznań 3696,Wrocław
+Luna Warszawa 3697,Gdańsk
+Nowe Horyzonty Warszawa 3698,Szczecin
+Helios Poznań 3699,Lublin
+Luna Lublin 3700,Rzeszów
+Iluzjon Lublin 3701,Poznań
+Cinema City Poznań 3702,Poznań
+Cinema City Wrocław 3703,Szczecin
+Helios Kraków 3704,Warszawa
+Multikino Rzeszów 3705,Rzeszów
+Cinema City Wrocław 3706,Lublin
+Helios Poznań 3707,Warszawa
+Nowe Horyzonty Szczecin 3708,Rzeszów
+Multikino Łódź 3709,Łódź
+Nowe Horyzonty Wrocław 3710,Warszawa
+Iluzjon Katowice 3711,Rzeszów
+Kinepolis Gdańsk 3712,Katowice
+Nowe Horyzonty Wrocław 3713,Gdańsk
+Luna Wrocław 3714,Wrocław
+Nowe Horyzonty Katowice 3715,Szczecin
+Kino Moskwa Katowice 3716,Warszawa
+Kinepolis Kraków 3717,Łódź
+Muranów Szczecin 3718,Wrocław
+Kino Moskwa Poznań 3719,Kraków
+Cinema City Katowice 3720,Warszawa
+Helios Rzeszów 3721,Katowice
+Kinepolis Gdańsk 3722,Wrocław
+Iluzjon Szczecin 3723,Kraków
+Helios Warszawa 3724,Kraków
+Cinema City Szczecin 3725,Wrocław
+Kino Moskwa Katowice 3726,Lublin
+Muranów Kraków 3727,Łódź
+Kinepolis Katowice 3728,Katowice
+Kino Moskwa Katowice 3729,Wrocław
+Nowe Horyzonty Gdańsk 3730,Poznań
+Kinepolis Poznań 3731,Rzeszów
+Cinema City Gdańsk 3732,Wrocław
+Cinema City Szczecin 3733,Wrocław
+Helios Rzeszów 3734,Warszawa
+Kino Moskwa Poznań 3735,Warszawa
+Cinema City Łódź 3736,Szczecin
+Nowe Horyzonty Katowice 3737,Szczecin
+Nowe Horyzonty Szczecin 3738,Rzeszów
+Helios Lublin 3739,Poznań
+Kinepolis Warszawa 3740,Warszawa
+Muranów Łódź 3741,Katowice
+Multikino Lublin 3742,Wrocław
+Iluzjon Poznań 3743,Wrocław
+Luna Warszawa 3744,Szczecin
+Nowe Horyzonty Rzeszów 3745,Lublin
+Iluzjon Poznań 3746,Wrocław
+Luna Gdańsk 3747,Lublin
+Kino Moskwa Katowice 3748,Rzeszów
+Kinepolis Poznań 3749,Kraków
+Multikino Kraków 3750,Wrocław
+Kino Moskwa Lublin 3751,Kraków
+Kinepolis Szczecin 3752,Katowice
+Kinepolis Łódź 3753,Warszawa
+Multikino Łódź 3754,Poznań
+Iluzjon Kraków 3755,Szczecin
+Kinepolis Gdańsk 3756,Szczecin
+Luna Warszawa 3757,Kraków
+Kinepolis Szczecin 3758,Kraków
+Helios Szczecin 3759,Wrocław
+Luna Lublin 3760,Rzeszów
+Kino Moskwa Szczecin 3761,Poznań
+Multikino Wrocław 3762,Gdańsk
+Multikino Katowice 3763,Szczecin
+Cinema City Rzeszów 3764,Rzeszów
+Muranów Lublin 3765,Rzeszów
+Nowe Horyzonty Gdańsk 3766,Szczecin
+Nowe Horyzonty Rzeszów 3767,Kraków
+Multikino Lublin 3768,Szczecin
+Iluzjon Warszawa 3769,Łódź
+Multikino Warszawa 3770,Katowice
+Helios Szczecin 3771,Wrocław
+Luna Warszawa 3772,Katowice
+Nowe Horyzonty Wrocław 3773,Kraków
+Helios Gdańsk 3774,Wrocław
+Nowe Horyzonty Szczecin 3775,Gdańsk
+Kino Moskwa Poznań 3776,Rzeszów
+Kinepolis Poznań 3777,Lublin
+Iluzjon Gdańsk 3778,Kraków
+Muranów Lublin 3779,Lublin
+Kino Moskwa Szczecin 3780,Poznań
+Cinema City Katowice 3781,Rzeszów
+Iluzjon Rzeszów 3782,Rzeszów
+Muranów Kraków 3783,Katowice
+Nowe Horyzonty Rzeszów 3784,Lublin
+Kino Moskwa Wrocław 3785,Wrocław
+Cinema City Kraków 3786,Kraków
+Cinema City Kraków 3787,Wrocław
+Kino Moskwa Wrocław 3788,Gdańsk
+Luna Szczecin 3789,Warszawa
+Cinema City Lublin 3790,Gdańsk
+Helios Katowice 3791,Kraków
+Helios Łódź 3792,Rzeszów
+Luna Kraków 3793,Łódź
+Nowe Horyzonty Wrocław 3794,Szczecin
+Cinema City Wrocław 3795,Rzeszów
+Kino Moskwa Kraków 3796,Szczecin
+Iluzjon Warszawa 3797,Gdańsk
+Kino Moskwa Poznań 3798,Warszawa
+Kino Moskwa Szczecin 3799,Warszawa
+Cinema City Poznań 3800,Gdańsk
+Muranów Szczecin 3801,Gdańsk
+Kino Moskwa Rzeszów 3802,Katowice
+Muranów Poznań 3803,Kraków
+Iluzjon Rzeszów 3804,Warszawa
+Luna Wrocław 3805,Lublin
+Luna Gdańsk 3806,Szczecin
+Helios Gdańsk 3807,Rzeszów
+Luna Poznań 3808,Gdańsk
+Luna Katowice 3809,Poznań
+Muranów Gdańsk 3810,Szczecin
+Nowe Horyzonty Szczecin 3811,Szczecin
+Luna Kraków 3812,Warszawa
+Kino Moskwa Gdańsk 3813,Szczecin
+Kinepolis Wrocław 3814,Lublin
+Kino Moskwa Kraków 3815,Rzeszów
+Multikino Warszawa 3816,Warszawa
+Muranów Lublin 3817,Katowice
+Helios Lublin 3818,Rzeszów
+Luna Katowice 3819,Szczecin
+Nowe Horyzonty Gdańsk 3820,Warszawa
+Kino Moskwa Szczecin 3821,Łódź
+Helios Poznań 3822,Gdańsk
+Cinema City Lublin 3823,Warszawa
+Helios Rzeszów 3824,Kraków
+Nowe Horyzonty Gdańsk 3825,Gdańsk
+Kinepolis Lublin 3826,Łódź
+Helios Kraków 3827,Wrocław
+Kino Moskwa Wrocław 3828,Warszawa
+Kino Moskwa Poznań 3829,Lublin
+Kino Moskwa Wrocław 3830,Kraków
+Muranów Poznań 3831,Warszawa
+Iluzjon Gdańsk 3832,Wrocław
+Kino Moskwa Kraków 3833,Wrocław
+Luna Szczecin 3834,Gdańsk
+Nowe Horyzonty Warszawa 3835,Wrocław
+Kinepolis Szczecin 3836,Katowice
+Kino Moskwa Warszawa 3837,Warszawa
+Luna Katowice 3838,Warszawa
+Nowe Horyzonty Kraków 3839,Rzeszów
+Kino Moskwa Gdańsk 3840,Rzeszów
+Helios Kraków 3841,Łódź
+Iluzjon Lublin 3842,Lublin
+Iluzjon Szczecin 3843,Kraków
+Luna Warszawa 3844,Lublin
+Iluzjon Łódź 3845,Kraków
+Cinema City Rzeszów 3846,Wrocław
+Iluzjon Wrocław 3847,Rzeszów
+Kino Moskwa Poznań 3848,Łódź
+Luna Kraków 3849,Gdańsk
+Kino Moskwa Lublin 3850,Łódź
+Multikino Szczecin 3851,Wrocław
+Kino Moskwa Warszawa 3852,Gdańsk
+Helios Lublin 3853,Wrocław
+Kinepolis Wrocław 3854,Rzeszów
+Multikino Wrocław 3855,Gdańsk
+Cinema City Wrocław 3856,Wrocław
+Iluzjon Szczecin 3857,Wrocław
+Kino Moskwa Rzeszów 3858,Łódź
+Helios Kraków 3859,Łódź
+Kino Moskwa Gdańsk 3860,Szczecin
+Kinepolis Poznań 3861,Łódź
+Cinema City Szczecin 3862,Warszawa
+Iluzjon Łódź 3863,Szczecin
+Helios Łódź 3864,Wrocław
+Helios Katowice 3865,Wrocław
+Helios Warszawa 3866,Szczecin
+Kinepolis Warszawa 3867,Katowice
+Muranów Wrocław 3868,Kraków
+Iluzjon Wrocław 3869,Poznań
+Kinepolis Warszawa 3870,Wrocław
+Iluzjon Kraków 3871,Wrocław
+Cinema City Katowice 3872,Katowice
+Helios Katowice 3873,Gdańsk
+Nowe Horyzonty Szczecin 3874,Wrocław
+Nowe Horyzonty Łódź 3875,Warszawa
+Kinepolis Kraków 3876,Lublin
+Muranów Gdańsk 3877,Warszawa
+Luna Rzeszów 3878,Poznań
+Cinema City Rzeszów 3879,Gdańsk
+Cinema City Łódź 3880,Wrocław
+Kinepolis Lublin 3881,Wrocław
+Cinema City Warszawa 3882,Warszawa
+Muranów Gdańsk 3883,Wrocław
+Kinepolis Wrocław 3884,Poznań
+Multikino Wrocław 3885,Kraków
+Kino Moskwa Warszawa 3886,Kraków
+Muranów Poznań 3887,Warszawa
+Muranów Wrocław 3888,Poznań
+Kinepolis Rzeszów 3889,Szczecin
+Iluzjon Poznań 3890,Łódź
+Iluzjon Rzeszów 3891,Szczecin
+Helios Rzeszów 3892,Szczecin
+Cinema City Szczecin 3893,Kraków
+Kino Moskwa Katowice 3894,Gdańsk
+Nowe Horyzonty Katowice 3895,Kraków
+Kinepolis Szczecin 3896,Wrocław
+Multikino Wrocław 3897,Kraków
+Helios Lublin 3898,Rzeszów
+Iluzjon Warszawa 3899,Wrocław
+Luna Szczecin 3900,Szczecin
+Kino Moskwa Poznań 3901,Gdańsk
+Cinema City Gdańsk 3902,Poznań
+Kino Moskwa Kraków 3903,Wrocław
+Kinepolis Katowice 3904,Katowice
+Kino Moskwa Lublin 3905,Szczecin
+Kino Moskwa Katowice 3906,Lublin
+Cinema City Katowice 3907,Rzeszów
+Multikino Warszawa 3908,Poznań
+Nowe Horyzonty Warszawa 3909,Lublin
+Cinema City Wrocław 3910,Rzeszów
+Muranów Wrocław 3911,Poznań
+Kino Moskwa Łódź 3912,Wrocław
+Kino Moskwa Warszawa 3913,Katowice
+Luna Rzeszów 3914,Gdańsk
+Cinema City Poznań 3915,Kraków
+Iluzjon Wrocław 3916,Kraków
+Nowe Horyzonty Lublin 3917,Wrocław
+Helios Szczecin 3918,Katowice
+Cinema City Łódź 3919,Rzeszów
+Luna Łódź 3920,Łódź
+Iluzjon Lublin 3921,Lublin
+Cinema City Rzeszów 3922,Rzeszów
+Iluzjon Lublin 3923,Warszawa
+Nowe Horyzonty Szczecin 3924,Szczecin
+Nowe Horyzonty Łódź 3925,Szczecin
+Helios Wrocław 3926,Katowice
+Nowe Horyzonty Warszawa 3927,Poznań
+Iluzjon Katowice 3928,Kraków
+Nowe Horyzonty Lublin 3929,Szczecin
+Multikino Warszawa 3930,Lublin
+Multikino Rzeszów 3931,Warszawa
+Nowe Horyzonty Gdańsk 3932,Katowice
+Helios Poznań 3933,Szczecin
+Iluzjon Kraków 3934,Kraków
+Multikino Warszawa 3935,Gdańsk
+Kino Moskwa Katowice 3936,Łódź
+Iluzjon Gdańsk 3937,Rzeszów
+Luna Kraków 3938,Lublin
+Muranów Lublin 3939,Warszawa
+Kino Moskwa Łódź 3940,Lublin
+Kino Moskwa Poznań 3941,Łódź
+Luna Rzeszów 3942,Wrocław
+Nowe Horyzonty Warszawa 3943,Warszawa
+Kino Moskwa Szczecin 3944,Lublin
+Helios Gdańsk 3945,Gdańsk
+Kino Moskwa Wrocław 3946,Łódź
+Luna Rzeszów 3947,Warszawa
+Kinepolis Wrocław 3948,Gdańsk
+Kinepolis Gdańsk 3949,Wrocław
+Kinepolis Wrocław 3950,Warszawa
+Kinepolis Poznań 3951,Łódź
+Muranów Szczecin 3952,Wrocław
+Cinema City Poznań 3953,Poznań
+Cinema City Poznań 3954,Łódź
+Nowe Horyzonty Szczecin 3955,Wrocław
+Multikino Szczecin 3956,Łódź
+Iluzjon Katowice 3957,Rzeszów
+Luna Lublin 3958,Warszawa
+Multikino Gdańsk 3959,Katowice
+Nowe Horyzonty Katowice 3960,Kraków
+Helios Łódź 3961,Poznań
+Muranów Poznań 3962,Warszawa
+Kino Moskwa Rzeszów 3963,Katowice
+Cinema City Lublin 3964,Gdańsk
+Iluzjon Rzeszów 3965,Kraków
+Multikino Szczecin 3966,Szczecin
+Iluzjon Łódź 3967,Rzeszów
+Luna Lublin 3968,Łódź
+Luna Kraków 3969,Poznań
+Helios Wrocław 3970,Lublin
+Muranów Warszawa 3971,Katowice
+Cinema City Kraków 3972,Warszawa
+Nowe Horyzonty Szczecin 3973,Kraków
+Helios Gdańsk 3974,Rzeszów
+Kino Moskwa Katowice 3975,Lublin
+Cinema City Warszawa 3976,Rzeszów
+Luna Łódź 3977,Łódź
+Nowe Horyzonty Rzeszów 3978,Poznań
+Luna Wrocław 3979,Łódź
+Cinema City Warszawa 3980,Wrocław
+Luna Kraków 3981,Gdańsk
+Nowe Horyzonty Szczecin 3982,Rzeszów
+Cinema City Lublin 3983,Rzeszów
+Kinepolis Szczecin 3984,Katowice
+Helios Rzeszów 3985,Lublin
+Iluzjon Łódź 3986,Lublin
+Cinema City Rzeszów 3987,Szczecin
+Cinema City Poznań 3988,Kraków
+Nowe Horyzonty Szczecin 3989,Warszawa
+Multikino Szczecin 3990,Warszawa
+Nowe Horyzonty Katowice 3991,Łódź
+Luna Lublin 3992,Kraków
+Multikino Katowice 3993,Łódź
+Cinema City Lublin 3994,Kraków
+Muranów Wrocław 3995,Szczecin
+Kino Moskwa Warszawa 3996,Lublin
+Multikino Poznań 3997,Łódź
+Helios Szczecin 3998,Gdańsk
+Multikino Wrocław 3999,Poznań
+Nowe Horyzonty Katowice 4000,Szczecin
+Cinema City Warszawa 4001,Gdańsk
+Kino Moskwa Katowice 4002,Wrocław
+Helios Poznań 4003,Kraków
+Kinepolis Wrocław 4004,Rzeszów
+Nowe Horyzonty Wrocław 4005,Wrocław
+Cinema City Rzeszów 4006,Kraków
+Kino Moskwa Katowice 4007,Warszawa
+Multikino Warszawa 4008,Gdańsk
+Luna Poznań 4009,Łódź
+Cinema City Katowice 4010,Gdańsk
+Nowe Horyzonty Rzeszów 4011,Katowice
+Muranów Kraków 4012,Warszawa
+Kinepolis Katowice 4013,Wrocław
+Kino Moskwa Szczecin 4014,Rzeszów
+Multikino Warszawa 4015,Kraków
+Nowe Horyzonty Warszawa 4016,Gdańsk
+Kino Moskwa Kraków 4017,Gdańsk
+Nowe Horyzonty Katowice 4018,Warszawa
+Cinema City Warszawa 4019,Szczecin
+Iluzjon Warszawa 4020,Warszawa
+Kino Moskwa Łódź 4021,Szczecin
+Iluzjon Warszawa 4022,Warszawa
+Kinepolis Wrocław 4023,Rzeszów
+Kino Moskwa Lublin 4024,Łódź
+Helios Warszawa 4025,Gdańsk
+Luna Warszawa 4026,Lublin
+Multikino Katowice 4027,Gdańsk
+Kinepolis Rzeszów 4028,Poznań
+Multikino Wrocław 4029,Kraków
+Iluzjon Kraków 4030,Szczecin
+Kinepolis Wrocław 4031,Wrocław
+Cinema City Kraków 4032,Szczecin
+Helios Warszawa 4033,Rzeszów
+Nowe Horyzonty Łódź 4034,Łódź
+Iluzjon Lublin 4035,Szczecin
+Cinema City Rzeszów 4036,Łódź
+Luna Wrocław 4037,Katowice
+Multikino Poznań 4038,Gdańsk
+Nowe Horyzonty Łódź 4039,Łódź
+Kinepolis Gdańsk 4040,Wrocław
+Luna Gdańsk 4041,Rzeszów
+Kino Moskwa Wrocław 4042,Łódź
+Cinema City Szczecin 4043,Kraków
+Nowe Horyzonty Rzeszów 4044,Rzeszów
+Iluzjon Warszawa 4045,Katowice
+Helios Warszawa 4046,Łódź
+Helios Poznań 4047,Rzeszów
+Iluzjon Poznań 4048,Lublin
+Helios Poznań 4049,Szczecin
+Iluzjon Wrocław 4050,Lublin
+Multikino Warszawa 4051,Poznań
+Kinepolis Lublin 4052,Rzeszów
+Muranów Lublin 4053,Lublin
+Luna Lublin 4054,Poznań
+Nowe Horyzonty Gdańsk 4055,Kraków
+Multikino Szczecin 4056,Poznań
+Nowe Horyzonty Gdańsk 4057,Rzeszów
+Iluzjon Katowice 4058,Łódź
+Luna Gdańsk 4059,Lublin
+Nowe Horyzonty Wrocław 4060,Łódź
+Nowe Horyzonty Gdańsk 4061,Poznań
+Nowe Horyzonty Lublin 4062,Szczecin
+Kinepolis Kraków 4063,Kraków
+Kino Moskwa Łódź 4064,Łódź
+Muranów Wrocław 4065,Poznań
+Cinema City Wrocław 4066,Rzeszów
+Muranów Katowice 4067,Poznań
+Cinema City Kraków 4068,Łódź
+Cinema City Szczecin 4069,Lublin
+Helios Warszawa 4070,Poznań
+Muranów Lublin 4071,Łódź
+Iluzjon Warszawa 4072,Warszawa
+Helios Wrocław 4073,Gdańsk
+Kino Moskwa Lublin 4074,Wrocław
+Cinema City Poznań 4075,Szczecin
+Multikino Łódź 4076,Katowice
+Iluzjon Lublin 4077,Kraków
+Kino Moskwa Lublin 4078,Szczecin
+Kino Moskwa Gdańsk 4079,Szczecin
+Muranów Kraków 4080,Kraków
+Multikino Gdańsk 4081,Warszawa
+Kino Moskwa Wrocław 4082,Szczecin
+Helios Gdańsk 4083,Rzeszów
+Helios Szczecin 4084,Szczecin
+Multikino Lublin 4085,Kraków
+Muranów Kraków 4086,Wrocław
+Helios Poznań 4087,Łódź
+Iluzjon Szczecin 4088,Rzeszów
+Multikino Warszawa 4089,Kraków
+Muranów Warszawa 4090,Wrocław
+Iluzjon Wrocław 4091,Gdańsk
+Muranów Szczecin 4092,Rzeszów
+Iluzjon Poznań 4093,Gdańsk
+Luna Poznań 4094,Lublin
+Luna Rzeszów 4095,Rzeszów
+Iluzjon Rzeszów 4096,Rzeszów
+Cinema City Wrocław 4097,Poznań
+Kino Moskwa Kraków 4098,Wrocław
+Helios Poznań 4099,Warszawa
+Iluzjon Wrocław 4100,Gdańsk
+Multikino Szczecin 4101,Łódź
+Luna Poznań 4102,Łódź
+Nowe Horyzonty Kraków 4103,Gdańsk
+Iluzjon Warszawa 4104,Wrocław
+Multikino Wrocław 4105,Szczecin
+Multikino Poznań 4106,Lublin
+Multikino Kraków 4107,Warszawa
+Multikino Katowice 4108,Łódź
+Kino Moskwa Łódź 4109,Lublin
+Nowe Horyzonty Wrocław 4110,Wrocław
+Kinepolis Wrocław 4111,Wrocław
+Kino Moskwa Poznań 4112,Warszawa
+Multikino Warszawa 4113,Poznań
+Muranów Lublin 4114,Gdańsk
+Nowe Horyzonty Kraków 4115,Kraków
+Muranów Katowice 4116,Kraków
+Muranów Warszawa 4117,Katowice
+Muranów Rzeszów 4118,Rzeszów
+Helios Lublin 4119,Łódź
+Multikino Łódź 4120,Katowice
+Muranów Warszawa 4121,Rzeszów
+Helios Szczecin 4122,Poznań
+Nowe Horyzonty Lublin 4123,Gdańsk
+Multikino Lublin 4124,Szczecin
+Helios Lublin 4125,Szczecin
+Kino Moskwa Szczecin 4126,Katowice
+Cinema City Kraków 4127,Kraków
+Kino Moskwa Warszawa 4128,Łódź
+Muranów Wrocław 4129,Wrocław
+Luna Szczecin 4130,Szczecin
+Muranów Wrocław 4131,Rzeszów
+Multikino Łódź 4132,Kraków
+Cinema City Gdańsk 4133,Poznań
+Nowe Horyzonty Gdańsk 4134,Poznań
+Iluzjon Kraków 4135,Rzeszów
+Luna Poznań 4136,Katowice
+Iluzjon Katowice 4137,Szczecin
+Muranów Łódź 4138,Wrocław
+Nowe Horyzonty Rzeszów 4139,Gdańsk
+Luna Warszawa 4140,Łódź
+Iluzjon Szczecin 4141,Kraków
+Kino Moskwa Łódź 4142,Gdańsk
+Kino Moskwa Szczecin 4143,Lublin
+Muranów Lublin 4144,Poznań
+Luna Gdańsk 4145,Szczecin
+Cinema City Wrocław 4146,Lublin
+Iluzjon Rzeszów 4147,Poznań
+Helios Poznań 4148,Łódź
+Nowe Horyzonty Poznań 4149,Wrocław
+Cinema City Lublin 4150,Poznań
+Iluzjon Wrocław 4151,Katowice
+Muranów Lublin 4152,Warszawa
+Cinema City Szczecin 4153,Katowice
+Nowe Horyzonty Szczecin 4154,Wrocław
+Muranów Szczecin 4155,Gdańsk
+Cinema City Łódź 4156,Warszawa
+Helios Gdańsk 4157,Katowice
+Nowe Horyzonty Szczecin 4158,Kraków
+Kinepolis Rzeszów 4159,Lublin
+Multikino Rzeszów 4160,Warszawa
+Luna Rzeszów 4161,Warszawa
+Muranów Katowice 4162,Łódź
+Helios Łódź 4163,Kraków
+Muranów Lublin 4164,Łódź
+Multikino Poznań 4165,Poznań
+Muranów Gdańsk 4166,Szczecin
+Helios Lublin 4167,Kraków
+Kinepolis Warszawa 4168,Gdańsk
+Kinepolis Wrocław 4169,Lublin
+Luna Łódź 4170,Kraków
+Luna Rzeszów 4171,Wrocław
+Multikino Lublin 4172,Łódź
+Helios Szczecin 4173,Poznań
+Muranów Szczecin 4174,Rzeszów
+Luna Kraków 4175,Poznań
+Nowe Horyzonty Rzeszów 4176,Kraków
+Luna Gdańsk 4177,Poznań
+Cinema City Kraków 4178,Rzeszów
+Cinema City Łódź 4179,Katowice
+Luna Rzeszów 4180,Rzeszów
+Cinema City Poznań 4181,Gdańsk
+Nowe Horyzonty Poznań 4182,Katowice
+Kinepolis Lublin 4183,Poznań
+Iluzjon Lublin 4184,Katowice
+Nowe Horyzonty Katowice 4185,Łódź
+Nowe Horyzonty Warszawa 4186,Szczecin
+Kino Moskwa Katowice 4187,Rzeszów
+Multikino Wrocław 4188,Łódź
+Nowe Horyzonty Kraków 4189,Warszawa
+Nowe Horyzonty Rzeszów 4190,Warszawa
+Kino Moskwa Poznań 4191,Gdańsk
+Kinepolis Szczecin 4192,Poznań
+Luna Warszawa 4193,Gdańsk
+Luna Szczecin 4194,Gdańsk
+Muranów Poznań 4195,Łódź
+Nowe Horyzonty Poznań 4196,Rzeszów
+Luna Poznań 4197,Poznań
+Nowe Horyzonty Gdańsk 4198,Szczecin
+Multikino Warszawa 4199,Lublin
+Iluzjon Poznań 4200,Kraków
+Multikino Katowice 4201,Lublin
+Nowe Horyzonty Gdańsk 4202,Gdańsk
+Luna Gdańsk 4203,Poznań
+Iluzjon Katowice 4204,Lublin
+Luna Warszawa 4205,Rzeszów
+Kino Moskwa Wrocław 4206,Kraków
+Kino Moskwa Rzeszów 4207,Lublin
+Helios Katowice 4208,Kraków
+Nowe Horyzonty Łódź 4209,Szczecin
+Iluzjon Rzeszów 4210,Kraków
+Cinema City Szczecin 4211,Gdańsk
+Kinepolis Rzeszów 4212,Poznań
+Muranów Szczecin 4213,Poznań
+Helios Lublin 4214,Lublin
+Cinema City Gdańsk 4215,Wrocław
+Muranów Katowice 4216,Rzeszów
+Iluzjon Szczecin 4217,Warszawa
+Kino Moskwa Rzeszów 4218,Szczecin
+Nowe Horyzonty Wrocław 4219,Łódź
+Nowe Horyzonty Warszawa 4220,Kraków
+Muranów Rzeszów 4221,Wrocław
+Iluzjon Szczecin 4222,Łódź
+Cinema City Szczecin 4223,Poznań
+Kinepolis Warszawa 4224,Gdańsk
+Cinema City Poznań 4225,Lublin
+Kinepolis Rzeszów 4226,Warszawa
+Muranów Kraków 4227,Gdańsk
+Multikino Poznań 4228,Lublin
+Iluzjon Rzeszów 4229,Warszawa
+Multikino Rzeszów 4230,Wrocław
+Kino Moskwa Gdańsk 4231,Kraków
+Multikino Gdańsk 4232,Łódź
+Helios Łódź 4233,Gdańsk
+Multikino Lublin 4234,Wrocław
+Nowe Horyzonty Wrocław 4235,Wrocław
+Nowe Horyzonty Lublin 4236,Katowice
+Iluzjon Rzeszów 4237,Rzeszów
+Luna Katowice 4238,Łódź
+Kino Moskwa Rzeszów 4239,Łódź
+Kino Moskwa Poznań 4240,Katowice
+Multikino Katowice 4241,Wrocław
+Helios Wrocław 4242,Kraków
+Cinema City Szczecin 4243,Łódź
+Kinepolis Szczecin 4244,Kraków
+Kinepolis Lublin 4245,Rzeszów
+Nowe Horyzonty Katowice 4246,Łódź
+Kino Moskwa Poznań 4247,Szczecin
+Kino Moskwa Poznań 4248,Kraków
+Multikino Rzeszów 4249,Katowice
+Multikino Gdańsk 4250,Rzeszów
+Nowe Horyzonty Poznań 4251,Rzeszów
+Iluzjon Kraków 4252,Poznań
+Kinepolis Katowice 4253,Lublin
+Nowe Horyzonty Szczecin 4254,Lublin
+Kinepolis Warszawa 4255,Kraków
+Multikino Katowice 4256,Lublin
+Luna Łódź 4257,Lublin
+Iluzjon Kraków 4258,Lublin
+Multikino Kraków 4259,Wrocław
+Multikino Kraków 4260,Szczecin
+Muranów Kraków 4261,Łódź
+Kinepolis Poznań 4262,Gdańsk
+Iluzjon Poznań 4263,Warszawa
+Nowe Horyzonty Kraków 4264,Wrocław
+Kinepolis Szczecin 4265,Łódź
+Helios Gdańsk 4266,Poznań
+Kino Moskwa Łódź 4267,Kraków
+Luna Rzeszów 4268,Wrocław
+Cinema City Kraków 4269,Gdańsk
+Muranów Katowice 4270,Wrocław
+Nowe Horyzonty Katowice 4271,Gdańsk
+Iluzjon Kraków 4272,Szczecin
+Luna Katowice 4273,Lublin
+Kino Moskwa Warszawa 4274,Szczecin
+Muranów Rzeszów 4275,Szczecin
+Cinema City Poznań 4276,Warszawa
+Kino Moskwa Warszawa 4277,Poznań
+Helios Katowice 4278,Warszawa
+Muranów Poznań 4279,Gdańsk
+Helios Rzeszów 4280,Gdańsk
+Nowe Horyzonty Wrocław 4281,Lublin
+Kino Moskwa Rzeszów 4282,Kraków
+Nowe Horyzonty Poznań 4283,Warszawa
+Kino Moskwa Łódź 4284,Łódź
+Luna Szczecin 4285,Rzeszów
+Muranów Szczecin 4286,Poznań
+Kinepolis Kraków 4287,Poznań
+Kino Moskwa Wrocław 4288,Gdańsk
+Nowe Horyzonty Szczecin 4289,Rzeszów
+Iluzjon Lublin 4290,Kraków
+Luna Kraków 4291,Wrocław
+Luna Szczecin 4292,Rzeszów
+Luna Wrocław 4293,Lublin
+Muranów Katowice 4294,Wrocław
+Kino Moskwa Kraków 4295,Wrocław
+Kino Moskwa Rzeszów 4296,Poznań
+Luna Rzeszów 4297,Katowice
+Multikino Warszawa 4298,Rzeszów
+Iluzjon Kraków 4299,Gdańsk
+Luna Warszawa 4300,Gdańsk
+Kino Moskwa Lublin 4301,Poznań
+Luna Łódź 4302,Rzeszów
+Kinepolis Warszawa 4303,Poznań
+Kino Moskwa Wrocław 4304,Katowice
+Kino Moskwa Gdańsk 4305,Gdańsk
+Kinepolis Łódź 4306,Wrocław
+Multikino Wrocław 4307,Rzeszów
+Kinepolis Katowice 4308,Lublin
+Multikino Szczecin 4309,Kraków
+Muranów Wrocław 4310,Lublin
+Helios Rzeszów 4311,Wrocław
+Iluzjon Kraków 4312,Szczecin
+Nowe Horyzonty Wrocław 4313,Łódź
+Kinepolis Poznań 4314,Lublin
+Nowe Horyzonty Poznań 4315,Warszawa
+Multikino Kraków 4316,Gdańsk
+Kino Moskwa Katowice 4317,Łódź
+Luna Lublin 4318,Gdańsk
+Luna Kraków 4319,Rzeszów
+Luna Warszawa 4320,Kraków
+Helios Kraków 4321,Poznań
+Helios Szczecin 4322,Szczecin
+Kino Moskwa Łódź 4323,Szczecin
+Kinepolis Szczecin 4324,Kraków
+Kino Moskwa Kraków 4325,Lublin
+Kinepolis Katowice 4326,Szczecin
+Helios Katowice 4327,Warszawa
+Cinema City Szczecin 4328,Szczecin
+Muranów Kraków 4329,Gdańsk
+Kino Moskwa Wrocław 4330,Wrocław
+Kino Moskwa Rzeszów 4331,Wrocław
+Iluzjon Katowice 4332,Rzeszów
+Muranów Szczecin 4333,Lublin
+Luna Rzeszów 4334,Gdańsk
+Kinepolis Lublin 4335,Wrocław
+Iluzjon Szczecin 4336,Łódź
+Iluzjon Poznań 4337,Łódź
+Muranów Kraków 4338,Łódź
+Cinema City Warszawa 4339,Warszawa
+Kino Moskwa Szczecin 4340,Kraków
+Luna Wrocław 4341,Rzeszów
+Muranów Kraków 4342,Poznań
+Kino Moskwa Kraków 4343,Wrocław
+Helios Szczecin 4344,Wrocław
+Iluzjon Łódź 4345,Szczecin
+Helios Kraków 4346,Gdańsk
+Muranów Kraków 4347,Wrocław
+Luna Kraków 4348,Kraków
+Iluzjon Katowice 4349,Lublin
+Kino Moskwa Wrocław 4350,Szczecin
+Iluzjon Warszawa 4351,Wrocław
+Luna Wrocław 4352,Wrocław
+Helios Katowice 4353,Szczecin
+Iluzjon Kraków 4354,Warszawa
+Kino Moskwa Gdańsk 4355,Rzeszów
+Kino Moskwa Wrocław 4356,Gdańsk
+Multikino Kraków 4357,Katowice
+Muranów Kraków 4358,Kraków
+Multikino Kraków 4359,Warszawa
+Kinepolis Poznań 4360,Poznań
+Helios Kraków 4361,Szczecin
+Muranów Szczecin 4362,Poznań
+Helios Gdańsk 4363,Rzeszów
+Kinepolis Łódź 4364,Warszawa
+Helios Rzeszów 4365,Wrocław
+Multikino Kraków 4366,Katowice
+Iluzjon Warszawa 4367,Rzeszów
+Helios Lublin 4368,Łódź
+Iluzjon Gdańsk 4369,Lublin
+Kino Moskwa Łódź 4370,Poznań
+Luna Szczecin 4371,Szczecin
+Cinema City Rzeszów 4372,Łódź
+Kinepolis Lublin 4373,Kraków
+Kinepolis Warszawa 4374,Łódź
+Kino Moskwa Wrocław 4375,Rzeszów
+Iluzjon Warszawa 4376,Lublin
+Kino Moskwa Katowice 4377,Wrocław
+Kinepolis Rzeszów 4378,Wrocław
+Muranów Lublin 4379,Wrocław
+Iluzjon Poznań 4380,Kraków
+Kino Moskwa Lublin 4381,Szczecin
+Muranów Lublin 4382,Gdańsk
+Kino Moskwa Łódź 4383,Katowice
+Muranów Katowice 4384,Szczecin
+Cinema City Katowice 4385,Wrocław
+Helios Szczecin 4386,Lublin
+Nowe Horyzonty Wrocław 4387,Poznań
+Iluzjon Poznań 4388,Kraków
+Iluzjon Kraków 4389,Poznań
+Kino Moskwa Łódź 4390,Łódź
+Muranów Szczecin 4391,Kraków
+Nowe Horyzonty Gdańsk 4392,Lublin
+Kino Moskwa Kraków 4393,Kraków
+Kinepolis Poznań 4394,Szczecin
+Multikino Wrocław 4395,Lublin
+Kinepolis Szczecin 4396,Gdańsk
+Kino Moskwa Wrocław 4397,Łódź
+Helios Wrocław 4398,Katowice
+Cinema City Katowice 4399,Wrocław
+Helios Warszawa 4400,Katowice
+Helios Kraków 4401,Poznań
+Nowe Horyzonty Katowice 4402,Łódź
+Luna Katowice 4403,Warszawa
+Iluzjon Warszawa 4404,Katowice
+Iluzjon Poznań 4405,Warszawa
+Helios Łódź 4406,Szczecin
+Kino Moskwa Poznań 4407,Gdańsk
+Cinema City Lublin 4408,Gdańsk
+Helios Lublin 4409,Łódź
+Nowe Horyzonty Rzeszów 4410,Szczecin
+Nowe Horyzonty Poznań 4411,Szczecin
+Kinepolis Warszawa 4412,Szczecin
+Multikino Katowice 4413,Wrocław
+Luna Gdańsk 4414,Rzeszów
+Luna Wrocław 4415,Warszawa
+Cinema City Łódź 4416,Gdańsk
+Iluzjon Poznań 4417,Rzeszów
+Luna Szczecin 4418,Łódź
+Kino Moskwa Poznań 4419,Lublin
+Kinepolis Warszawa 4420,Warszawa
+Iluzjon Łódź 4421,Szczecin
+Kinepolis Warszawa 4422,Wrocław
+Luna Katowice 4423,Gdańsk
+Nowe Horyzonty Rzeszów 4424,Rzeszów
+Luna Kraków 4425,Lublin
+Nowe Horyzonty Kraków 4426,Gdańsk
+Luna Gdańsk 4427,Katowice
+Kino Moskwa Lublin 4428,Warszawa
+Kinepolis Gdańsk 4429,Łódź
+Muranów Katowice 4430,Szczecin
+Kino Moskwa Poznań 4431,Rzeszów
+Multikino Szczecin 4432,Katowice
+Kinepolis Wrocław 4433,Warszawa
+Helios Szczecin 4434,Lublin
+Nowe Horyzonty Gdańsk 4435,Gdańsk
+Iluzjon Łódź 4436,Wrocław
+Luna Łódź 4437,Warszawa
+Kino Moskwa Rzeszów 4438,Warszawa
+Cinema City Wrocław 4439,Lublin
+Kino Moskwa Gdańsk 4440,Katowice
+Helios Gdańsk 4441,Warszawa
+Kino Moskwa Warszawa 4442,Szczecin
+Iluzjon Rzeszów 4443,Rzeszów
+Iluzjon Łódź 4444,Szczecin
+Muranów Katowice 4445,Warszawa
+Helios Lublin 4446,Lublin
+Muranów Katowice 4447,Lublin
+Cinema City Gdańsk 4448,Gdańsk
+Muranów Kraków 4449,Poznań
+Cinema City Łódź 4450,Lublin
+Helios Rzeszów 4451,Lublin
+Cinema City Szczecin 4452,Wrocław
+Iluzjon Wrocław 4453,Rzeszów
+Multikino Rzeszów 4454,Szczecin
+Nowe Horyzonty Kraków 4455,Lublin
+Cinema City Kraków 4456,Łódź
+Muranów Łódź 4457,Szczecin
+Helios Katowice 4458,Rzeszów
+Kino Moskwa Poznań 4459,Wrocław
+Kino Moskwa Lublin 4460,Katowice
+Helios Łódź 4461,Katowice
+Iluzjon Wrocław 4462,Rzeszów
+Multikino Lublin 4463,Kraków
+Kino Moskwa Warszawa 4464,Lublin
+Luna Lublin 4465,Katowice
+Kino Moskwa Szczecin 4466,Warszawa
+Cinema City Szczecin 4467,Szczecin
+Multikino Szczecin 4468,Lublin
+Helios Szczecin 4469,Poznań
+Luna Łódź 4470,Łódź
+Nowe Horyzonty Kraków 4471,Wrocław
+Cinema City Kraków 4472,Gdańsk
+Kinepolis Kraków 4473,Wrocław
+Cinema City Łódź 4474,Poznań
+Nowe Horyzonty Kraków 4475,Warszawa
+Kino Moskwa Szczecin 4476,Lublin
+Nowe Horyzonty Gdańsk 4477,Poznań
+Iluzjon Warszawa 4478,Kraków
+Luna Poznań 4479,Wrocław
+Nowe Horyzonty Kraków 4480,Lublin
+Helios Wrocław 4481,Katowice
+Kino Moskwa Łódź 4482,Lublin
+Cinema City Warszawa 4483,Łódź
+Kinepolis Katowice 4484,Kraków
+Multikino Warszawa 4485,Lublin
+Luna Warszawa 4486,Rzeszów
+Multikino Rzeszów 4487,Kraków
+Kinepolis Kraków 4488,Kraków
+Luna Katowice 4489,Łódź
+Kinepolis Łódź 4490,Wrocław
+Cinema City Kraków 4491,Szczecin
+Luna Lublin 4492,Szczecin
+Muranów Szczecin 4493,Gdańsk
+Luna Lublin 4494,Łódź
+Cinema City Poznań 4495,Lublin
+Kino Moskwa Łódź 4496,Wrocław
+Cinema City Poznań 4497,Katowice
+Helios Szczecin 4498,Warszawa
+Kino Moskwa Warszawa 4499,Warszawa
+Iluzjon Rzeszów 4500,Łódź
+Luna Warszawa 4501,Kraków
+Cinema City Katowice 4502,Poznań
+Nowe Horyzonty Wrocław 4503,Kraków
+Luna Poznań 4504,Lublin
+Kino Moskwa Lublin 4505,Kraków
+Cinema City Szczecin 4506,Kraków
+Kino Moskwa Wrocław 4507,Rzeszów
+Nowe Horyzonty Gdańsk 4508,Rzeszów
+Helios Kraków 4509,Kraków
+Iluzjon Wrocław 4510,Szczecin
+Kino Moskwa Warszawa 4511,Warszawa
+Helios Lublin 4512,Rzeszów
+Helios Kraków 4513,Szczecin
+Nowe Horyzonty Lublin 4514,Rzeszów
+Nowe Horyzonty Rzeszów 4515,Warszawa
+Cinema City Rzeszów 4516,Szczecin
+Multikino Lublin 4517,Warszawa
+Muranów Gdańsk 4518,Gdańsk
+Nowe Horyzonty Szczecin 4519,Poznań
+Kinepolis Katowice 4520,Szczecin
+Multikino Rzeszów 4521,Kraków
+Multikino Lublin 4522,Kraków
+Kinepolis Wrocław 4523,Gdańsk
+Cinema City Poznań 4524,Szczecin
+Kino Moskwa Poznań 4525,Szczecin
+Muranów Lublin 4526,Poznań
+Multikino Poznań 4527,Gdańsk
+Nowe Horyzonty Kraków 4528,Łódź
+Nowe Horyzonty Warszawa 4529,Gdańsk
+Muranów Gdańsk 4530,Kraków
+Iluzjon Szczecin 4531,Katowice
+Luna Łódź 4532,Szczecin
+Luna Łódź 4533,Katowice
+Iluzjon Gdańsk 4534,Kraków
+Kino Moskwa Katowice 4535,Gdańsk
+Luna Wrocław 4536,Rzeszów
+Cinema City Warszawa 4537,Poznań
+Muranów Warszawa 4538,Kraków
+Muranów Poznań 4539,Lublin
+Muranów Wrocław 4540,Poznań
+Iluzjon Warszawa 4541,Warszawa
+Cinema City Warszawa 4542,Łódź
+Helios Katowice 4543,Warszawa
+Cinema City Gdańsk 4544,Katowice
+Muranów Gdańsk 4545,Katowice
+Luna Katowice 4546,Gdańsk
+Cinema City Kraków 4547,Rzeszów
+Helios Katowice 4548,Łódź
+Kino Moskwa Lublin 4549,Szczecin
+Muranów Wrocław 4550,Warszawa
+Multikino Rzeszów 4551,Katowice
+Kino Moskwa Łódź 4552,Lublin
+Helios Lublin 4553,Szczecin
+Multikino Łódź 4554,Gdańsk
+Iluzjon Kraków 4555,Łódź
+Iluzjon Poznań 4556,Kraków
+Luna Wrocław 4557,Rzeszów
+Nowe Horyzonty Wrocław 4558,Łódź
+Kinepolis Wrocław 4559,Lublin
+Kino Moskwa Poznań 4560,Rzeszów
+Multikino Kraków 4561,Wrocław
+Iluzjon Wrocław 4562,Gdańsk
+Multikino Warszawa 4563,Lublin
+Luna Rzeszów 4564,Łódź
+Luna Lublin 4565,Rzeszów
+Helios Gdańsk 4566,Katowice
+Cinema City Rzeszów 4567,Katowice
+Kino Moskwa Kraków 4568,Warszawa
+Luna Rzeszów 4569,Wrocław
+Kino Moskwa Poznań 4570,Poznań
+Kinepolis Katowice 4571,Lublin
+Multikino Lublin 4572,Kraków
+Nowe Horyzonty Katowice 4573,Szczecin
+Nowe Horyzonty Gdańsk 4574,Warszawa
+Kino Moskwa Szczecin 4575,Wrocław
+Kinepolis Warszawa 4576,Warszawa
+Nowe Horyzonty Łódź 4577,Łódź
+Helios Łódź 4578,Łódź
+Cinema City Gdańsk 4579,Szczecin
+Cinema City Warszawa 4580,Szczecin
+Luna Lublin 4581,Warszawa
+Nowe Horyzonty Poznań 4582,Lublin
+Multikino Szczecin 4583,Wrocław
+Multikino Gdańsk 4584,Kraków
+Muranów Wrocław 4585,Rzeszów
+Iluzjon Łódź 4586,Łódź
+Muranów Łódź 4587,Warszawa
+Kino Moskwa Katowice 4588,Szczecin
+Helios Łódź 4589,Rzeszów
+Muranów Kraków 4590,Łódź
+Helios Rzeszów 4591,Warszawa
+Kinepolis Rzeszów 4592,Gdańsk
+Cinema City Łódź 4593,Katowice
+Helios Szczecin 4594,Poznań
+Nowe Horyzonty Łódź 4595,Łódź
+Kinepolis Lublin 4596,Szczecin
+Nowe Horyzonty Katowice 4597,Rzeszów
+Cinema City Katowice 4598,Wrocław
+Multikino Łódź 4599,Gdańsk
+Muranów Rzeszów 4600,Łódź
+Kino Moskwa Warszawa 4601,Wrocław
+Luna Szczecin 4602,Łódź
+Kinepolis Lublin 4603,Wrocław
+Kino Moskwa Poznań 4604,Gdańsk
+Nowe Horyzonty Poznań 4605,Katowice
+Multikino Gdańsk 4606,Rzeszów
+Kino Moskwa Lublin 4607,Poznań
+Kino Moskwa Poznań 4608,Warszawa
+Helios Kraków 4609,Poznań
+Cinema City Poznań 4610,Łódź
+Iluzjon Rzeszów 4611,Kraków
+Nowe Horyzonty Warszawa 4612,Wrocław
+Kinepolis Katowice 4613,Szczecin
+Kinepolis Poznań 4614,Warszawa
+Kinepolis Warszawa 4615,Łódź
+Cinema City Rzeszów 4616,Warszawa
+Iluzjon Szczecin 4617,Gdańsk
+Helios Szczecin 4618,Lublin
+Nowe Horyzonty Wrocław 4619,Katowice
+Muranów Kraków 4620,Rzeszów
+Multikino Wrocław 4621,Kraków
+Multikino Lublin 4622,Kraków
+Multikino Warszawa 4623,Rzeszów
+Cinema City Poznań 4624,Rzeszów
+Kinepolis Gdańsk 4625,Warszawa
+Muranów Lublin 4626,Katowice
+Kino Moskwa Szczecin 4627,Rzeszów
+Multikino Wrocław 4628,Katowice
+Luna Poznań 4629,Warszawa
+Nowe Horyzonty Lublin 4630,Warszawa
+Helios Wrocław 4631,Warszawa
+Kinepolis Kraków 4632,Katowice
+Muranów Łódź 4633,Szczecin
+Helios Łódź 4634,Lublin
+Kino Moskwa Kraków 4635,Rzeszów
+Cinema City Łódź 4636,Lublin
+Helios Kraków 4637,Gdańsk
+Cinema City Poznań 4638,Łódź
+Kinepolis Warszawa 4639,Rzeszów
+Luna Kraków 4640,Kraków
+Kinepolis Gdańsk 4641,Warszawa
+Cinema City Rzeszów 4642,Poznań
+Kino Moskwa Kraków 4643,Poznań
+Cinema City Warszawa 4644,Wrocław
+Cinema City Szczecin 4645,Rzeszów
+Kinepolis Kraków 4646,Katowice
+Kino Moskwa Lublin 4647,Poznań
+Muranów Katowice 4648,Lublin
+Multikino Poznań 4649,Warszawa
+Nowe Horyzonty Poznań 4650,Kraków
+Cinema City Warszawa 4651,Gdańsk
+Kinepolis Warszawa 4652,Wrocław
+Kino Moskwa Szczecin 4653,Łódź
+Luna Rzeszów 4654,Lublin
+Luna Gdańsk 4655,Łódź
+Kino Moskwa Kraków 4656,Rzeszów
+Cinema City Lublin 4657,Katowice
+Cinema City Kraków 4658,Lublin
+Helios Rzeszów 4659,Gdańsk
+Multikino Poznań 4660,Łódź
+Kino Moskwa Rzeszów 4661,Lublin
+Muranów Rzeszów 4662,Gdańsk
+Helios Rzeszów 4663,Rzeszów
+Kinepolis Lublin 4664,Poznań
+Nowe Horyzonty Lublin 4665,Poznań
+Nowe Horyzonty Wrocław 4666,Poznań
+Multikino Warszawa 4667,Lublin
+Muranów Poznań 4668,Poznań
+Muranów Lublin 4669,Lublin
+Iluzjon Szczecin 4670,Wrocław
+Kino Moskwa Lublin 4671,Lublin
+Muranów Wrocław 4672,Poznań
+Luna Łódź 4673,Kraków
+Iluzjon Szczecin 4674,Katowice
+Cinema City Lublin 4675,Poznań
+Helios Kraków 4676,Poznań
+Muranów Rzeszów 4677,Lublin
+Cinema City Kraków 4678,Kraków
+Helios Gdańsk 4679,Szczecin
+Cinema City Katowice 4680,Katowice
+Cinema City Katowice 4681,Szczecin
+Luna Kraków 4682,Poznań
+Kino Moskwa Gdańsk 4683,Kraków
+Kinepolis Łódź 4684,Kraków
+Muranów Wrocław 4685,Gdańsk
+Kinepolis Gdańsk 4686,Lublin
+Multikino Kraków 4687,Katowice
+Luna Katowice 4688,Katowice
+Kinepolis Wrocław 4689,Rzeszów
+Kinepolis Kraków 4690,Wrocław
+Muranów Warszawa 4691,Szczecin
+Muranów Wrocław 4692,Szczecin
+Kino Moskwa Poznań 4693,Poznań
+Muranów Szczecin 4694,Rzeszów
+Muranów Wrocław 4695,Wrocław
+Multikino Wrocław 4696,Szczecin
+Nowe Horyzonty Warszawa 4697,Warszawa
+Multikino Szczecin 4698,Wrocław
+Luna Lublin 4699,Katowice
+Kinepolis Warszawa 4700,Wrocław
+Muranów Szczecin 4701,Rzeszów
+Kinepolis Lublin 4702,Rzeszów
+Muranów Szczecin 4703,Łódź
+Kinepolis Poznań 4704,Warszawa
+Kinepolis Łódź 4705,Rzeszów
+Helios Warszawa 4706,Warszawa
+Kino Moskwa Lublin 4707,Kraków
+Luna Szczecin 4708,Wrocław
+Kino Moskwa Szczecin 4709,Wrocław
+Nowe Horyzonty Katowice 4710,Poznań
+Cinema City Rzeszów 4711,Łódź
+Luna Lublin 4712,Warszawa
+Muranów Warszawa 4713,Poznań
+Nowe Horyzonty Gdańsk 4714,Lublin
+Kino Moskwa Wrocław 4715,Katowice
+Helios Lublin 4716,Rzeszów
+Kinepolis Gdańsk 4717,Lublin
+Muranów Gdańsk 4718,Gdańsk
+Luna Gdańsk 4719,Warszawa
+Helios Łódź 4720,Szczecin
+Iluzjon Gdańsk 4721,Lublin
+Luna Wrocław 4722,Kraków
+Cinema City Katowice 4723,Lublin
+Kino Moskwa Szczecin 4724,Lublin
+Multikino Lublin 4725,Gdańsk
+Helios Rzeszów 4726,Gdańsk
+Kinepolis Rzeszów 4727,Szczecin
+Multikino Warszawa 4728,Wrocław
+Luna Warszawa 4729,Wrocław
+Helios Lublin 4730,Rzeszów
+Luna Poznań 4731,Gdańsk
+Luna Łódź 4732,Gdańsk
+Kinepolis Rzeszów 4733,Kraków
+Multikino Lublin 4734,Rzeszów
+Iluzjon Szczecin 4735,Łódź
+Helios Poznań 4736,Katowice
+Luna Gdańsk 4737,Rzeszów
+Kinepolis Lublin 4738,Łódź
+Luna Łódź 4739,Gdańsk
+Kinepolis Rzeszów 4740,Lublin
+Helios Poznań 4741,Lublin
+Muranów Łódź 4742,Wrocław
+Kino Moskwa Rzeszów 4743,Lublin
+Iluzjon Szczecin 4744,Szczecin
+Multikino Katowice 4745,Gdańsk
+Iluzjon Szczecin 4746,Gdańsk
+Iluzjon Poznań 4747,Szczecin
+Nowe Horyzonty Szczecin 4748,Gdańsk
+Nowe Horyzonty Szczecin 4749,Szczecin
+Luna Wrocław 4750,Wrocław
+Luna Łódź 4751,Lublin
+Kino Moskwa Kraków 4752,Katowice
+Iluzjon Szczecin 4753,Gdańsk
+Cinema City Szczecin 4754,Katowice
+Nowe Horyzonty Poznań 4755,Wrocław
+Cinema City Katowice 4756,Rzeszów
+Multikino Gdańsk 4757,Katowice
+Kinepolis Warszawa 4758,Lublin
+Iluzjon Warszawa 4759,Wrocław
+Multikino Poznań 4760,Rzeszów
+Helios Szczecin 4761,Łódź
+Nowe Horyzonty Wrocław 4762,Warszawa
+Iluzjon Poznań 4763,Warszawa
+Helios Warszawa 4764,Katowice
+Multikino Warszawa 4765,Rzeszów
+Cinema City Łódź 4766,Rzeszów
+Kinepolis Warszawa 4767,Wrocław
+Nowe Horyzonty Szczecin 4768,Warszawa
+Helios Katowice 4769,Kraków
+Kino Moskwa Gdańsk 4770,Rzeszów
+Kinepolis Kraków 4771,Kraków
+Luna Szczecin 4772,Gdańsk
+Cinema City Szczecin 4773,Katowice
+Luna Rzeszów 4774,Rzeszów
+Kinepolis Kraków 4775,Warszawa
+Kino Moskwa Warszawa 4776,Warszawa
+Kino Moskwa Wrocław 4777,Lublin
+Kino Moskwa Katowice 4778,Lublin
+Helios Gdańsk 4779,Kraków
+Kino Moskwa Łódź 4780,Łódź
+Multikino Szczecin 4781,Szczecin
+Nowe Horyzonty Wrocław 4782,Warszawa
+Multikino Rzeszów 4783,Łódź
+Kinepolis Szczecin 4784,Gdańsk
+Luna Szczecin 4785,Łódź
+Multikino Warszawa 4786,Łódź
+Cinema City Katowice 4787,Warszawa
+Helios Warszawa 4788,Warszawa
+Kino Moskwa Rzeszów 4789,Katowice
+Luna Lublin 4790,Katowice
+Iluzjon Kraków 4791,Łódź
+Iluzjon Poznań 4792,Gdańsk
+Kino Moskwa Poznań 4793,Szczecin
+Cinema City Gdańsk 4794,Poznań
+Cinema City Rzeszów 4795,Lublin
+Kinepolis Wrocław 4796,Kraków
+Nowe Horyzonty Gdańsk 4797,Wrocław
+Luna Gdańsk 4798,Szczecin
+Iluzjon Łódź 4799,Lublin
+Iluzjon Katowice 4800,Katowice
+Muranów Szczecin 4801,Kraków
+Kinepolis Rzeszów 4802,Poznań
+Multikino Szczecin 4803,Kraków
+Muranów Katowice 4804,Kraków
+Cinema City Rzeszów 4805,Lublin
+Iluzjon Gdańsk 4806,Katowice
+Helios Szczecin 4807,Szczecin
+Nowe Horyzonty Wrocław 4808,Gdańsk
+Muranów Wrocław 4809,Szczecin
+Cinema City Warszawa 4810,Katowice
+Nowe Horyzonty Gdańsk 4811,Kraków
+Multikino Katowice 4812,Poznań
+Kino Moskwa Warszawa 4813,Lublin
+Kinepolis Wrocław 4814,Poznań
+Cinema City Katowice 4815,Wrocław
+Luna Kraków 4816,Katowice
+Luna Wrocław 4817,Rzeszów
+Luna Wrocław 4818,Warszawa
+Kinepolis Katowice 4819,Szczecin
+Luna Wrocław 4820,Kraków
+Iluzjon Katowice 4821,Kraków
+Kinepolis Rzeszów 4822,Gdańsk
+Iluzjon Kraków 4823,Łódź
+Helios Łódź 4824,Warszawa
+Multikino Gdańsk 4825,Lublin
+Nowe Horyzonty Wrocław 4826,Rzeszów
+Helios Szczecin 4827,Warszawa
+Cinema City Lublin 4828,Szczecin
+Muranów Poznań 4829,Rzeszów
+Muranów Rzeszów 4830,Szczecin
+Cinema City Gdańsk 4831,Szczecin
+Muranów Warszawa 4832,Rzeszów
+Multikino Lublin 4833,Kraków
+Kinepolis Łódź 4834,Warszawa
+Kino Moskwa Łódź 4835,Warszawa
+Cinema City Katowice 4836,Warszawa
+Multikino Katowice 4837,Katowice
+Helios Katowice 4838,Katowice
+Nowe Horyzonty Kraków 4839,Kraków
+Cinema City Warszawa 4840,Kraków
+Kino Moskwa Kraków 4841,Wrocław
+Muranów Łódź 4842,Łódź
+Kino Moskwa Katowice 4843,Rzeszów
+Kinepolis Gdańsk 4844,Lublin
+Iluzjon Poznań 4845,Warszawa
+Kino Moskwa Rzeszów 4846,Szczecin
+Nowe Horyzonty Lublin 4847,Wrocław
+Luna Łódź 4848,Poznań
+Helios Wrocław 4849,Łódź
+Kino Moskwa Szczecin 4850,Katowice
+Muranów Łódź 4851,Rzeszów
+Muranów Lublin 4852,Kraków
+Kino Moskwa Gdańsk 4853,Katowice
+Nowe Horyzonty Wrocław 4854,Rzeszów
+Multikino Lublin 4855,Łódź
+Kino Moskwa Poznań 4856,Rzeszów
+Cinema City Rzeszów 4857,Szczecin
+Kino Moskwa Szczecin 4858,Lublin
+Multikino Lublin 4859,Szczecin
+Kino Moskwa Warszawa 4860,Lublin
+Nowe Horyzonty Szczecin 4861,Szczecin
+Iluzjon Gdańsk 4862,Warszawa
+Muranów Gdańsk 4863,Poznań
+Luna Lublin 4864,Rzeszów
+Iluzjon Rzeszów 4865,Kraków
+Helios Warszawa 4866,Kraków
+Iluzjon Wrocław 4867,Poznań
+Multikino Szczecin 4868,Poznań
+Iluzjon Warszawa 4869,Rzeszów
+Kinepolis Łódź 4870,Warszawa
+Iluzjon Rzeszów 4871,Wrocław
+Nowe Horyzonty Rzeszów 4872,Kraków
+Helios Poznań 4873,Katowice
+Muranów Łódź 4874,Katowice
+Multikino Szczecin 4875,Szczecin
+Cinema City Wrocław 4876,Wrocław
+Muranów Szczecin 4877,Łódź
+Cinema City Wrocław 4878,Rzeszów
+Kinepolis Gdańsk 4879,Rzeszów
+Iluzjon Warszawa 4880,Gdańsk
+Multikino Gdańsk 4881,Warszawa
+Cinema City Kraków 4882,Lublin
+Muranów Kraków 4883,Szczecin
+Kino Moskwa Rzeszów 4884,Kraków
+Iluzjon Warszawa 4885,Lublin
+Helios Łódź 4886,Katowice
+Kino Moskwa Warszawa 4887,Wrocław
+Kinepolis Rzeszów 4888,Poznań
+Cinema City Łódź 4889,Kraków
+Multikino Katowice 4890,Łódź
+Nowe Horyzonty Poznań 4891,Lublin
+Iluzjon Lublin 4892,Gdańsk
+Muranów Lublin 4893,Łódź
+Multikino Lublin 4894,Lublin
+Kinepolis Lublin 4895,Warszawa
+Helios Gdańsk 4896,Gdańsk
+Muranów Poznań 4897,Gdańsk
+Nowe Horyzonty Warszawa 4898,Warszawa
+Luna Łódź 4899,Katowice
+Cinema City Wrocław 4900,Kraków
+Helios Katowice 4901,Kraków
+Iluzjon Lublin 4902,Katowice
+Nowe Horyzonty Poznań 4903,Łódź
+Iluzjon Gdańsk 4904,Poznań
+Multikino Wrocław 4905,Warszawa
+Helios Szczecin 4906,Warszawa
+Cinema City Poznań 4907,Warszawa
+Multikino Łódź 4908,Szczecin
+Cinema City Szczecin 4909,Kraków
+Multikino Lublin 4910,Warszawa
+Kinepolis Warszawa 4911,Kraków
+Kino Moskwa Kraków 4912,Katowice
+Muranów Katowice 4913,Katowice
+Kinepolis Poznań 4914,Wrocław
+Iluzjon Gdańsk 4915,Poznań
+Multikino Łódź 4916,Szczecin
+Muranów Poznań 4917,Poznań
+Iluzjon Wrocław 4918,Szczecin
+Multikino Kraków 4919,Poznań
+Cinema City Szczecin 4920,Poznań
+Iluzjon Poznań 4921,Gdańsk
+Kinepolis Kraków 4922,Rzeszów
+Helios Wrocław 4923,Szczecin
+Nowe Horyzonty Gdańsk 4924,Wrocław
+Helios Warszawa 4925,Łódź
+Cinema City Łódź 4926,Warszawa
+Luna Kraków 4927,Łódź
+Cinema City Szczecin 4928,Poznań
+Multikino Gdańsk 4929,Poznań
+Kinepolis Gdańsk 4930,Lublin
+Iluzjon Katowice 4931,Łódź
+Iluzjon Wrocław 4932,Rzeszów
+Nowe Horyzonty Łódź 4933,Gdańsk
+Iluzjon Łódź 4934,Łódź
+Kino Moskwa Wrocław 4935,Kraków
+Cinema City Lublin 4936,Wrocław
+Kinepolis Kraków 4937,Gdańsk
+Cinema City Wrocław 4938,Lublin
+Helios Gdańsk 4939,Wrocław
+Luna Lublin 4940,Warszawa
+Muranów Łódź 4941,Poznań
+Nowe Horyzonty Wrocław 4942,Poznań
+Luna Szczecin 4943,Lublin
+Iluzjon Łódź 4944,Rzeszów
+Cinema City Kraków 4945,Łódź
+Multikino Katowice 4946,Kraków
+Muranów Lublin 4947,Szczecin
+Multikino Rzeszów 4948,Lublin
+Muranów Katowice 4949,Poznań
+Helios Kraków 4950,Szczecin
+Kino Moskwa Katowice 4951,Gdańsk
+Nowe Horyzonty Łódź 4952,Katowice
+Luna Szczecin 4953,Katowice
+Nowe Horyzonty Warszawa 4954,Lublin
+Kinepolis Wrocław 4955,Gdańsk
+Kino Moskwa Poznań 4956,Gdańsk
+Muranów Łódź 4957,Poznań
+Iluzjon Rzeszów 4958,Szczecin
+Kinepolis Kraków 4959,Poznań
+Luna Lublin 4960,Gdańsk
+Multikino Katowice 4961,Szczecin
+Kinepolis Gdańsk 4962,Szczecin
+Helios Wrocław 4963,Łódź
+Helios Poznań 4964,Wrocław
+Cinema City Poznań 4965,Lublin
+Muranów Katowice 4966,Łódź
+Luna Poznań 4967,Warszawa
+Kino Moskwa Lublin 4968,Wrocław
+Luna Poznań 4969,Poznań
+Muranów Gdańsk 4970,Szczecin
+Multikino Łódź 4971,Kraków
+Multikino Łódź 4972,Lublin
+Multikino Lublin 4973,Kraków
+Nowe Horyzonty Szczecin 4974,Szczecin
+Kinepolis Kraków 4975,Gdańsk
+Kinepolis Poznań 4976,Katowice
+Nowe Horyzonty Poznań 4977,Kraków
+Iluzjon Lublin 4978,Szczecin
+Nowe Horyzonty Poznań 4979,Poznań
+Luna Gdańsk 4980,Szczecin
+Nowe Horyzonty Poznań 4981,Katowice
+Helios Kraków 4982,Wrocław
+Luna Katowice 4983,Łódź
+Iluzjon Rzeszów 4984,Szczecin
+Nowe Horyzonty Wrocław 4985,Kraków
+Iluzjon Szczecin 4986,Gdańsk
+Nowe Horyzonty Kraków 4987,Katowice
+Muranów Rzeszów 4988,Łódź
+Iluzjon Lublin 4989,Wrocław
+Helios Poznań 4990,Katowice
+Helios Szczecin 4991,Warszawa
+Kinepolis Warszawa 4992,Rzeszów
+Multikino Wrocław 4993,Kraków
+Kino Moskwa Wrocław 4994,Poznań
+Muranów Poznań 4995,Warszawa
+Luna Kraków 4996,Lublin
+Cinema City Łódź 4997,Warszawa
+Iluzjon Katowice 4998,Poznań
+Kinepolis Warszawa 4999,Wrocław
+Kino Moskwa Poznań 5000,Łódź

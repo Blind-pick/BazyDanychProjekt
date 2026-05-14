@@ -64,7 +64,7 @@ class DatabasePool:
         conn = await self.get_connection()
         try:
             await conn.set_isolation_level(
-                psycopg.IsolationLevel.repeatable_read
+                psycopg.IsolationLevel.REPEATABLE_READ
             )
             yield conn
         finally:
@@ -83,7 +83,7 @@ class DatabasePool:
 
         try:
             await conn.set_isolation_level(
-                psycopg.IsolationLevel.repeatable_read
+                psycopg.IsolationLevel.REPEATABLE_READ
             )
             async with conn.transaction():
                 async with conn.cursor() as cur:

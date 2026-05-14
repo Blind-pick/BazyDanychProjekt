@@ -1,0 +1,2 @@
+reservation_user_id,reservation_showtime_id,reservation_seat_ids
+1,1,"[1,2]"
