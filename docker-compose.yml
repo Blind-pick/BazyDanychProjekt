@@ -90,4 +90,3 @@ volumes:
 networks:
   cinema_network:
     driver: bridge
-

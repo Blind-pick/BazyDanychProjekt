@@ -1,0 +1,53 @@
+================================================================================
+ GŁÓWNY RAPORT TESTÓW WYDAJNOŚCIOWYCH (BENCHMARK)
+ Data wygenerowania: 2026-05-21 21:48:19
+================================================================================
+
+
+================================================================================
+ RAPORT WYDAJNOŚCI: Profil OLAP - Złożone Zapytania Analityczne (Read-Heavy)
+================================================================================
+ [*] Przepustowość (TPS):     714.120409 transakcji/s
+ [*] Średnie opóźnienie:      104.920 ms
+ [*] Odrzucone transakcje:    0
+
+ [ TOP 3 NAJBARDZIEJ OBCIĄŻAJĄCE ZAPYTANIA (pg_stat_statements) ]
+ Średni czas  | Wywołania  | Fragment Zapytania SQL
+--------------------------------------------------------------------------------
+ 1.28 ms      | 21489      | SELECT c.city, m.title, COUNT(t.ticket_id) as sprzedane_bilety, ...
+ 85.65 ms     | 2          | SELECT pg_database.datname as datname, tmp.mode as mode, COALESCE(c...
+ 7.15 ms      | 8          | SELECT pg_database_size($1)...
+================================================================================
+
+
+================================================================================
+ RAPORT WYDAJNOŚCI: Profil OLTP - Masowe Równoległe Zapisy (Write-Heavy)
+================================================================================
+ [*] Przepustowość (TPS):     2376.047051 transakcji/s
+ [*] Średnie opóźnienie:      14.935 ms
+ [*] Odrzucone transakcje:    0
+
+ [ TOP 3 NAJBARDZIEJ OBCIĄŻAJĄCE ZAPYTANIA (pg_stat_statements) ]
+ Średni czas  | Wywołania  | Fragment Zapytania SQL
+--------------------------------------------------------------------------------
+ 0.16 ms      | 71287      | INSERT INTO reservations (user_id, showtime_id, status) SELECT u.user_id, s.show...
+ 0.00 ms      | 71287      | COMMIT...
+ 0.00 ms      | 71287      | BEGIN...
+================================================================================
+
+
+================================================================================
+ RAPORT WYDAJNOŚCI: Test Współbieżności - Zjawisko Lock Contention (Hot Row UPDATE)
+================================================================================
+ [*] Przepustowość (TPS):     3701.131367 transakcji/s
+ [*] Średnie opóźnienie:      18.581 ms
+ [*] Odrzucone transakcje:    0
+
+ [ TOP 3 NAJBARDZIEJ OBCIĄŻAJĄCE ZAPYTANIA (pg_stat_statements) ]
+ Średni czas  | Wywołania  | Fragment Zapytania SQL
+--------------------------------------------------------------------------------
+ 0.23 ms      | 110608     | UPDATE showtimes SET start_datetime = start_datetime WHERE showtime_id = $1...
+ 0.00 ms      | 110608     | COMMIT...
+ 0.00 ms      | 110608     | BEGIN...
+================================================================================
+

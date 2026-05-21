@@ -14,3 +14,6 @@ scrape_configs:
     static_configs:
       - targets: ['host.docker.internal:9270']
     metrics_path: /metrics
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres_exporter:9187']
