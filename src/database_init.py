@@ -59,6 +59,8 @@ class CinemaDatabaseInitializer:
             raise RuntimeError("Not connected to database. Call connect() first.")
 
         queries = [
+            """CREATE EXTENSION IF NOT EXISTS pg_stat_statements;""",
+
             """DO $$
             BEGIN
                 IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'reservation_status') THEN
