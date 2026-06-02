@@ -1,207 +1,302 @@
-import asyncio
-import logging
-import random
+"""
+Masowy generator danych testowych dla bazy kina.
+
+Cala praca wykonywana jest PO STRONIE SERWERA (INSERT ... SELECT generate_series),
+dzieki czemu generacja dziesiatkow milionow wierszy trwa minuty, a nie godziny.
+
+Skala sterowana zmiennymi srodowiskowymi (domyslnie ~20 mln biletow):
+
+    N_CINEMAS        liczba kin                       (50)
+    HALLS_PER_CINEMA sal na kino                      (20)
+    SEATS_PER_HALL   miejsc na sale                   (200)
+    SEATS_PER_ROW    miejsc w rzedzie                 (20)   <- SEATS_PER_HALL/te <= 26
+    N_MOVIES         filmow                           (1000)
+    N_GENRES         gatunkow                         (15)
+    N_USERS          uzytkownikow                     (1_000_000)
+    N_SHOWTIMES      seansow                          (200_000)
+    N_RESERVATIONS   rezerwacji                       (5_000_000)
+    N_PAYMENTS       platnosci                        (3_000_000)
+    TICKET_FILL      wypelnienie miejsc biletami 0..1 (0.5)  -> ~20 mln biletow
+
+Liczba biletow ~= N_SHOWTIMES * SEATS_PER_HALL * TICKET_FILL.
+
+Uruchomienie (z hosta, baza wystawiona na localhost:5432):
+    python scripts/load_sample_data.py
+
+Mozesz tez przeskalowac w dol na szybki test:
+    N_USERS=50000 N_SHOWTIMES=20000 N_RESERVATIONS=200000 N_PAYMENTS=100000 \
+        python scripts/load_sample_data.py
+"""
+
+import os
 import sys
-from datetime import datetime, timedelta, timezone
+import time
+import logging
 
 import psycopg
-from psycopg.rows import tuple_row
 
-from src.config import DatabaseConfig
-
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-NUM_CINEMAS = 10
-HALLS_PER_CINEMA = 6
-NUM_USERS = 5000
-DAYS_OF_DATA = 365
-SHOWTIMES_PER_DAY = 5
+
+def env_int(name: str, default: int) -> int:
+    return int(os.getenv(name, str(default)))
 
 
-async def execute_values(cur, query, template, args_list, fetch=False):
-    if not args_list:
-        return []
-
-    params_per_row = template.count("%s")
-    max_rows_per_batch = 60000 // params_per_row
-    all_results = []
-
-    for i in range(0, len(args_list), max_rows_per_batch):
-        batch = args_list[i:i + max_rows_per_batch]
-        records_list_template = ','.join([template] * len(batch))
-        insert_query = query.format(records_list_template)
-
-        flat_args = [item for sublist in batch for item in sublist]
-
-        await cur.execute(insert_query, flat_args)
-        if fetch:
-            all_results.extend(await cur.fetchall())
-
-    return all_results
+def env_float(name: str, default: float) -> float:
+    return float(os.getenv(name, str(default)))
 
 
-async def load_sample_data():
-    conn_string = DatabaseConfig.get_connection_string()
-    conn = await psycopg.AsyncConnection.connect(conn_string, row_factory=tuple_row)
+# --- Skala ---------------------------------------------------------------
+N_CINEMAS = env_int("N_CINEMAS", 50)
+HALLS_PER_CINEMA = env_int("HALLS_PER_CINEMA", 20)
+SEATS_PER_HALL = env_int("SEATS_PER_HALL", 200)
+SEATS_PER_ROW = env_int("SEATS_PER_ROW", 20)
+N_MOVIES = env_int("N_MOVIES", 1000)
+N_GENRES = env_int("N_GENRES", 15)
+N_USERS = env_int("N_USERS", 1_000_000)
+N_SHOWTIMES = env_int("N_SHOWTIMES", 200_000)
+N_RESERVATIONS = env_int("N_RESERVATIONS", 5_000_000)
+N_PAYMENTS = env_int("N_PAYMENTS", 3_000_000)
+TICKET_FILL = env_float("TICKET_FILL", 0.5)
 
+N_HALLS = N_CINEMAS * HALLS_PER_CINEMA
+
+
+def connect() -> psycopg.Connection:
+    # Z hosta laczymy sie po localhost (kontener wystawia 5432). DB_HOST mozna nadpisac.
+    # autocommit=False: CALE ladowanie (drop indeksow + inserty + odtworzenie) idzie
+    # w JEDNEJ transakcji. Jesli skrypt zostanie przerwany, serwer wycofa wszystko -
+    # w tym DROP INDEX - wiec schemat nigdy nie zostaje rozwalony w polowie.
+    return psycopg.connect(
+        host=os.getenv("DB_HOST", "localhost"),
+        port=env_int("DB_PORT", 5432),
+        dbname=os.getenv("DB_NAME", "kino"),
+        user=os.getenv("DB_USER", "postgres"),
+        password=os.getenv("DB_PASSWORD", "pswd"),
+        autocommit=False,
+    )
+
+
+def step(cur, label: str, sql: str) -> None:
+    t0 = time.perf_counter()
+    cur.execute(sql)
+    dt = time.perf_counter() - t0
+    logger.info(f"  [{dt:7.1f}s] {label} ({cur.rowcount if cur.rowcount >= 0 else '?'} wierszy)")
+
+
+# Tabele, ktore ladujemy masowo - dla nich zrzucamy indeksy/constrainty na czas
+# ladowania i odtwarzamy je rownolegle na koncu (duzo szybsze niz inkrementalna
+# aktualizacja indeksow przy kazdym z milionow INSERT-ow).
+BULK_TABLES = ["tickets", "reservations", "payments", "showtimes", "seats", "users"]
+
+
+def capture_and_drop_indexes(cur):
+    # Klucze obce (FK) - ich wyzwalacze per-row to glowny hamulec masowego ladowania.
+    # Odtworzymy je na koncu z walidacja zbiorcza (jeden skan zamiast milionow trigerow).
+    cur.execute("""
+        SELECT conrelid::regclass::text, conname, pg_get_constraintdef(oid)
+        FROM pg_constraint
+        WHERE contype = 'f' AND conrelid = ANY(%s::regclass[])
+    """, (BULK_TABLES,))
+    fks = cur.fetchall()
+
+    # Unikalne constrainty (np. unique_ticket_per_seat_showtime, email/username).
+    cur.execute("""
+        SELECT conrelid::regclass::text, conname, pg_get_constraintdef(oid)
+        FROM pg_constraint
+        WHERE contype = 'u' AND conrelid = ANY(%s::regclass[])
+    """, (BULK_TABLES,))
+    uniques = cur.fetchall()
+
+    # Zwykle indeksy wtorne (nie PK, nie te stojace za constraintem).
+    cur.execute("""
+        SELECT c.relname, pg_get_indexdef(i.indexrelid)
+        FROM pg_index i
+        JOIN pg_class c ON c.oid = i.indexrelid
+        JOIN pg_class t ON t.oid = i.indrelid
+        WHERE t.relname = ANY(%s)
+          AND NOT i.indisprimary
+          AND i.indexrelid NOT IN (SELECT conindid FROM pg_constraint WHERE conindid <> 0)
+    """, (BULK_TABLES,))
+    indexes = cur.fetchall()
+
+    for tbl, conname, _ in fks:
+        cur.execute(f'ALTER TABLE {tbl} DROP CONSTRAINT IF EXISTS "{conname}"')
+    for tbl, conname, _ in uniques:
+        cur.execute(f'ALTER TABLE {tbl} DROP CONSTRAINT IF EXISTS "{conname}"')
+    for idxname, _ in indexes:
+        cur.execute(f'DROP INDEX IF EXISTS "{idxname}"')
+
+    logger.info(f"  zrzucono {len(indexes)} indeksow, {len(uniques)} unikalnych, {len(fks)} FK")
+    return fks, uniques, indexes
+
+
+def recreate_indexes(cur, fks, uniques, indexes):
+    for idxname, idxdef in indexes:
+        step(cur, f"index {idxname}", idxdef)
+    for tbl, conname, condef in uniques:
+        step(cur, f"unique {conname}", f'ALTER TABLE {tbl} ADD CONSTRAINT "{conname}" {condef}')
+    for tbl, conname, condef in fks:
+        step(cur, f"fk {conname}", f'ALTER TABLE {tbl} ADD CONSTRAINT "{conname}" {condef}')
+
+
+def main() -> None:
+    if SEATS_PER_HALL % SEATS_PER_ROW != 0 or SEATS_PER_HALL // SEATS_PER_ROW > 26:
+        logger.warning("SEATS_PER_HALL / SEATS_PER_ROW powinno byc calkowite i <= 26 (etykiety rzedow A-Z).")
+
+    est_tickets = int(N_SHOWTIMES * SEATS_PER_HALL * TICKET_FILL)
+    logger.info("=" * 70)
+    logger.info(" MASOWE LADOWANIE DANYCH")
+    logger.info(f"  kina={N_CINEMAS} sale={N_HALLS} miejsca={N_HALLS * SEATS_PER_HALL:,}")
+    logger.info(f"  uzytkownicy={N_USERS:,} seanse={N_SHOWTIMES:,}")
+    logger.info(f"  rezerwacje={N_RESERVATIONS:,} platnosci={N_PAYMENTS:,}")
+    logger.info(f"  szac. bilety ~ {est_tickets:,}")
+    logger.info("=" * 70)
+
+    conn = connect()
+    t_start = time.perf_counter()
     try:
-        async with conn.cursor() as cur:
-            logger.info("Rozpoczynam generowanie dużej paczki danych...")
+        with conn.cursor() as cur:
+            # Przyspieszenie sesji ladujacej (ustawienia dotycza tylko tej sesji).
+            cur.execute("SET synchronous_commit TO off")
+            cur.execute("SET maintenance_work_mem TO '2GB'")
+            cur.execute("SET work_mem TO '512MB'")
+            cur.execute("SET max_parallel_workers_per_gather TO 8")
+            cur.execute("SET max_parallel_maintenance_workers TO 7")
 
-            await cur.execute("SELECT hall_type_id FROM hall_types LIMIT 1")
-            hall_type_id = (await cur.fetchone())[0]
+            logger.info("Czyszczenie tabel (TRUNCATE ... RESTART IDENTITY CASCADE)...")
+            step(cur, "truncate", """
+                TRUNCATE cinemas, halls, seats, movies, genres, movie_genres,
+                         users, showtimes, reservations, reservation_seats,
+                         tickets, payments, ticket_payments, refunds
+                RESTART IDENTITY CASCADE
+            """)
 
-            await cur.execute("SELECT seat_type_id FROM seat_types LIMIT 1")
-            seat_type_id = (await cur.fetchone())[0]
+            logger.info("Zrzucanie indeksow i FK na czas ladowania...")
+            saved_fks, saved_uniques, saved_indexes = capture_and_drop_indexes(cur)
 
-            logger.info("Generowanie filmów...")
-            movies_data = [(f"Movie Title {i}", random.randint(90, 180)) for i in range(1, 51)]
-            movies_ids = await execute_values(
-                cur,
-                "INSERT INTO movies (title, duration_minutes) VALUES {} RETURNING movie_id",
-                "(%s, %s)",
-                movies_data,
-                fetch=True
-            )
-            movie_ids = [m[0] for m in movies_ids]
+            step(cur, "movies", f"""
+                INSERT INTO movies (title, duration_minutes)
+                SELECT 'Movie Title ' || g, 80 + (g % 100)
+                FROM generate_series(1, {N_MOVIES}) g
+            """)
 
-            logger.info("Generowanie kin, sal i miejsc...")
-            cities = ["Warszawa", "Kraków", "Wrocław", "Poznań", "Gdańsk"]
-            cinemas_data = [(f"Cinema City {i}", random.choice(cities)) for i in range(1, NUM_CINEMAS + 1)]
+            step(cur, "genres", f"""
+                INSERT INTO genres (name)
+                SELECT 'Genre ' || g FROM generate_series(1, {N_GENRES}) g
+            """)
 
-            cinema_records = await execute_values(
-                cur,
-                "INSERT INTO cinemas (name, city) VALUES {} RETURNING cinema_id",
-                "(%s, %s)",
-                cinemas_data,
-                fetch=True
-            )
-            cinema_ids = [c[0] for c in cinema_records]
+            step(cur, "movie_genres", f"""
+                INSERT INTO movie_genres (movie_id, genre_id)
+                SELECT m, 1 + floor(random() * {N_GENRES})::int
+                FROM generate_series(1, {N_MOVIES}) m
+                ON CONFLICT DO NOTHING
+            """)
 
-            hall_ids = []
-            for c_id in cinema_ids:
-                halls_data = [(c_id, hall_type_id, f"Sala {h}", 150) for h in range(1, HALLS_PER_CINEMA + 1)]
-                h_records = await execute_values(
-                    cur,
-                    "INSERT INTO halls (cinema_id, hall_type_id, name, capacity) VALUES {} RETURNING hall_id",
-                    "(%s, %s, %s, %s)",
-                    halls_data,
-                    fetch=True
-                )
-                hall_ids.extend([h[0] for h in h_records])
+            step(cur, "cinemas", f"""
+                INSERT INTO cinemas (name, city)
+                SELECT 'Cinema City ' || g,
+                       (ARRAY['Warszawa','Krakow','Wroclaw','Poznan','Gdansk'])[1 + (g % 5)]
+                FROM generate_series(1, {N_CINEMAS}) g
+            """)
 
-            seats_data = []
-            rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-            for h_id in hall_ids:
-                for row_idx, r_label in enumerate(rows):
-                    for s_num in range(1, 16):
-                        seats_data.append((h_id, seat_type_id, r_label, s_num))
+            step(cur, "halls", f"""
+                INSERT INTO halls (cinema_id, hall_type_id, name, capacity)
+                SELECT c, (SELECT min(hall_type_id) FROM hall_types),
+                       'Sala ' || h, {SEATS_PER_HALL}
+                FROM generate_series(1, {N_CINEMAS}) c,
+                     generate_series(1, {HALLS_PER_CINEMA}) h
+            """)
 
-            for i in range(0, len(seats_data), 5000):
-                await execute_values(cur, "INSERT INTO seats (hall_id, seat_type_id, row_label, seat_number) VALUES {}",
-                                     "(%s, %s, %s, %s)", seats_data[i:i + 5000])
+            step(cur, "seats", f"""
+                INSERT INTO seats (hall_id, seat_type_id, row_label, seat_number)
+                SELECT h.hall_id,
+                       (ARRAY(SELECT seat_type_id FROM seat_types ORDER BY seat_type_id))
+                           [1 + floor(random() * (SELECT count(*) FROM seat_types))::int],
+                       chr(65 + (n / {SEATS_PER_ROW})::int),
+                       1 + (n % {SEATS_PER_ROW})
+                FROM halls h
+                CROSS JOIN generate_series(0, {SEATS_PER_HALL} - 1) n
+            """)
 
-            logger.info("Generowanie użytkowników...")
-            users_data = [(f"user{i}@example.com", f"user{i}") for i in range(1, NUM_USERS + 1)]
-            user_records = await execute_values(
-                cur,
-                "INSERT INTO users (email, username) VALUES {} RETURNING user_id",
-                "(%s, %s)",
-                users_data,
-                fetch=True
-            )
-            user_ids = [u[0] for u in user_records]
+            # Uwaga: domena NIE moze byc zarezerwowana (.test/.example/.invalid/localhost),
+            # bo Pydantic EmailStr w API odrzuca takie maile -> 500 przy serializacji usera.
+            step(cur, "users", f"""
+                INSERT INTO users (email, username)
+                SELECT 'user' || g || '@loadtest.com', 'user' || g
+                FROM generate_series(1, {N_USERS}) g
+            """)
 
-            logger.info("Generowanie seansów i biletów (to zajmie chwilę)...")
+            # Seanse zawsze w przyszlosci (CHECK future_showtime).
+            step(cur, "showtimes", f"""
+                INSERT INTO showtimes (movie_id, hall_id, start_datetime, base_price)
+                SELECT 1 + floor(random() * {N_MOVIES})::int,
+                       1 + floor(random() * {N_HALLS})::int,
+                       now() + ((1 + floor(random() * 365)) || ' days')::interval
+                            + ((floor(random() * 12) * 60) || ' minutes')::interval,
+                       20.00 + (g % 30)
+                FROM generate_series(1, {N_SHOWTIMES}) g
+            """)
 
-            await cur.execute("SELECT hall_id, seat_id FROM seats")
-            all_seats = await cur.fetchall()
-            seats_by_hall = {}
-            for h_id, s_id in all_seats:
-                seats_by_hall.setdefault(h_id, []).append(s_id)
+            step(cur, "reservations", f"""
+                INSERT INTO reservations (user_id, showtime_id, status)
+                SELECT 1 + floor(random() * {N_USERS})::int,
+                       1 + floor(random() * {N_SHOWTIMES})::int,
+                       'confirmed'
+                FROM generate_series(1, {N_RESERVATIONS}) g
+            """)
 
-            start_date = (datetime.now(timezone.utc) + timedelta(days=1)).replace(hour=10, minute=0, second=0, microsecond=0)
+            # Najwieksza tabela: join seans x miejsca tej samej sali -> unikalne (showtime, seat).
+            step(cur, "tickets", f"""
+                INSERT INTO tickets (showtime_id, seat_id, user_id, final_price, status)
+                SELECT s.showtime_id, se.seat_id,
+                       1 + floor(random() * {N_USERS})::int,
+                       25.00, 'valid'
+                FROM showtimes s
+                JOIN seats se ON se.hall_id = s.hall_id
+                WHERE random() < {TICKET_FILL}
+            """)
 
-            for day in range(DAYS_OF_DATA):
-                current_date = start_date + timedelta(days=day)
+            step(cur, "payments", f"""
+                INSERT INTO payments (user_id, payment_method_id, amount, status)
+                SELECT 1 + floor(random() * {N_USERS})::int,
+                       (ARRAY(SELECT payment_method_id FROM payment_methods ORDER BY payment_method_id))
+                           [1 + floor(random() * (SELECT count(*) FROM payment_methods))::int],
+                       round((10 + random() * 200)::numeric, 2),
+                       'completed'
+                FROM generate_series(1, {N_PAYMENTS}) g
+            """)
 
-                showtimes_data = []
-                for h_id in hall_ids:
-                    for show_num in range(SHOWTIMES_PER_DAY):
-                        movie_id = random.choice(movie_ids)
-                        show_time = current_date + timedelta(hours=show_num * 3)
-                        showtimes_data.append((movie_id, h_id, show_time, 25.00))
+            logger.info("Odtwarzanie indeksow, unikalnych i FK (z walidacja zbiorcza)...")
+            recreate_indexes(cur, saved_fks, saved_uniques, saved_indexes)
 
-                showtimes_records = await execute_values(
-                    cur,
-                    "INSERT INTO showtimes (movie_id, hall_id, start_datetime, base_price) VALUES {} RETURNING showtime_id, hall_id",
-                    "(%s, %s, %s, %s)",
-                    showtimes_data,
-                    fetch=True
-                )
+        # Domykamy transakcje - dopiero teraz dane i schemat sa trwale.
+        conn.commit()
 
-                reservations_data = []
+        conn.autocommit = True
+        with conn.cursor() as cur:
+            logger.info("ANALYZE (statystyki dla plannera)...")
+            step(cur, "analyze", "ANALYZE")
 
-                available_seats_for_st = {}
-                for st_id, h_id in showtimes_records:
-                    seats = list(seats_by_hall[h_id])
-                    random.shuffle(seats)
-                    available_seats_for_st[st_id] = seats
+            logger.info("-" * 70)
+            cur.execute("""
+                SELECT relname, n_live_tup
+                FROM pg_stat_user_tables
+                WHERE n_live_tup > 0
+                ORDER BY n_live_tup DESC
+            """)
+            for relname, n in cur.fetchall():
+                logger.info(f"  {relname:<20} {n:>14,}")
 
-                for st_id, h_id in showtimes_records:
-                    num_reservations = random.randint(10, 25)
-                    for _ in range(num_reservations):
-                        u_id = random.choice(user_ids)
-                        reservations_data.append((u_id, st_id, 'confirmed'))
-
-                res_records = await execute_values(
-                    cur,
-                    "INSERT INTO reservations (user_id, showtime_id, status) VALUES {} RETURNING reservation_id",
-                    "(%s, %s, %s)",
-                    reservations_data,
-                    fetch=True
-                )
-
-                res_seats_data = []
-                tickets_data = []
-
-                for idx, (res_id,) in enumerate(res_records):
-                    st_id = reservations_data[idx][1]
-                    u_id = reservations_data[idx][0]
-
-                    num_tickets = random.randint(2, 4)
-
-                    for _ in range(num_tickets):
-                        if available_seats_for_st[st_id]:
-                            s_id = available_seats_for_st[st_id].pop()
-                            res_seats_data.append((res_id, s_id))
-                            tickets_data.append((st_id, s_id, u_id, res_id, 25.00, 'valid'))
-
-                await execute_values(cur, "INSERT INTO reservation_seats (reservation_id, seat_id) VALUES {}",
-                                     "(%s, %s)", res_seats_data)
-
-                await execute_values(cur,
-                                     "INSERT INTO tickets (showtime_id, seat_id, user_id, reservation_id, final_price, status) VALUES {}",
-                                     "(%s, %s, %s, %s, %s, %s)", tickets_data)
-
-                await conn.commit()
-
-                if (day + 1) % 30 == 0:
-                    logger.info(f"Wygenerowano dane dla {day + 1} dni...")
-
-            logger.info("Zakończono ładowanie danych testowych sukcesem!")
-
+        logger.info("-" * 70)
+        logger.info(f"GOTOWE w {time.perf_counter() - t_start:.1f}s")
     except Exception as e:
-        logger.error(f"Błąd podczas ładowania danych: {e}")
-        await conn.rollback()
+        logger.error(f"Blad podczas ladowania: {e}")
         raise
     finally:
-        await conn.close()
+        conn.close()
 
 
 if __name__ == "__main__":
-    if sys.platform == 'win32':
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-    asyncio.run(load_sample_data())
+    sys.exit(main())

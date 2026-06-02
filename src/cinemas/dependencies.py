@@ -3,7 +3,7 @@ from fastapi import Depends, HTTPException, status
 
 import psycopg
 
-from src.database import get_db_connection
+from src.database import get_pool
 from src.exceptions import ResourceNotFoundException, DatabaseException, CinemaAPIException
 from .schemas import Cinema
 from .service import CinemaService
@@ -13,11 +13,8 @@ logger = logging.getLogger(__name__)
 
 async def get_valid_cinema(cinema_id: int) -> Cinema:
     try:
-        conn = await get_db_connection()
-        try:
+        async with get_pool().acquire() as conn:
             return await CinemaService.get_cinema_by_id(conn, cinema_id)
-        finally:
-            await conn.close()
     except ResourceNotFoundException:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
