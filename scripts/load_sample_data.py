@@ -1,33 +1,3 @@
-"""
-Masowy generator danych testowych dla bazy kina.
-
-Cala praca wykonywana jest PO STRONIE SERWERA (INSERT ... SELECT generate_series),
-dzieki czemu generacja dziesiatkow milionow wierszy trwa minuty, a nie godziny.
-
-Skala sterowana zmiennymi srodowiskowymi (domyslnie ~20 mln biletow):
-
-    N_CINEMAS        liczba kin                       (50)
-    HALLS_PER_CINEMA sal na kino                      (20)
-    SEATS_PER_HALL   miejsc na sale                   (200)
-    SEATS_PER_ROW    miejsc w rzedzie                 (20)   <- SEATS_PER_HALL/te <= 26
-    N_MOVIES         filmow                           (1000)
-    N_GENRES         gatunkow                         (15)
-    N_USERS          uzytkownikow                     (1_000_000)
-    N_SHOWTIMES      seansow                          (200_000)
-    N_RESERVATIONS   rezerwacji                       (5_000_000)
-    N_PAYMENTS       platnosci                        (3_000_000)
-    TICKET_FILL      wypelnienie miejsc biletami 0..1 (0.5)  -> ~20 mln biletow
-
-Liczba biletow ~= N_SHOWTIMES * SEATS_PER_HALL * TICKET_FILL.
-
-Uruchomienie (z hosta, baza wystawiona na localhost:5432):
-    python scripts/load_sample_data.py
-
-Mozesz tez przeskalowac w dol na szybki test:
-    N_USERS=50000 N_SHOWTIMES=20000 N_RESERVATIONS=200000 N_PAYMENTS=100000 \
-        python scripts/load_sample_data.py
-"""
-
 import os
 import sys
 import time
@@ -47,7 +17,6 @@ def env_float(name: str, default: float) -> float:
     return float(os.getenv(name, str(default)))
 
 
-# --- Skala ---------------------------------------------------------------
 N_CINEMAS = env_int("N_CINEMAS", 50)
 HALLS_PER_CINEMA = env_int("HALLS_PER_CINEMA", 20)
 SEATS_PER_HALL = env_int("SEATS_PER_HALL", 200)
@@ -64,10 +33,6 @@ N_HALLS = N_CINEMAS * HALLS_PER_CINEMA
 
 
 def connect() -> psycopg.Connection:
-    # Z hosta laczymy sie po localhost (kontener wystawia 5432). DB_HOST mozna nadpisac.
-    # autocommit=False: CALE ladowanie (drop indeksow + inserty + odtworzenie) idzie
-    # w JEDNEJ transakcji. Jesli skrypt zostanie przerwany, serwer wycofa wszystko -
-    # w tym DROP INDEX - wiec schemat nigdy nie zostaje rozwalony w polowie.
     return psycopg.connect(
         host=os.getenv("DB_HOST", "localhost"),
         port=env_int("DB_PORT", 5432),
@@ -85,15 +50,10 @@ def step(cur, label: str, sql: str) -> None:
     logger.info(f"  [{dt:7.1f}s] {label} ({cur.rowcount if cur.rowcount >= 0 else '?'} wierszy)")
 
 
-# Tabele, ktore ladujemy masowo - dla nich zrzucamy indeksy/constrainty na czas
-# ladowania i odtwarzamy je rownolegle na koncu (duzo szybsze niz inkrementalna
-# aktualizacja indeksow przy kazdym z milionow INSERT-ow).
 BULK_TABLES = ["tickets", "reservations", "payments", "showtimes", "seats", "users"]
 
 
 def capture_and_drop_indexes(cur):
-    # Klucze obce (FK) - ich wyzwalacze per-row to glowny hamulec masowego ladowania.
-    # Odtworzymy je na koncu z walidacja zbiorcza (jeden skan zamiast milionow trigerow).
     cur.execute("""
         SELECT conrelid::regclass::text, conname, pg_get_constraintdef(oid)
         FROM pg_constraint
@@ -101,7 +61,6 @@ def capture_and_drop_indexes(cur):
     """, (BULK_TABLES,))
     fks = cur.fetchall()
 
-    # Unikalne constrainty (np. unique_ticket_per_seat_showtime, email/username).
     cur.execute("""
         SELECT conrelid::regclass::text, conname, pg_get_constraintdef(oid)
         FROM pg_constraint
@@ -109,7 +68,6 @@ def capture_and_drop_indexes(cur):
     """, (BULK_TABLES,))
     uniques = cur.fetchall()
 
-    # Zwykle indeksy wtorne (nie PK, nie te stojace za constraintem).
     cur.execute("""
         SELECT c.relname, pg_get_indexdef(i.indexrelid)
         FROM pg_index i
@@ -158,7 +116,6 @@ def main() -> None:
     t_start = time.perf_counter()
     try:
         with conn.cursor() as cur:
-            # Przyspieszenie sesji ladujacej (ustawienia dotycza tylko tej sesji).
             cur.execute("SET synchronous_commit TO off")
             cur.execute("SET maintenance_work_mem TO '2GB'")
             cur.execute("SET work_mem TO '512MB'")
@@ -220,15 +177,13 @@ def main() -> None:
                 CROSS JOIN generate_series(0, {SEATS_PER_HALL} - 1) n
             """)
 
-            # Uwaga: domena NIE moze byc zarezerwowana (.test/.example/.invalid/localhost),
-            # bo Pydantic EmailStr w API odrzuca takie maile -> 500 przy serializacji usera.
+
             step(cur, "users", f"""
                 INSERT INTO users (email, username)
                 SELECT 'user' || g || '@loadtest.com', 'user' || g
                 FROM generate_series(1, {N_USERS}) g
             """)
 
-            # Seanse zawsze w przyszlosci (CHECK future_showtime).
             step(cur, "showtimes", f"""
                 INSERT INTO showtimes (movie_id, hall_id, start_datetime, base_price)
                 SELECT 1 + floor(random() * {N_MOVIES})::int,
@@ -247,7 +202,6 @@ def main() -> None:
                 FROM generate_series(1, {N_RESERVATIONS}) g
             """)
 
-            # Najwieksza tabela: join seans x miejsca tej samej sali -> unikalne (showtime, seat).
             step(cur, "tickets", f"""
                 INSERT INTO tickets (showtime_id, seat_id, user_id, final_price, status)
                 SELECT s.showtime_id, se.seat_id,
@@ -271,7 +225,6 @@ def main() -> None:
             logger.info("Odtwarzanie indeksow, unikalnych i FK (z walidacja zbiorcza)...")
             recreate_indexes(cur, saved_fks, saved_uniques, saved_indexes)
 
-        # Domykamy transakcje - dopiero teraz dane i schemat sa trwale.
         conn.commit()
 
         conn.autocommit = True

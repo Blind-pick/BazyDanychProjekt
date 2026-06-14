@@ -175,9 +175,9 @@ class CinemaDatabaseInitializer:
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 CONSTRAINT reservation_not_expired CHECK (created_at + INTERVAL '15 minutes' > CURRENT_TIMESTAMP OR status != 'pending')
             );
-            CREATE INDEX IF NOT EXISTS idx_reservations_user_id ON reservations(user_id);
+            CREATE INDEX IF NOT EXISTS idx_reservations_user_created ON reservations(user_id, created_at DESC);
             CREATE INDEX IF NOT EXISTS idx_reservations_showtime_id ON reservations(showtime_id);
-            CREATE INDEX IF NOT EXISTS idx_reservations_status ON reservations(status);""",
+            CREATE INDEX IF NOT EXISTS idx_reservations_pending ON reservations(created_at) WHERE status = 'pending';""",
             
             """CREATE TABLE IF NOT EXISTS reservation_seats (
                 reservation_seat_id SERIAL PRIMARY KEY,
@@ -220,10 +220,9 @@ class CinemaDatabaseInitializer:
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 CONSTRAINT unique_ticket_per_seat_showtime UNIQUE (showtime_id, seat_id)
             );
-            CREATE INDEX IF NOT EXISTS idx_tickets_user_id ON tickets(user_id);
+            CREATE INDEX IF NOT EXISTS idx_tickets_user_created ON tickets(user_id, created_at DESC);
             CREATE INDEX IF NOT EXISTS idx_tickets_showtime_id ON tickets(showtime_id);
-            CREATE INDEX IF NOT EXISTS idx_tickets_seat_id ON tickets(seat_id);
-            CREATE INDEX IF NOT EXISTS idx_tickets_status ON tickets(status);""",
+            CREATE INDEX IF NOT EXISTS idx_tickets_seat_id ON tickets(seat_id);""",
             
             """CREATE TABLE IF NOT EXISTS payments (
                 payment_id SERIAL PRIMARY KEY,

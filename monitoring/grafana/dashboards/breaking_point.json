@@ -1,0 +1,358 @@
+{
+  "id": null,
+  "uid": "cinema-breaking-point",
+  "title": "Punkt zalamania (Breaking Point)",
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "time": { "from": "now-30m", "to": "now" },
+  "templating": { "list": [] },
+  "annotations": { "list": [] },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Punkt zalamania - latencja vs obciazenie",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "x": 0, "y": 0, "w": 24, "h": 1 },
+      "panels": []
+    },
+    {
+      "id": 2,
+      "title": "Latencja p95 wg endpointu (API) + aktywne polaczenia DB",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 1, "w": 24, "h": 10 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "GLOWNY wykres. Kazda linia = p95 czasu odpowiedzi jednego endpointu (histogram API, ms). Linia 'aktywne pol. DB' (os prawa) to proxy obciazenia. PUNKT ZALAMANIA = miejsce, w ktorym latencja zalamuje sie w gore. Endpoint, ktory wystrzeliwuje pierwszy/najwyzej = NAJBARDZIEJ NARAZONE zapytanie (tu: /reports/movie/{id}/stats). GET /health (kontrola, bez bazy) zostaje plaski - dowod, ze to NIE API jest waskim gardlem.",
+      "options": {
+        "legend": { "calcs": ["mean", "max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "color": { "mode": "palette-classic" },
+          "custom": { "axisLabel": "p95 latencja (ms)", "fillOpacity": 0, "showPoints": "never", "lineWidth": 2 }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "aktywne pol. DB" },
+            "properties": [
+              { "id": "custom.axisPlacement", "value": "right" },
+              { "id": "unit", "value": "short" },
+              { "id": "custom.axisLabel", "value": "aktywne polaczenia DB (proxy obciazenia)" },
+              { "id": "custom.lineWidth", "value": 3 },
+              { "id": "custom.fillOpacity", "value": 8 },
+              { "id": "color", "value": { "mode": "fixed", "fixedColor": "semi-dark-blue" } }
+            ]
+          }
+        ]
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[1m])) by (le, handler)) * 1000",
+          "legendFormat": "{{handler}}"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(pg_stat_activity_states_connections{state=\"active\"})",
+          "legendFormat": "aktywne pol. DB"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Klasyczny knee: przepustowosc (req/s) vs latencja p95",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 11, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Sygnatura zalamania: przepustowosc (req/s, os lewa) przestaje rosnac i sie WYPLASZCZA, a latencja p95 (os prawa) STRZELA w gore. Przeciecie tych trendow to punkt zalamania.",
+      "options": {
+        "legend": { "calcs": ["mean", "max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps",
+          "color": { "mode": "palette-classic" },
+          "custom": { "axisLabel": "req/s", "fillOpacity": 10, "showPoints": "never", "lineWidth": 2 }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "p95 latencja" },
+            "properties": [
+              { "id": "custom.axisPlacement", "value": "right" },
+              { "id": "unit", "value": "s" },
+              { "id": "custom.axisLabel", "value": "p95 (s)" },
+              { "id": "color", "value": { "mode": "fixed", "fixedColor": "red" } },
+              { "id": "custom.lineWidth", "value": 3 }
+            ]
+          }
+        ]
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(http_request_duration_seconds_count[1m]))",
+          "legendFormat": "req/s (total)"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[1m])) by (le))",
+          "legendFormat": "p95 latencja"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Latencja p99 wg endpointu (ogon = nieprzewidywalnosc)",
+      "type": "timeseries",
+      "gridPos": { "x": 12, "y": 11, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "p99 per endpoint. Gdy p99 odjezdza daleko od p95/p50 - to znak utraty PRZEWIDYWALNOSCI (czesc zadan obslugiwana skrajnie wolno). Endpoint z najwyzszym p99 lamie sie najmocniej.",
+      "options": {
+        "legend": { "calcs": ["mean", "max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": { "defaults": { "unit": "s", "color": { "mode": "palette-classic" } } },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[1m])) by (le, handler))",
+          "legendFormat": "{{handler}}"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Ktore ZAPYTANIE jest waskim gardlem (pg_stat_statements)",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "x": 0, "y": 19, "w": 24, "h": 1 },
+      "panels": []
+    },
+    {
+      "id": 5,
+      "title": "Top zapytania - sredni czas / zapytanie w oknie (ms)",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 20, "w": 24, "h": 9 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Sredni czas wykonania (delta total_exec / delta calls) najciezszych zapytan w wybranym oknie. Zapytanie z najwyzsza/strzelajaca linia to glowny hamulec bazy. Legenda = poczatek tekstu SQL.",
+      "options": {
+        "legend": { "calcs": ["mean", "max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": { "defaults": { "unit": "ms", "color": { "mode": "palette-classic" } } },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "topk(8, rate(pg_stat_statements_total_exec_ms[$__rate_interval]) / clamp_min(rate(pg_stat_statements_calls[$__rate_interval]), 1))",
+          "legendFormat": "{{short_query}}"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tabela: najciezsze zapytania w wybranym oknie",
+      "type": "table",
+      "gridPos": { "x": 0, "y": 29, "w": 24, "h": 10 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Sredni czas wykonania w calym wybranym przedziale (rate po $__range). Posortuj malejaco po wartosci - na gorze najciezsze zapytanie.",
+      "options": {
+        "showHeader": true,
+        "sortBy": [{ "displayName": "sr. ms / zapytanie (okno)", "desc": true }]
+      },
+      "fieldConfig": {
+        "defaults": { "custom": { "align": "auto" } },
+        "overrides": [
+          { "matcher": { "id": "byName", "options": "Value" }, "properties": [{ "id": "displayName", "value": "sr. ms / zapytanie (okno)" }, { "id": "unit", "value": "ms" }] }
+        ]
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "topk(20, rate(pg_stat_statements_total_exec_ms[$__range]) / clamp_min(rate(pg_stat_statements_calls[$__range]), 1))",
+          "format": "table",
+          "instant": true
+        }
+      ],
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": { "Time": true, "__name__": true, "job": true, "instance": true, "server": true, "usename": true },
+            "indexByName": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Dlaczego baza pada (nasycenie zasobow)",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "x": 0, "y": 39, "w": 24, "h": 1 },
+      "panels": []
+    },
+    {
+      "id": 7,
+      "title": "DB CPU - % przyznanego limitu + throttling",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 40, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "DB CPU jako % PRZYDZIELONEGO limitu (uwzglednia DB_CPUS, wiec 100% = pelne nasycenie zacisku). 'throttled' = % okreslow CFS, w ktorych jadro wstrzymalo baze bo wyczerpala limit CPU. Dojscie do ~100% pokrywa sie z punktem zalamania.",
+      "options": {
+        "legend": { "calcs": ["max"], "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": { "defaults": { "unit": "percent", "color": { "mode": "palette-classic" }, "max": 100 } },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(container_cpu_usage_seconds_total{name=\"cinema_db\"}[1m])) / clamp_min(sum(container_spec_cpu_quota{name=\"cinema_db\"}) / sum(container_spec_cpu_period{name=\"cinema_db\"}), 0.01) * 100",
+          "legendFormat": "DB CPU (% limitu)"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "rate(container_cpu_cfs_throttled_periods_total{name=\"cinema_db\"}[1m]) / clamp_min(rate(container_cpu_cfs_periods_total{name=\"cinema_db\"}[1m]), 1) * 100",
+          "legendFormat": "DB CPU throttled %"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Cache hit ratio (256MB to malo!) ",
+      "type": "timeseries",
+      "gridPos": { "x": 12, "y": 40, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Udzial odczytow z cache vs z dysku (w oknie). Przy 256MB nad ~20 mln biletow cache jest male - pod obciazeniem hit ratio spada, rosna odczyty z dysku => latencja rosnie. To czesto wlasciwa przyczyna zalamania.",
+      "options": {
+        "legend": { "calcs": ["mean", "min"], "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": { "defaults": { "unit": "percentunit", "color": { "mode": "palette-classic" }, "max": 1, "min": 0 } },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(pg_stat_database_blks_hit{datname=\"kino\"}[1m])) / clamp_min(sum(rate(pg_stat_database_blks_hit{datname=\"kino\"}[1m])) + sum(rate(pg_stat_database_blks_read{datname=\"kino\"}[1m])), 1)",
+          "legendFormat": "cache hit ratio"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Polaczenia DB wg stanu + oczekujace blokady",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 48, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Gdy baza nie nadaza, polaczenia pilietrza sie w stanie 'active' / 'idle in transaction', a zadania czekaja na wolne polaczenie z puli. Rosnace 'waiting locks' = kontencja na tych samych wierszach.",
+      "options": {
+        "legend": { "calcs": ["max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": { "defaults": { "unit": "short", "color": { "mode": "palette-classic" } } },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(pg_stat_activity_states_connections) by (state)",
+          "legendFormat": "{{state}}"
+        },
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(pg_locks_waiting_waiting)",
+          "legendFormat": "waiting locks"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Bledy = twardy koniec (4xx / 5xx req/s)",
+      "type": "timeseries",
+      "gridPos": { "x": 12, "y": 48, "w": 12, "h": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Po zalamaniu zadania zaczynaja przekraczac timeout puli polaczen / bazy => 5xx. Wzrost bledow to definitywny dowod, ze przegielismy. Do tego momentu powinna byc widoczna sama rosnaca latencja.",
+      "options": {
+        "legend": { "calcs": ["max"], "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": {
+        "defaults": { "unit": "reqps", "color": { "mode": "palette-classic" }, "custom": { "fillOpacity": 20, "stacking": { "mode": "normal", "group": "A" } } },
+        "overrides": [
+          { "matcher": { "id": "byName", "options": "5xx" }, "properties": [{ "id": "color", "value": { "mode": "fixed", "fixedColor": "red" } }] },
+          { "matcher": { "id": "byName", "options": "4xx" }, "properties": [{ "id": "color", "value": { "mode": "fixed", "fixedColor": "orange" } }] }
+        ]
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(http_requests_total{status=~\"4xx|5xx\"}[1m])) by (status)",
+          "legendFormat": "{{status}}"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Bledy wg endpointu (ktore zapytanie sie sypie)",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "x": 0, "y": 56, "w": 24, "h": 1 },
+      "panels": []
+    },
+    {
+      "id": 31,
+      "title": "Bledy 5xx wg endpointu (req/s) - ktory SELECT/INSERT pada",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 57, "w": 12, "h": 9 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Tempo bledow 5xx (timeout puli polaczen / statement_timeout bazy => 500/503) per endpoint. Linia, ktora wystrzeliwuje najwyzej = zapytanie, ktore pada pierwsze pod obciazeniem. GET /health (bez bazy) ma tu zostac na zero - dowod, ze to baza, nie API.",
+      "options": {
+        "legend": { "calcs": ["max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps",
+          "color": { "mode": "palette-classic" },
+          "custom": { "fillOpacity": 20, "showPoints": "never", "lineWidth": 2, "stacking": { "mode": "normal", "group": "A" } }
+        }
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(http_requests_total{status=\"5xx\"}[1m])) by (handler)",
+          "legendFormat": "{{handler}}"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Udzial bledow 5xx wg endpointu (% zadan tego endpointu)",
+      "type": "timeseries",
+      "gridPos": { "x": 12, "y": 57, "w": 12, "h": 9 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "description": "Odsetek zadan danego endpointu zakonczonych 5xx (5xx / wszystkie dla tego handlera). Pokazuje, ktore zapytanie traci niezawodnosc najszybciej - niezaleznie od wolumenu ruchu. 1.0 = 100% zadan tego endpointu sie sypie. Czysty wskaznik 'najbardziej narazonego' zapytania.",
+      "options": {
+        "legend": { "calcs": ["max"], "displayMode": "table", "placement": "bottom" },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "min": 0,
+          "max": 1,
+          "color": { "mode": "palette-classic" },
+          "custom": { "fillOpacity": 0, "showPoints": "never", "lineWidth": 2 }
+        }
+      },
+      "targets": [
+        {
+          "datasource": { "type": "prometheus", "uid": "prometheus" },
+          "expr": "sum(rate(http_requests_total{status=\"5xx\"}[1m])) by (handler) / clamp_min(sum(rate(http_requests_total[1m])) by (handler), 0.001)",
+          "legendFormat": "{{handler}}"
+        }
+      ]
+    }
+  ]
+}

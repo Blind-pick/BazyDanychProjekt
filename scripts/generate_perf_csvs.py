@@ -1,17 +1,4 @@
 #!/usr/bin/env python3
-"""
-Generuje pliki CSV dla JMeter (tests/perf_test.jmx).
-
-  - *_new.csv : dane do POST (tworzenie nowych rekordow)
-  - *_ids.csv : ID istniejacych rekordow do GET
-
-Zakresy ID sa odczytywane PROSTO Z BAZY (max(id)), wiec zawsze pasuja do
-aktualnej skali danych. Po TRUNCATE ... RESTART IDENTITY id sa ciagle 1..max,
-wiec losowy ID z tego zakresu zawsze istnieje.
-
-Uruchom po zaladowaniu danych:
-    python scripts/generate_perf_csvs.py
-"""
 
 import csv
 import os
@@ -23,13 +10,13 @@ try:
 except ImportError:
     psycopg = None
 
-# Liczba wierszy w plikach (JMeter zapetla je w kolko - recycle=true).
 N_NEW_USERS = int(os.getenv("N_NEW_USERS", "20000"))
 N_NEW_CINEMAS = int(os.getenv("N_NEW_CINEMAS", "5000"))
 N_READ_ROWS = int(os.getenv("N_READ_ROWS", "20000"))
 
-# Wartosci awaryjne, gdyby baza byla niedostepna.
-FALLBACK = {"users": 1_000_000, "cinemas": 50, "reservations": 5_000_000, "tickets": 20_000_000}
+FALLBACK = {"users": 1_000_000, "cinemas": 50, "reservations": 5_000_000,
+            "tickets": 20_000_000, "showtimes": 200_000, "movies": 1_000,
+            "seats": 200_000}
 
 OUTPUT_DIR = Path(__file__).parent.parent / "tests" / "data" / "perf"
 
@@ -61,8 +48,15 @@ def fetch_max_ids() -> dict:
             reservations = cur.fetchone()[0]
             cur.execute("SELECT COALESCE(max(ticket_id), 0) FROM tickets")
             tickets = cur.fetchone()[0]
+            cur.execute("SELECT COALESCE(max(showtime_id), 0) FROM showtimes")
+            showtimes = cur.fetchone()[0]
+            cur.execute("SELECT COALESCE(max(movie_id), 0) FROM movies")
+            movies = cur.fetchone()[0]
+            cur.execute("SELECT COALESCE(max(seat_id), 0) FROM seats")
+            seats = cur.fetchone()[0]
         ids = {"users": users, "cinemas": cinemas,
-               "reservations": reservations, "tickets": tickets}
+               "reservations": reservations, "tickets": tickets,
+               "showtimes": showtimes, "movies": movies, "seats": seats}
         print(f"  max id z bazy: {ids}")
         return {k: (v or FALLBACK[k]) for k, v in ids.items()}
     except Exception as e:
@@ -107,6 +101,10 @@ def main() -> None:
     write_csv(OUTPUT_DIR / "cinema_ids.csv", gen_random_ids(ids["cinemas"], "cinema_id"), ["cinema_id"])
     write_csv(OUTPUT_DIR / "reservation_ids.csv", gen_random_ids(ids["reservations"], "reservation_id"), ["reservation_id"])
     write_csv(OUTPUT_DIR / "ticket_ids.csv", gen_random_ids(ids["tickets"], "ticket_id"), ["ticket_id"])
+    write_csv(OUTPUT_DIR / "showtime_ids.csv", gen_random_ids(ids["showtimes"], "showtime_id"), ["showtime_id"])
+    write_csv(OUTPUT_DIR / "movie_ids.csv", gen_random_ids(ids["movies"], "movie_id"), ["movie_id"])
+
+    write_csv(OUTPUT_DIR / "seat_ids.csv", gen_random_ids(ids["seats"], "seat_id"), ["seat_id"])
 
     print("\nGotowe. Teraz mozesz odpalic tests/perf_test.jmx")
 

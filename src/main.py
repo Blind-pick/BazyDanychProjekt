@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from prometheus_fastapi_instrumentator import Instrumentator
+from prometheus_fastapi_instrumentator import Instrumentator, metrics
 
 from src.config import AppConfig
 from src.database import init_db, close_db
@@ -22,6 +22,7 @@ from src.users import router as users_router
 from src.reservations import router as reservations_router
 from src.tickets import router as tickets_router
 from src.payments import router as payments_router
+from src.reports import router as reports_router
 
 
 @asynccontextmanager
@@ -53,7 +54,11 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-Instrumentator().instrument(app).expose(app)
+
+_LATENCY_BUCKETS = (0.05, 0.1, 0.25, 0.5, 1, 2, 3, 5, 8, 13, 21, 34, 55, 90, 120)
+_instrumentator = Instrumentator()
+_instrumentator.add(metrics.default(latency_lowr_buckets=_LATENCY_BUCKETS))
+_instrumentator.instrument(app).expose(app)
 
 
 @app.exception_handler(CinemaAPIException)
@@ -72,6 +77,7 @@ app.include_router(users_router)
 app.include_router(reservations_router)
 app.include_router(tickets_router)
 app.include_router(payments_router)
+app.include_router(reports_router)
 
 
 @app.get("/health", tags=["Health"])

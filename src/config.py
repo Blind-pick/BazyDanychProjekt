@@ -8,6 +8,11 @@ class DatabaseConfig:
     USER: str = os.getenv("DB_USER", "postgres")
     PASSWORD: str = os.getenv("DB_PASSWORD", "pswd")
 
+    # Replika (standby, read-only). Gdy ustawione - ODCZYTY ida tu, ZAPISY na master.
+    # Puste => brak repliki, odczyty tez na master (zachowanie sprzed fazy 7).
+    REPLICA_HOST: str = os.getenv("DB_REPLICA_HOST", "")
+    REPLICA_PORT: int = int(os.getenv("DB_REPLICA_PORT", "5432"))
+
     MIN_SIZE: int = int(os.getenv("DB_POOL_MIN_SIZE", "5"))
     MAX_SIZE: int = int(os.getenv("DB_POOL_MAX_SIZE", "20"))
     MAX_OVERFLOW: int = int(os.getenv("DB_POOL_MAX_OVERFLOW", "10"))
@@ -18,6 +23,10 @@ class DatabaseConfig:
     @classmethod
     def get_connection_string(cls) -> str:
         return f"postgresql://{cls.USER}:{cls.PASSWORD}@{cls.HOST}:{cls.PORT}/{cls.NAME}"
+
+    @classmethod
+    def get_replica_connection_string(cls) -> str:
+        return f"postgresql://{cls.USER}:{cls.PASSWORD}@{cls.REPLICA_HOST}:{cls.REPLICA_PORT}/{cls.NAME}"
 
     @classmethod
     def get_admin_connection_string(cls) -> str:

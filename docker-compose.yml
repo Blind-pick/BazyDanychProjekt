@@ -15,15 +15,23 @@ services:
       - "-c"
       - "pg_stat_statements.track=all"
       - "-c"
-      - "log_min_duration_statement=200"
+      - "log_min_duration_statement=${DB_LOG_MIN_MS:-500}"
       - "-c"
-      - "auto_explain.log_min_duration=200"
+      - "auto_explain.log_min_duration=${DB_AUTOEXPLAIN_MS:-2000}"
       - "-c"
-      - "auto_explain.log_analyze=on"
-      - "-c"
-      - "auto_explain.log_buffers=on"
+      - "auto_explain.log_analyze=off"
       - "-c"
       - "auto_explain.log_nested_statements=on"
+      - "-c"
+      - "shared_buffers=${DB_SHARED_BUFFERS:-32MB}"
+      - "-c"
+      - "work_mem=${DB_WORK_MEM:-1MB}"
+      - "-c"
+      - "maintenance_work_mem=${DB_MAINT_WORK_MEM:-64MB}"
+      - "-c"
+      - "effective_cache_size=${DB_EFFECTIVE_CACHE:-128MB}"
+      - "-c"
+      - "max_connections=${DB_MAX_CONNECTIONS:-150}"
     ports:
       - "5432:5432"
     volumes:
@@ -41,29 +49,85 @@ services:
     networks:
       - cinema_network
 
+  db_replica:
+    image: postgres:15-alpine
+    container_name: cinema_db_replica
+    environment:
+      PGPASSWORD: replpass
+      PGDATA: /var/lib/postgresql/data
+    entrypoint: ["sh", "/usr/local/bin/replica_entrypoint.sh"]
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+      - "-c"
+      - "pg_stat_statements.max=10000"
+      - "-c"
+      - "pg_stat_statements.track=all"
+      - "-c"
+      - "shared_buffers=${DB_SHARED_BUFFERS:-32MB}"
+      - "-c"
+      - "work_mem=${DB_WORK_MEM:-1MB}"
+      - "-c"
+      - "effective_cache_size=${DB_EFFECTIVE_CACHE:-128MB}"
+      - "-c"
+      - "max_connections=${DB_MAX_CONNECTIONS:-150}"
+      - "-c"
+      - "hot_standby=on"
+    volumes:
+      - pgdata_replica:/var/lib/postgresql/data
+      - ./scripts/replica_entrypoint.sh:/usr/local/bin/replica_entrypoint.sh:ro
+    ports:
+      - "5433:5432"
+    depends_on:
+      db:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: "${DB_CPUS:-6.0}"
+          memory: ${DB_MEMORY:-6g}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 90s
+    networks:
+      - cinema_network
+    restart: unless-stopped
+
   api:
     build: .
     container_name: cinema_api
     depends_on:
       db:
         condition: service_healthy
+      db_replica:
+        condition: service_started
     environment:
       DB_HOST: db
+      DB_REPLICA_HOST: ${DB_REPLICA_HOST:-db_replica}
+      DB_REPLICA_PORT: ${DB_REPLICA_PORT:-5432}
       DB_NAME: ${DB_NAME:-kino}
       DB_USER: ${DB_USER:-postgres}
       DB_PASSWORD: ${DB_PASSWORD:-pswd}
       DB_PORT: 5432
-      DB_POOL_MIN_SIZE: ${DB_POOL_MIN_SIZE:-5}
-      DB_POOL_MAX_SIZE: ${DB_POOL_MAX_SIZE:-50}
+      DB_POOL_MIN_SIZE: ${DB_POOL_MIN_SIZE:-2}
+      DB_POOL_MAX_SIZE: ${DB_POOL_MAX_SIZE:-12}
+      DB_POOL_TIMEOUT: ${DB_POOL_TIMEOUT:-30}
+      API_WORKERS: ${API_WORKERS:-4}
       ENVIRONMENT: ${ENVIRONMENT:-local}
+      PROMETHEUS_MULTIPROC_DIR: /tmp/prometheus_multiproc
     ports:
       - "8000:8000"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health',timeout=5).status==200 else 1)"]
+      interval: 15s
+      timeout: 8s
+      retries: 5
+      start_period: 30s
     networks:
       - cinema_network
 
@@ -146,6 +210,8 @@ services:
 
 volumes:
   pgdata:
+    driver: local
+  pgdata_replica:
     driver: local
   prometheus_data:
     driver: local

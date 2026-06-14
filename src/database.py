@@ -18,7 +18,8 @@ class TransactionContext(NamedTuple):
 
 class DatabasePool:
     _instance: Optional["DatabasePool"] = None
-    _pool: Optional[AsyncConnectionPool] = None
+    _pool: Optional[AsyncConnectionPool] = None        
+    _read_pool: Optional[AsyncConnectionPool] = None   
 
     def __new__(cls) -> "DatabasePool":
         if cls._instance is None:
@@ -39,16 +40,37 @@ class DatabasePool:
                 timeout=DatabaseConfig.TIMEOUT,
             )
             await self._pool.wait()
-            logger.info(f"Database pool initialized: min={DatabaseConfig.MIN_SIZE}, max={DatabaseConfig.MAX_SIZE}")
+            logger.info(f"Write pool (master) initialized: min={DatabaseConfig.MIN_SIZE}, max={DatabaseConfig.MAX_SIZE}")
         except Exception as e:
-            logger.error(f"Failed to initialize database pool: {e}")
+            logger.error(f"Failed to initialize master pool: {e}")
             raise
 
+        if DatabaseConfig.REPLICA_HOST:
+            try:
+                read_pool = AsyncConnectionPool(
+                    conninfo=DatabaseConfig.get_replica_connection_string(),
+                    min_size=DatabaseConfig.MIN_SIZE,
+                    max_size=DatabaseConfig.MAX_SIZE,
+                    max_idle=60,
+                    timeout=DatabaseConfig.TIMEOUT,
+                )
+                await read_pool.wait()
+                self._read_pool = read_pool
+                logger.info(f"Read pool (replica {DatabaseConfig.REPLICA_HOST}) initialized")
+            except Exception as e:
+                logger.warning(f"Replica unavailable ({e}); reads fall back to master")
+                self._read_pool = self._pool
+        else:
+            self._read_pool = self._pool
+
     async def close(self) -> None:
+        if self._read_pool is not None and self._read_pool is not self._pool:
+            await self._read_pool.close()
+        self._read_pool = None
         if self._pool:
             await self._pool.close()
             self._pool = None
-            logger.info("Database pool closed")
+            logger.info("Database pools closed")
 
     async def get_connection(self) -> AsyncConnection:
         if self._pool is None:
@@ -61,14 +83,17 @@ class DatabasePool:
 
     @asynccontextmanager
     async def acquire(self) -> AsyncIterator[AsyncConnection]:
-        conn = await self.get_connection()
+        pool = self._read_pool if self._read_pool is not None else self._pool
+        if pool is None:
+            raise RuntimeError("Database pool not initialized. Call initialize() first.")
+        conn = await pool.getconn()
         try:
             await conn.set_isolation_level(
                 psycopg.IsolationLevel.REPEATABLE_READ
             )
             yield conn
         finally:
-            await self.return_connection(conn)
+            await pool.putconn(conn)
 
     @asynccontextmanager
     async def transaction(
@@ -96,7 +121,6 @@ class DatabasePool:
                 await self.return_connection(conn)
 
 
-# Global pool instance
 _pool = DatabasePool()
 
 

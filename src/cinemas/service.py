@@ -84,9 +84,10 @@ class CinemaService:
             async with conn.cursor() as cur:
                 if city:
                     await cur.execute("SELECT COUNT(*) FROM cinemas WHERE city = %s", (city,))
+                    total = (await cur.fetchone())[0]
                 else:
-                    await cur.execute("SELECT COUNT(*) FROM cinemas")
-                total = (await cur.fetchone())[0]
+                    await cur.execute("SELECT reltuples::bigint FROM pg_class WHERE relname = 'cinemas'")
+                    total = (await cur.fetchone())[0]
 
                 query = "SELECT cinema_id, name, city, created_at FROM cinemas"
                 params = []
